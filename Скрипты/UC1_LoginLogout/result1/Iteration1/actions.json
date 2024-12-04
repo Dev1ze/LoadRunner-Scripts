@@ -1,0 +1,67 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1733305017671
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: header.html",
+                "infFile": "t2.inf",
+                "time": 1733305017742
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t3.inf",
+                "time": 1733305017844
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t4.inf",
+                "time": 1733305017979
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: SignOff Button",
+                "infFile": "t5.inf",
+                "time": 1733305018114
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "OpenLandingPage",
+                "rawStartTime": 1733305017400,
+                "rawEndTime": 1733305017861,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06784200668334961
+            },
+            {
+                "transactionName": "Login",
+                "rawStartTime": 1733305017877,
+                "rawEndTime": 1733305017989,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0027768611907958986
+            },
+            {
+                "transactionName": "SIGNOFF",
+                "rawStartTime": 1733305018005,
+                "rawEndTime": 1733305018116,
+                "thinkTime": 0.0,
+                "wastedTime": 0.002315998077392578
+            },
+            {
+                "transactionName": "UC1_LoginLogout",
+                "rawStartTime": 1733305017368,
+                "rawEndTime": 1733305018164,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07293486595153809
+            }
+        ]
+    }
+]
