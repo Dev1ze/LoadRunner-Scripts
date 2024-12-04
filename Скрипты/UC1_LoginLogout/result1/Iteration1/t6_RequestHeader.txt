@@ -1,5 +1,5 @@
-GET /cgi-bin/welcome.pl?signOff=true HTTP/1.1
-Referer: http://127.0.0.1:1080/WebTours/
+GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1
+Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home
 Sec-Fetch-Mode: navigate
 Priority: u=4
 Sec-Fetch-Dest: frame
@@ -11,5 +11,5 @@ Accept-Language: en-US,en;q=0.5
 Accept: */*
 Connection: Keep-Alive
 Host: 127.0.0.1:1080
-Cookie: MSO=SID&1733305017
+Cookie: MSO=SID&1733310417; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
 
