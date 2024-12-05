@@ -2746,7 +2746,6 @@ Action()
 	 
 	lr_start_transaction("UC2_SearchTicket");
 
-	
 	 
 	 
 	lr_start_transaction("OpenLandingPage");
@@ -2761,7 +2760,8 @@ Action()
 	web_add_auto_header("Sec-Fetch-Mode", "navigate");
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	web_add_auto_header("Upgrade-Insecure-Requests", "1");
-	 
+	
+ 
 	web_reg_save_param_attrib(
 		"ParamName=userSession",
 		"TagName=input",
@@ -2772,7 +2772,7 @@ Action()
 		"IgnoreRedirections=No",
 		"RequestUrl=*/nav.pl*",
 		"LAST");
-	
+
 	web_url("WebTours", 
 		"URL=http://127.0.0.1:1080/WebTours/", 
 		"TargetFrame=", 
@@ -2832,27 +2832,29 @@ Action()
 	 
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	lr_think_time(27);
+	
 	 
-	web_reg_save_param_attrib(
-		"ParamName=departDate",
-		"TagName=input",
-		"Extract=value",
-		"Name=departDate",
-		"Type=text",
-		"SEARCH_FILTERS",
-		"RequestUrl=*/reservations.pl*",
-		"LAST");
+    web_reg_save_param_attrib(
+        "ParamName=departDate",
+        "TagName=input",
+        "Extract=value",
+        "Name=departDate",
+        "Type=text",
+        "SEARCH_FILTERS",
+        "RequestUrl=*/reservations.pl*",
+        "LAST");
 
-	 
-	web_reg_save_param_attrib(
-		"ParamName=returnDate",
-		"TagName=input",
-		"Extract=value",
-		"Name=returnDate",
-		"Type=text",
-		"SEARCH_FILTERS",
-		"RequestUrl=*/reservations.pl*",
-		"LAST");
+     
+    web_reg_save_param_attrib(
+        "ParamName=returnDate",
+        "TagName=input",
+        "Extract=value",
+        "Name=returnDate",
+        "Type=text",
+        "SEARCH_FILTERS",
+        "RequestUrl=*/reservations.pl*",
+        "LAST");
+
 
 	web_url("Search Flights Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
