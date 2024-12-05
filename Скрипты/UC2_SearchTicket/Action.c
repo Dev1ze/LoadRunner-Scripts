@@ -1,12 +1,21 @@
 Action()
 {
+	char departCity[100];
+	char arriveCity[100];
+	char _numPassangers[50];
+	
 	/*НАЧАЛО ГЛАВНОЙ СТРАНЗАКЦИИ*/
 	/*--------------------------*/
 	lr_start_transaction("UC2_SearchTicket");
 
+	
 	/*НАЧАЛО ПЕРЕХОДА НА ГЛАВНУЮ СТРАНИЦУ*/
 	/*-----------------------------------*/
-	lr_start_transaction("OpenLandingPage"); 
+	lr_start_transaction("OpenLandingPage");
+	/*Проверка на успешную вход на страницу*/
+	/*-------------------------------------*/
+	web_reg_find("Text=Welcome to the Web Tours site", LAST);
+	/*-------------------------------------*/
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 	web_add_auto_header("Sec-Fetch-Dest", "document");
 	web_add_auto_header("Sec-Fetch-Site", "none");
@@ -45,6 +54,10 @@ Action()
 	/*НАЧАЛО АВТОРИИЗАЦИИ*/
 	/*-------------------*/
 	lr_start_transaction("Login");
+	/*Проверка на успешную авторизацию*/
+	/*--------------------------------*/
+	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", LAST);
+	/*--------------------------------*/
 	web_revert_auto_header("Sec-Fetch-User");
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_add_auto_header("Priority", "u=4");
@@ -75,26 +88,34 @@ Action()
 	/*НАЧАЛО ОТКРЫТИЯ СТРАНИЦЫ ПОИСКА БИЛЕТА*/
 	/*--------------------------------------*/
 	lr_start_transaction("OpenPage_FindFlights");
-	
-	web_set_max_html_param_len("2048000");
-	web_reg_save_param_ex(
-	    "ParamName=ArriveDropdown",
-	    "LB=\<select name\=\"depart\" \>\n",
-	    "RB=\<option",
-	    "Ordinal=1",
-	    LAST);
-	
-	web_reg_save_param_ex(
-    	"ParamName=ArriveCityList",
-    	"LB=<option value=\"",
-    	"RB=\">",
-    	"SourceString={ArriveDropdown}",
-    	"Ordinal=All",
-    	LAST);
-
-	
+	/*Проверка на успешную открытие страницы поиска билета*/
+	/*----------------------------------------------------*/
+	web_reg_find("Text=Find Flight", LAST);
+	/*----------------------------------------------------*/
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	lr_think_time(27);
+	/*Correlation comment - Do not change!  Original value='12/05/2024' Name ='departDate' Type ='RecordReplay'*/
+	web_reg_save_param_attrib(
+		"ParamName=departDate",
+		"TagName=input",
+		"Extract=value",
+		"Name=departDate",
+		"Type=text",
+		SEARCH_FILTERS,
+		"RequestUrl=*/reservations.pl*",
+		LAST);
+
+	/*Correlation comment - Do not change!  Original value='12/06/2024' Name ='returnDate' Type ='RecordReplay'*/
+	web_reg_save_param_attrib(
+		"ParamName=returnDate",
+		"TagName=input",
+		"Extract=value",
+		"Name=returnDate",
+		"Type=text",
+		SEARCH_FILTERS,
+		"RequestUrl=*/reservations.pl*",
+		LAST);
+
 	web_url("Search Flights Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
 		"TargetFrame=body", 
@@ -108,37 +129,56 @@ Action()
 	/*-------------------------------------*/
 	/*КОНЕЦ ОТКРЫТИЯ СТРАНИЦЫ ПОИСКА БИЛЕТА*/
 	
+
 	
-	/*ВЫБОР КОНКРЕТНОГО РЕЙСА*/
+	/*ТРАНЗАКЦИЯ ВЫБОРА КОНКРЕТНОГО РЕЙСА*/
 	/*-----------------------*/
+	/*Проверка на не совпадение городов*/
+	lr_set_debug_message(LR_MSG_CLASS_FULL_TRACE, LR_SWITCH_ON);
+	strcpy(departCity, lr_eval_string("{depart}"));
+	do 
+	{ 
+		strcpy(arriveCity, lr_eval_string("{arrive}"));
+	} 
+	while (strcmp(departCity, arriveCity) == 0);
+	lr_save_string(departCity, "departCity");
+	lr_save_string(arriveCity, "arriveCity");
+	lr_output_message("Selected Depart City: %s", departCity);
+	lr_output_message("Selected Arrive City: %s", arriveCity);
+	/*---------------------------------*/
 	lr_start_transaction("SubmitFlight");
+	/*Проверка корректности выбранных пунктов */
+	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>",LAST);
+	/*----------------------------------------*/
+	strcpy(_numPassangers, lr_eval_string("{numPassengers}"));
+	lr_save_string(_numPassangers, "_numPassangers");
 	web_add_header("Origin", "http://127.0.0.1:1080");
-	web_submit_data("reservations.pl", 
-		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Snapshot=t6.inf", 
-		"Mode=HTML", 
-		ITEMDATA, 
-		"Name=advanceDiscount", "Value=0", ENDITEM, 
-		"Name=depart", "Value=Denver", ENDITEM, 
-		"Name=departDate", "Value=12/05/2024", ENDITEM, 
-		"Name=arrive", "Value=London", ENDITEM, 
-		"Name=returnDate", "Value=12/06/2024", ENDITEM, 
-		"Name=numPassengers", "Value=1", ENDITEM, 
-		"Name=seatPref", "Value=None", ENDITEM, 
-		"Name=seatType", "Value=Coach", ENDITEM, 
-		"Name=findFlights.x", "Value=59", ENDITEM, 
-		"Name=findFlights.y", "Value=3", ENDITEM, 
-		"Name=.cgifields", "Value=roundtrip", ENDITEM, 
-		"Name=.cgifields", "Value=seatType", ENDITEM, 
-		"Name=.cgifields", "Value=seatPref", ENDITEM, 
+	web_submit_data("reservations.pl",
+		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl",
+		"Method=POST",
+		"TargetFrame=",
+		"RecContentType=text/html",
+		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome",
+		"Snapshot=t6.inf",
+		"Mode=HTML",
+		ITEMDATA,
+		"Name=advanceDiscount", "Value=0", ENDITEM,
+		"Name=depart", "Value={departCity}", ENDITEM,
+		"Name=departDate", "Value={departDate}", ENDITEM,
+		"Name=arrive", "Value={arriveCity}", ENDITEM,
+		"Name=returnDate", "Value={returnDate}", ENDITEM,
+		"Name=numPassengers", "Value={_numPassangers}", ENDITEM,
+		"Name=seatPref", "Value={seatingPreference}", ENDITEM,
+		"Name=seatType", "Value={typeSeat}", ENDITEM,
+		"Name=findFlights.x", "Value=59", ENDITEM,
+		"Name=findFlights.y", "Value=3", ENDITEM,
+		"Name=.cgifields", "Value=roundtrip", ENDITEM,
+		"Name=.cgifields", "Value=seatType", ENDITEM,
+		"Name=.cgifields", "Value=seatPref", ENDITEM,
 		LAST);
 	lr_end_transaction("SubmitFlight",LR_AUTO);
 	/*-----------------------*/
-	/*ВЫБОР КОНКРЕТНОГО РЕЙСА*/
+	/*КОНЕЦ ТРАНЗАКЦИИ ВЫБОРА КОНКРЕТНОГО РЕЙСА*/
 	
 	
 	lr_end_transaction("UC2_SearchTicket", LR_AUTO);

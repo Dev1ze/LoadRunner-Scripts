@@ -55,7 +55,7 @@ vuser_end=cci
 [TransactionsOrder]
 Order="UC2_SearchTicket__*delimiter*__OpenLandingPage__*delimiter*__Login__*delimiter*__OpenPage_FindFlights__*delimiter*__SubmitFlight"
 [StateManagement]
-LastReplayStatus=0
+LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
