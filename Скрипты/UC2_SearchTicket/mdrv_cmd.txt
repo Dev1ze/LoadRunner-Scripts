@@ -1,0 +1,1 @@
+-usr "P:\Programs\FinalTask\Скрипты\UC2_SearchTicket\UC2_SearchTicket.usr" -compile_only -out "P:\Programs\FinalTask\Скрипты\UC2_SearchTicket\" -drv_log_file "P:\Programs\FinalTask\Скрипты\UC2_SearchTicket\mdrv.log" -cfg "P:\Programs\FinalTask\Скрипты\UC2_SearchTicket\default.cfg" -product_name vugen

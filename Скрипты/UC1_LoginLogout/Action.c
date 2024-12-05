@@ -93,7 +93,7 @@ Action()
 	web_reg_find("Text=please enter your account information",LAST); //Проверка на выход из аккаунта
 	
 	
-	lr_start_transaction("SIGNOFF"); /*НАЧАЛО SIGN OFF*/
+	lr_start_transaction("Logout"); /*НАЧАЛО Logout*/
 	web_revert_auto_header("Sec-Fetch-User");
 	lr_think_time(4);
 	web_url("SignOff Button", 
@@ -105,7 +105,7 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("SIGNOFF",LR_AUTO); /*ЗАВРЕШЕНИЕ SIGN OFF*/
+	lr_end_transaction("Logout",LR_AUTO); /*ЗАВРЕШЕНИЕ Logout*/
 	lr_think_time(7);
 	web_websocket_close("ID=0", "Code=1000", LAST);
 	

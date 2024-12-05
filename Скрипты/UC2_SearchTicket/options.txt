@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IP:\Programs\FinalTask\Скрипты\UC2_SearchTicket
+-IP:\Programs\LoadRunner\include
+-ep:\programs\finaltask\скрипты\uc2_searchticket\\logfile.log
+p:\programs\finaltask\скрипты\uc2_searchticket\\combined_UC2_SearchTicket.c
+p:\programs\finaltask\скрипты\uc2_searchticket\\pre_cci.c
