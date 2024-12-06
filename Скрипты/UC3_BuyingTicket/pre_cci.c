@@ -3264,9 +3264,12 @@ Action()
 	 
 	
 	 
-	web_reg_find("Text={_numPassengers} {typeSeat} Class tickets from {departCity} to {arriveCity}","LAST");
+	if(numPassengersInt == 1){
+		web_reg_find("Text=A {typeSeat} Class ticket\n from {departCity} to {arriveCity}","LAST");
+	}
+	else web_reg_find("Text={_numPassengers} {typeSeat} Class tickets from {departCity} to {arriveCity}","LAST");
+	
 	web_reg_find("Text=Total Charged to Credit Card # {creditCard}\n\    </TD\>\n\    <TD\>\n       \<b\> \${totalPriceStr} \</b\>","LAST");
-
 	 
 	
 	lr_start_transaction("BuyingTicket");
