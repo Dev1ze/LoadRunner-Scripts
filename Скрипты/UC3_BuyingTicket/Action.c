@@ -3,10 +3,16 @@ Action()
 	char departCity[100];
 	char arriveCity[100];
 	char _numPassengers[50];
+	int numPassengersInt;
 	int i, countTicket;
 	char *randTicketId;
 	char paramName[50];
     int randomValue;
+    char *token; 
+    char priceTicket[10];
+    int priceTicketInt;
+    int totalPrice;
+    char totalPriceStr[10];
 	
 	/*НАЧАЛО ГЛАВНОЙ ТРАНЗАКЦИИ*/
     /*-------------------------*/
@@ -59,10 +65,12 @@ Action()
 	/*НАЧАЛО АВТОРИЗАЦИИ*/
     /*------------------*/
 	lr_start_transaction("Login");
+	
 	/*Проверка на успешную авторизацию*/
 	/*--------------------------------*/
 	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", LAST);
 	/*--------------------------------*/
+	
 	web_revert_auto_header("Origin");
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	lr_think_time(41);
@@ -90,6 +98,12 @@ Action()
 	/*НАЧАЛО ОТКРЫТИЯ СТРАНИЦЫ ПОИСКА БИЛЕТА*/
 	/*--------------------------------------*/
 	lr_start_transaction("OpenPage_FindFlight");
+	
+	/*Проверка на успешную открытие страницы поиска билета*/
+	/*----------------------------------------------------*/
+	web_reg_find("Text=Find Flight", LAST);
+	/*----------------------------------------------------*/
+	
 	web_revert_auto_header("Sec-Fetch-User");
 	lr_think_time(13);
 	
@@ -141,6 +155,7 @@ Action()
 	
 	/*ТРАНЗАКЦИЯ ВЫБОРА КОНКРЕТНОГО РЕЙСА*/
 	/*-----------------------------------*/
+	
 	/*Проверка на не совпадение городов*/
 	lr_set_debug_message(LR_MSG_CLASS_FULL_TRACE, LR_SWITCH_ON);
 	strcpy(departCity, lr_eval_string("{depart}"));
@@ -154,10 +169,13 @@ Action()
 	lr_output_message("Selected Depart City: %s", departCity);
 	lr_output_message("Selected Arrive City: %s", arriveCity);
 	/*---------------------------------*/
+	
 	lr_start_transaction("SubmitFlight");
+	
 	/*Проверка корректности выбранных пунктов */
 	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>",LAST);
 	/*----------------------------------------*/
+	
 	strcpy(_numPassengers, lr_eval_string("{numPassengers}"));
 	lr_save_string(_numPassengers, "_numPassengers");
 	web_add_header("Origin", "http://127.0.0.1:1080");
@@ -197,15 +215,43 @@ Action()
 
 	/*Получение рандомного id билета из всех на странице*/
 	/*--------------------------------------------------*/
-	countTicket = atoi(lr_eval_string("{idTicket_count}")); // Количество билетов
+	countTicket = atoi(lr_eval_string("{idTicket_count}"));
 	srand(time(NULL));
-    randomValue = (rand() % (countTicket - 0)) + 0;
+    randomValue = (rand() % (countTicket - 1)) + 1;
 	sprintf(paramName, "{idTicket_%d}", randomValue);
 	randTicketId = lr_eval_string(paramName); 
     lr_output_message("Random ticket - %s", randTicketId);
     lr_save_string(randTicketId, "randTicketId");
     /*--------------------------------------------------*/
     
+    /*Извлечение цены из id билета*/
+	/*----------------------------*/
+	token = strtok(randTicketId, ";");
+	token = strtok(NULL, ";");
+	strcpy(priceTicket, token);
+	lr_output_message("Цена билета: %s", priceTicket);
+	/*----------------------------*/
+	
+	/*Фильтр для итоговой цены билета на странице*/
+	/*-------------------------------------------*/
+	web_reg_save_param_regexp(
+		"ParamName=totalPrice",
+		"RegExp=\\$ (.*?)\<tr",
+		"Ordinal=1",
+         LAST);
+	/*-------------------------------------------*/
+	
+	/*Проверка итоговой цены билета*/
+	/*-----------------------------*/
+	priceTicketInt = atoi(priceTicket);
+	numPassengersInt = atoi(_numPassengers);
+	totalPrice = priceTicketInt * numPassengersInt;
+	sprintf(totalPriceStr, "%d", totalPrice);
+	lr_save_string(totalPriceStr, "totalPriceStr");
+	lr_output_message("totalPriceStr - %s", totalPriceStr);
+	web_reg_find("Text=Total for {_numPassengers} ticket(s) is \= $ {totalPriceStr}", LAST);
+	/*-----------------------------*/
+	
     /*ТРАНЗАКЦИЯ ВЫБОРА ВРЕМЕНИ РЕЙСА*/
 	/*-------------------------------*/
 	lr_start_transaction("СhooseDepartureTime");
@@ -219,7 +265,7 @@ Action()
 		"Mode=HTML", 
 		ITEMDATA, 
 		"Name=outboundFlight", "Value={randTicketId}", ENDITEM, 
-		"Name=numPassengers", "Value=1", ENDITEM, 
+		"Name=numPassengers", "Value={_numPassengers}", ENDITEM, 
 		"Name=advanceDiscount", "Value=0", ENDITEM, 
 		"Name=seatType", "Value=Coach", ENDITEM, 
 		"Name=seatPref", "Value=None", ENDITEM, 

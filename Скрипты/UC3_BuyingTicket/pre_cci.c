@@ -2598,6 +2598,360 @@ long WebSocketReceiveLen0   = sizeof(WebSocketReceive0) - 1;
 
 # 9 "globals.h" 2
 
+# 1 "P:\\Programs\\LoadRunner\\include/stdio.h" 1
+
+
+
+# 1 "P:\\Programs\\LoadRunner\\include/stddef.h" 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef unsigned int uintptr_t;
+
+
+
+
+
+
+
+
+typedef int intptr_t;
+
+
+
+
+
+
+
+
+typedef int ptrdiff_t;
+
+
+
+
+
+typedef unsigned short wchar_t;
+
+
+
+
+typedef long time_t;
+
+
+
+
+typedef long clock_t;
+
+
+
+
+typedef wchar_t wint_t;
+typedef wchar_t wctype_t;
+
+
+
+
+typedef char *	va_list;
+
+
+
+ 
+
+
+
+
+
+# 4 "P:\\Programs\\LoadRunner\\include/stdio.h" 2
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 79 "P:\\Programs\\LoadRunner\\include/stdio.h"
+
+
+
+
+
+
+
+
+typedef struct _iobuf
+{
+	void* _Placeholder;
+} FILE;
+
+
+
+
+typedef long long fpos_t;
+
+
+
+
+FILE* __acrt_iob_func(unsigned);
+
+
+
+
+
+
+
+ 
+
+
+
+# 126 "P:\\Programs\\LoadRunner\\include/stdio.h"
+
+
+int _fgetchar(void);
+int _fputchar(int);
+int _flushall(void);
+int _rmtmp(void);
+FILE * _fsopen(const char *, const char *, int);
+
+
+
+void clearerr(FILE *);
+int fclose(FILE *);
+int _fcloseall(void);
+
+FILE * _fdopen(int, const char *);
+
+int feof(FILE *);
+int ferror(FILE *);
+int fflush(FILE *);
+int fgetc(FILE *);
+int fgetpos(FILE *, fpos_t *);
+char * fgets(char *, int, FILE *);
+
+int _fileno(FILE *);
+
+FILE * fopen(const char *, const char *);
+int fprintf(FILE *, const char *, ...);
+int fputc(int, FILE *);
+
+int fputs(const char *, FILE *);
+size_t fread(void *, size_t, size_t, FILE *);
+FILE * freopen(const char *, const char *, FILE *);
+int fscanf(FILE *, const char *, ...);
+int fsetpos(FILE *, const fpos_t *);
+int fseek(FILE *, long, int);
+long ftell(FILE *);
+size_t fwrite(const void *, size_t, size_t, FILE *);
+int getc(FILE *);
+int getchar(void);
+char * gets(char *);
+int _getw(FILE *);
+int _pclose(FILE *);
+FILE * _popen(const char *, const char *);
+int printf(const char *, ...);
+int putc(int, FILE *);
+int putchar(int);
+int puts(const char *);
+int _putw(int, FILE *);
+int remove(const char *);
+int rename(const char *, const char *);
+void rewind(FILE *);
+int scanf(const char *, ...);
+void setbuf(FILE *, char *);
+int setvbuf(FILE *, char *, int, size_t);
+int _snprintf(char *, size_t, const char *, ...);
+int sprintf(char *, const char *, ...);
+int sscanf(const char *, const char *, ...);
+char * _tempnam(char *, char *);
+FILE * tmpfile(void);
+char * tmpnam(char *);
+int ungetc(int, FILE *);
+int _unlink(const char *);
+int vfprintf(FILE *, const char *, va_list);
+int vprintf(const char *, va_list);
+int _vsnprintf(char *, size_t, const char *, va_list);
+int vsprintf(char *, const char *, va_list);
+
+
+
+
+
+
+
+
+# 10 "globals.h" 2
+
+# 1 "P:\\Programs\\LoadRunner\\include/string.h" 1
+ 
+
+
+
+
+
+
+
+
+# 1 "P:\\Programs\\LoadRunner\\include/stddef.h" 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+# 10 "P:\\Programs\\LoadRunner\\include/string.h" 2
+
+
+
+
+
+
+
+
+
+
+void *	 memchr(const void *, int, size_t);
+int 	 memcmp(const void *, const void *, size_t);
+void * 	 memcpy(void *, const void *, size_t);
+void *	 memmove(void *, const void *, size_t);
+void *	 memset(void *, int, size_t);
+
+char 	*strcat(char *, const char *);
+char 	*strchr(const char *, int);
+int	 strcmp(const char *, const char *);
+int	 strcoll(const char *, const char *);
+char 	*strcpy(char *, const char *);
+size_t	 strcspn(const char *, const char *);
+char 	*strerror(int);
+size_t	 strlen(const char *);
+char 	*strncat(char *, const char *, size_t);
+int	 strncmp(const char *, const char *, size_t);
+char 	*strncpy(char *, const char *, size_t);
+char 	*strpbrk(const char *, const char *);
+char 	*strrchr(const char *, int);
+size_t	 strspn(const char *, const char *);
+char 	*strstr(const char *, const char *);
+char 	*strtok(char *, const char *);
+
+void *	 memccpy(void *, const void *, int, size_t);
+int	 strcmpi(const char *, const char *);
+char 	*strdup(const char *);
+int	 strnicmp(const char *, const char *, size_t);
+void	 swab(const char *, char *, size_t);
+
+# 11 "globals.h" 2
+
 
 
  
@@ -2628,10 +2982,16 @@ Action()
 	char departCity[100];
 	char arriveCity[100];
 	char _numPassengers[50];
+	int numPassengersInt;
 	int i, countTicket;
 	char *randTicketId;
 	char paramName[50];
     int randomValue;
+    char *token; 
+    char priceTicket[10];
+    int priceTicketInt;
+    int totalPrice;
+    char totalPriceStr[10];
 	
 	 
      
@@ -2684,10 +3044,12 @@ Action()
 	 
      
 	lr_start_transaction("Login");
+	
 	 
 	 
 	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", "LAST");
 	 
+	
 	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	lr_think_time(41);
@@ -2715,6 +3077,12 @@ Action()
 	 
 	 
 	lr_start_transaction("OpenPage_FindFlight");
+	
+	 
+	 
+	web_reg_find("Text=Find Flight", "LAST");
+	 
+	
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
 	lr_think_time(13);
 	
@@ -2766,6 +3134,7 @@ Action()
 	
 	 
 	 
+	
 	 
 	lr_set_debug_message(8, 1);
 	strcpy(departCity, lr_eval_string("{depart}"));
@@ -2779,10 +3148,13 @@ Action()
 	lr_output_message("Selected Depart City: %s", departCity);
 	lr_output_message("Selected Arrive City: %s", arriveCity);
 	 
+	
 	lr_start_transaction("SubmitFlight");
+	
 	 
 	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>","LAST");
 	 
+	
 	strcpy(_numPassengers, lr_eval_string("{numPassengers}"));
 	lr_save_string(_numPassengers, "_numPassengers");
 	web_add_header("Origin", "http://127.0.0.1:1080");
@@ -2822,15 +3194,43 @@ Action()
 
 	 
 	 
-	countTicket = atoi(lr_eval_string("{idTicket_count}"));  
+	countTicket = atoi(lr_eval_string("{idTicket_count}"));
 	srand(_time32(0));
-    randomValue = (rand() % (countTicket - 0)) + 0;
+    randomValue = (rand() % (countTicket - 1)) + 1;
 	sprintf(paramName, "{idTicket_%d}", randomValue);
 	randTicketId = lr_eval_string(paramName); 
     lr_output_message("Random ticket - %s", randTicketId);
     lr_save_string(randTicketId, "randTicketId");
      
     
+     
+	 
+	token = strtok(randTicketId, ";");
+	token = strtok(0, ";");
+	strcpy(priceTicket, token);
+	lr_output_message("÷ÂÌ‡ ·ËÎÂÚ‡: %s", priceTicket);
+	 
+	
+	 
+	 
+	web_reg_save_param_regexp(
+		"ParamName=totalPrice",
+		"RegExp=\\$ (.*?)\<tr",
+		"Ordinal=1",
+         "LAST");
+	 
+	
+	 
+	 
+	priceTicketInt = atoi(priceTicket);
+	numPassengersInt = atoi(_numPassengers);
+	totalPrice = priceTicketInt * numPassengersInt;
+	sprintf(totalPriceStr, "%d", totalPrice);
+	lr_save_string(totalPriceStr, "totalPriceStr");
+	lr_output_message("totalPriceStr - %s", totalPriceStr);
+	web_reg_find("Text=Total for {_numPassengers} ticket(s) is \= $ {totalPriceStr}", "LAST");
+	 
+	
      
 	 
 	lr_start_transaction("—hooseDepartureTime");
@@ -2844,7 +3244,7 @@ Action()
 		"Mode=HTML", 
 		"ITEMDATA", 
 		"Name=outboundFlight", "Value={randTicketId}", "ENDITEM", 
-		"Name=numPassengers", "Value=1", "ENDITEM", 
+		"Name=numPassengers", "Value={_numPassengers}", "ENDITEM", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
 		"Name=seatType", "Value=Coach", "ENDITEM", 
 		"Name=seatPref", "Value=None", "ENDITEM", 
