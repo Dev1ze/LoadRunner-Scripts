@@ -1,0 +1,48 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t2.inf",
+                "time": 1733516469210
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login.pl_2",
+                "infFile": "t3.inf",
+                "time": 1733516469404
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t4.inf",
+                "time": 1733516469596
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "OpenLandingPage",
+                "rawStartTime": 1733516468929,
+                "rawEndTime": 1733516469217,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06511735916137696
+            },
+            {
+                "transactionName": "Login",
+                "rawStartTime": 1733516469233,
+                "rawEndTime": 1733516469410,
+                "thinkTime": 0.0,
+                "wastedTime": 0.003525972366333008
+            },
+            {
+                "transactionName": "ViewTicketList",
+                "rawStartTime": 1733516469442,
+                "rawEndTime": 1733516469601,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0030977725982666017
+            }
+        ]
+    }
+]
