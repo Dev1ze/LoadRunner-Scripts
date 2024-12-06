@@ -1,2 +1,2 @@
-"userSession=140412.902146618HccctiipzftVzzzHtDDDtpQDVQcf&username=artemironman&password=12345&"
+"userSession=140415.445038477HccczVQptftVzzzHtDDDfpHVzHcf&username=artemironman&password=12345&"
 "login.x=36&login.y=12&JSFormSubmit=off"

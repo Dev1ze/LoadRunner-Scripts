@@ -1,0 +1,19 @@
+POST /cgi-bin/reservations.pl HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome
+Origin: http://127.0.0.1:1080
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Sec-Fetch-Site: none
+Priority: u=0, i
+Sec-Fetch-Mode: navigate
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Accept: */*
+Connection: Keep-Alive
+Host: 127.0.0.1:1080
+Cookie: MSO=SID&1733491239; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Content-Length: 249
+
