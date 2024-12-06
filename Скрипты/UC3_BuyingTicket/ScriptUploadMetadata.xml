@@ -21,11 +21,14 @@
     <FileEntry Name="159232566440.idx" Filter="1" />
     <FileEntry Name="163137289440.idx" Filter="1" />
     <FileEntry Name="164149558440.idx" Filter="1" />
+    <FileEntry Name="38844797440.idx" Filter="1" />
     <FileEntry Name="75995481440.idx" Filter="1" />
     <FileEntry Name="address2.dat" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="cardDate.dat" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="creditCard.dat" Filter="1" />
     <FileEntry Name="custom_body_variables.txt" Filter="1" />
     <FileEntry Name="data.zip" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />

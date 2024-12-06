@@ -3196,7 +3196,8 @@ Action()
 	 
 	countTicket = atoi(lr_eval_string("{idTicket_count}"));
 	srand(_time32(0));
-    randomValue = (rand() % (countTicket - 1)) + 1;
+    randomValue = (rand() % (countTicket - 0)) + 1;
+    lr_output_message("Random  - %d", randomValue);
 	sprintf(paramName, "{idTicket_%d}", randomValue);
 	randTicketId = lr_eval_string(paramName); 
     lr_output_message("Random ticket - %s", randTicketId);
@@ -3246,8 +3247,8 @@ Action()
 		"Name=outboundFlight", "Value={randTicketId}", "ENDITEM", 
 		"Name=numPassengers", "Value={_numPassengers}", "ENDITEM", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
-		"Name=seatType", "Value=Coach", "ENDITEM", 
-		"Name=seatPref", "Value=None", "ENDITEM", 
+		"Name=seatType", "Value={typeSeat}", "ENDITEM", 
+		"Name=seatPref", "Value={seatingPreference}", "ENDITEM", 
 		"Name=reserveFlights.x", "Value=42", "ENDITEM", 
 		"Name=reserveFlights.y", "Value=9", "ENDITEM", 
 		"LAST");
@@ -3261,6 +3262,13 @@ Action()
 	
 	 
 	 
+	
+	 
+	web_reg_find("Text={_numPassengers} {typeSeat} Class tickets from {departCity} to {arriveCity}","LAST");
+	web_reg_find("Text=Total Charged to Credit Card # {creditCard}\n\    </TD\>\n\    <TD\>\n       \<b\> \${totalPriceStr} \</b\>","LAST");
+
+	 
+	
 	lr_start_transaction("BuyingTicket");
 	web_submit_data("reservations.pl_3", 
 		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
@@ -3271,17 +3279,17 @@ Action()
 		"Snapshot=t7.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
-		"Name=firstName", "Value=Artem", "ENDITEM", 
-		"Name=lastName", "Value=Kleymenov", "ENDITEM", 
-		"Name=address1", "Value=Rahmaninova", "ENDITEM", 
-		"Name=address2", "Value=PenzOblast Penza", "ENDITEM", 
-		"Name=pass1", "Value=Artem Kleymenov", "ENDITEM", 
-		"Name=creditCard", "Value=12345678", "ENDITEM", 
-		"Name=expDate", "Value=09/26", "ENDITEM", 
+		"Name=firstName", "Value={firstName}", "ENDITEM", 
+		"Name=lastName", "Value={lastName}", "ENDITEM", 
+		"Name=address1", "Value={address1}", "ENDITEM", 
+		"Name=address2", "Value={address2}", "ENDITEM", 
+		"Name=pass1", "Value={firstName} {lastName}", "ENDITEM", 
+		"Name=creditCard", "Value={creditCard}", "ENDITEM", 
+		"Name=expDate", "Value={cardDate}", "ENDITEM", 
 		"Name=oldCCOption", "Value=", "ENDITEM", 
-		"Name=numPassengers", "Value=1", "ENDITEM", 
-		"Name=seatType", "Value=Coach", "ENDITEM", 
-		"Name=seatPref", "Value=None", "ENDITEM", 
+		"Name=numPassengers", "Value={_numPassengers}", "ENDITEM", 
+		"Name=seatType", "Value={typeSeat}", "ENDITEM", 
+		"Name=seatPref", "Value={seatingPreference}", "ENDITEM", 
 		"Name=outboundFlight", "Value={randTicketId}", "ENDITEM", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
 		"Name=returnFlight", "Value=", "ENDITEM", 
