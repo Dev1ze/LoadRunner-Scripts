@@ -2636,6 +2636,9 @@ Action()
 	 
      
 	lr_start_transaction("OpenLandingPage");
+	 
+	web_reg_find("Text=Welcome to the Web Tours site", "LAST");
+	 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 	web_add_auto_header("Sec-Fetch-Dest", "document");
 	web_add_auto_header("Sec-Fetch-Site", "none");
@@ -2676,6 +2679,9 @@ Action()
 	 
      
 	lr_start_transaction("Login");
+	 
+	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", "LAST");
+	 
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_add_auto_header("Priority", "u=4");
@@ -2691,8 +2697,8 @@ Action()
 		"Mode=HTML", 
 		"ITEMDATA", 
 		"Name=userSession", "Value={userSession}", "ENDITEM", 
-		"Name=username", "Value=artemironman", "ENDITEM", 
-		"Name=password", "Value=12345", "ENDITEM", 
+		"Name=username", "Value={userName}", "ENDITEM", 
+		"Name=password", "Value={password}", "ENDITEM", 
 		"Name=login.x", "Value=67", "ENDITEM", 
 		"Name=login.y", "Value=9", "ENDITEM", 
 		"Name=JSFormSubmit", "Value=off", "ENDITEM", 
@@ -2706,6 +2712,9 @@ Action()
 	 
      
 	lr_start_transaction("Litinerary");
+	 
+	web_reg_find("Text=Itinerary", "LAST");
+	 
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	lr_think_time(15);
 	web_reg_save_param("c_flightids",
@@ -2749,6 +2758,10 @@ Action()
  	 
 	     
 	lr_start_transaction("DeleteTicket");
+	
+	lr_param_sprintf(lr_eval_string(lr_eval_string("{c_flightids_{c_flightids_count}}")),"deletedTicket");
+	web_reg_find("Text={deletedTicket}", "Fail=Found", "LAST");
+	
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	lr_think_time(24);
     web_custom_request("itinerary.pl_2",

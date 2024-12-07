@@ -9,6 +9,9 @@ Action()
 	/*ОТКРЫТИЕ ГЛАВНОЙ СТРАНИЦИ*/
     /*-------------------------*/
 	lr_start_transaction("OpenLandingPage");
+	/*Проверка на успешную вход на страницу*/
+	web_reg_find("Text=Welcome to the Web Tours site", LAST);
+	/*-------------------------------------*/
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 	web_add_auto_header("Sec-Fetch-Dest", "document");
 	web_add_auto_header("Sec-Fetch-Site", "none");
@@ -49,6 +52,9 @@ Action()
 	/*НАЧАЛО АВТОРИЗАЦИИ*/
     /*------------------*/
 	lr_start_transaction("Login");
+	/*Проверка на успешную авторизацию*/
+	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", LAST);
+	/*--------------------------------*/
 	web_revert_auto_header("Sec-Fetch-User");
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_add_auto_header("Priority", "u=4");
@@ -64,8 +70,8 @@ Action()
 		"Mode=HTML", 
 		ITEMDATA, 
 		"Name=userSession", "Value={userSession}", ENDITEM, 
-		"Name=username", "Value=artemironman", ENDITEM, 
-		"Name=password", "Value=12345", ENDITEM, 
+		"Name=username", "Value={userName}", ENDITEM, 
+		"Name=password", "Value={password}", ENDITEM, 
 		"Name=login.x", "Value=67", ENDITEM, 
 		"Name=login.y", "Value=9", ENDITEM, 
 		"Name=JSFormSubmit", "Value=off", ENDITEM, 
@@ -79,6 +85,9 @@ Action()
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/
     /*----------------------------------*/
 	lr_start_transaction("Litinerary");
+	/*Проверка на переход на страницу путевых листов*/
+	web_reg_find("Text=Itinerary", LAST);
+	/*----------------------------------------------*/
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	lr_think_time(15);
 	web_reg_save_param("c_flightids",
@@ -122,6 +131,10 @@ Action()
  	/*УДАЛЕНИЕ БУТЕВОГО ЛИСТА*/
 	/*-----------------------*/    
 	lr_start_transaction("DeleteTicket");
+	/*Проверка на отсутствие удаленного билета*/
+	lr_param_sprintf(lr_eval_string(lr_eval_string("{c_flightids_{c_flightids_count}}")),"deletedTicket");
+	web_reg_find("Text={deletedTicket}", "Fail=Found", LAST);
+	/*----------------------------------------*/   
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	lr_think_time(24);
     web_custom_request("itinerary.pl_2",
