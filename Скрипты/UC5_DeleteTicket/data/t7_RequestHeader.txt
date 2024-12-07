@@ -1,0 +1,19 @@
+POST /cgi-bin/itinerary.pl HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 160
+Origin: http://127.0.0.1:1080
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/itinerary.pl
+Cookie: MSO=SID&1733562260; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=4
+
