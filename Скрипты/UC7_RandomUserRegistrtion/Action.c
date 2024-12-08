@@ -26,7 +26,8 @@ Action()
 	lr_save_string(userDatas[5], "address2");
 
 	
-	
+	lr_start_transaction("UC7_RandomUserRegistrtion");
+
 	lr_start_transaction("OpenLandingPage");
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	web_set_sockets_option("SSL_VERSION", "AUTO");
@@ -153,6 +154,8 @@ Action()
 		"Mode=HTML", 
 		LAST);
 	lr_end_transaction("SignOff",LR_AUTO);
+	
+	lr_end_transaction("UC7_RandomUserRegistrtion", LR_AUTO);
 
 	return 0;
 }
