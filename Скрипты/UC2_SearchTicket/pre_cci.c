@@ -2921,6 +2921,28 @@ Action()
 	 
 	
 	
+	 
+	 
+	lr_start_transaction("SignOff");
+	 
+	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
+	 
+	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
+	lr_think_time(22);
+	web_url("SignOff Button", 
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t24.inf", 
+		"Mode=HTML", 
+		"LAST");
+	lr_end_transaction("SignOff",2);
+	    
+	 
+	
+	
 	lr_end_transaction("UC2_SearchTicket", 2);
 	 
 	 

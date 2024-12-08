@@ -3264,7 +3264,8 @@ Action()
 	 
 	
 	 
-	if(numPassengersInt == 1){
+	if(numPassengersInt == 1)
+	{
 		web_reg_find("Text=A {typeSeat} Class ticket\n from {departCity} to {arriveCity}","LAST");
 	}
 	else web_reg_find("Text={_numPassengers} {typeSeat} Class tickets from {departCity} to {arriveCity}","LAST");
@@ -3302,6 +3303,27 @@ Action()
 		"Name=.cgifields", "Value=saveCC", "ENDITEM", 
 		"LAST");
 	lr_end_transaction("BuyingTicket",2);
+	 
+	 
+	
+	 
+	 
+	lr_start_transaction("SignOff");
+	 
+	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
+	 
+	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
+	lr_think_time(22);
+	web_url("SignOff Button", 
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t24.inf", 
+		"Mode=HTML", 
+		"LAST");
+	lr_end_transaction("SignOff",2);
 	 
 	 
 	

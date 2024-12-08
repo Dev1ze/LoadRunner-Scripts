@@ -327,6 +327,27 @@ Action()
 	/*-------------------------*/
 	/*ÒĞÀÍÇÀÊÖÈß ÏÎÊÓÏÊÈ ÁÈËÅÒÀ*/
 	
+	/*ÂÛÕÎÄ ÈÇ ÀÊÊÀÓÍÒÀ*/
+	/*-----------------*/
+	lr_start_transaction("SignOff");
+	/*Ïğîâåğêà íà âûçîä èç àêêàóíòà*/
+	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
+	/*-----------------------------*/
+	web_revert_auto_header("Sec-Fetch-User");
+	lr_think_time(22);
+	web_url("SignOff Button", 
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t24.inf", 
+		"Mode=HTML", 
+		LAST);
+	lr_end_transaction("SignOff",LR_AUTO);
+	/*-----------------*/
+	/*ÂÛÕÎÄ ÈÇ ÀÊÊÀÓÍÒÀ*/
+	
 	
 	lr_end_transaction("UC3_BuyingTicket", LR_AUTO);
 	/*------------------------*/

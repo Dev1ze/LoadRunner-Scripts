@@ -112,7 +112,6 @@ Action()
 	lr_end_transaction("Litinerary",LR_AUTO);
     /*----------------------------------*/
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/
-
 	
 	
  	/*Формирование тела для удаления элемента списка*/
@@ -150,6 +149,31 @@ Action()
 	lr_end_transaction("DeleteTicket",LR_AUTO);
 	/*-----------------------*/  
  	/*УДАЛЕНИЕ БУТЕВОГО ЛИСТА*/
+ 	
+ 	
+ 	
+ 	/*ВЫХОД ИЗ АККАУНТА*/
+	/*-----------------*/
+	lr_start_transaction("SignOff");
+	/*Проверка на вызод из аккаунта*/
+	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
+	/*-----------------------------*/
+	web_revert_auto_header("Sec-Fetch-User");
+	lr_think_time(22);
+	web_url("SignOff Button", 
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t24.inf", 
+		"Mode=HTML", 
+		LAST);
+	lr_end_transaction("SignOff",LR_AUTO);
+	/*-----------------*/
+	/*ВЫХОД ИЗ АККАУНТА*/
+ 	
+	
  	
  	lr_end_transaction("UC5_DeleteTicket", LR_AUTO);
  	/*------------------------*/  
