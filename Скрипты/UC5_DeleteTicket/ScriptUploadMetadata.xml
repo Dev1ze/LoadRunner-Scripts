@@ -17,6 +17,12 @@
     <FileEntry Name="combined_UC5_DeleteTicket.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="92374473440.idx" Filter="1" />
+    <FileEntry Name="9237447344_2gi.223.idx" Filter="1" />
+    <FileEntry Name="9237447344_a7Z.681.idx" Filter="1" />
+    <FileEntry Name="9237447344_OOm.49.idx" Filter="1" />
+    <FileEntry Name="9237447344_T54.655.idx" Filter="1" />
+    <FileEntry Name="9237447344_Vca.365.idx" Filter="1" />
+    <FileEntry Name="9237447344_X7S.615.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
@@ -35,6 +41,7 @@
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
     <FileEntry Name="UC5_DeleteTicket.c.pickle" Filter="1" />
     <FileEntry Name="UC5_DeleteTicket.ci" Filter="1" />
+    <FileEntry Name="UC5_DeleteTicket.prm.bak" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
     <FileEntry Name="result1\" Filter="1" />

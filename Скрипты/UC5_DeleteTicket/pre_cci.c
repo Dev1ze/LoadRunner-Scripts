@@ -2739,7 +2739,6 @@ Action()
 	lr_end_transaction("Litinerary",2);
      
 	 
-
 	
 	
  	 
@@ -2758,10 +2757,10 @@ Action()
  	 
 	     
 	lr_start_transaction("DeleteTicket");
-	
+	 
 	lr_param_sprintf(lr_eval_string(lr_eval_string("{c_flightids_{c_flightids_count}}")),"deletedTicket");
 	web_reg_find("Text={deletedTicket}", "Fail=Found", "LAST");
-	
+	    
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	lr_think_time(24);
     web_custom_request("itinerary.pl_2",
@@ -2777,6 +2776,31 @@ Action()
 	lr_end_transaction("DeleteTicket",2);
 	   
  	 
+ 	
+ 	
+ 	
+ 	 
+	 
+	lr_start_transaction("SignOff");
+	 
+	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
+	 
+	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
+	lr_think_time(22);
+	web_url("SignOff Button", 
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t24.inf", 
+		"Mode=HTML", 
+		"LAST");
+	lr_end_transaction("SignOff",2);
+	 
+	 
+ 	
+	
  	
  	lr_end_transaction("UC5_DeleteTicket", 2);
  	   

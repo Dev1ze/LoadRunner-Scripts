@@ -17,6 +17,10 @@
     <FileEntry Name="combined_UC4_ViewTicketList.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="256070286440.idx" Filter="1" />
+    <FileEntry Name="25607028644_cht.143.idx" Filter="1" />
+    <FileEntry Name="25607028644_iYI.117.idx" Filter="1" />
+    <FileEntry Name="25607028644_qkx.131.idx" Filter="1" />
+    <FileEntry Name="25607028644_ZUl.923.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
@@ -34,6 +38,7 @@
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
     <FileEntry Name="UC4_ViewTicketList.c.pickle" Filter="1" />
     <FileEntry Name="UC4_ViewTicketList.ci" Filter="1" />
+    <FileEntry Name="UC4_ViewTicketList.prm.bak" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
     <FileEntry Name="result1\" Filter="1" />

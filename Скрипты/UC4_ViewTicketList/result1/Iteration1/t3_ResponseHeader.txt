@@ -1,8 +1,8 @@
 HTTP/1.1 200 OK
-Date: Fri, 06 Dec 2024 20:21:09 GMT
+Date: Sun, 08 Dec 2024 13:05:54 GMT
 Server: Apache/2.2.21 (Win32)
 Expires: 5s
-Set-Cookie: MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A; path=/
+Set-Cookie: MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%20CA&username&ironman131&hash&81&lastName&Stark%0A&address1&10880%20Malibu%20Point&creditCard&&expDate&%0A; path=/
 Keep-Alive: timeout=5, max=97
 Connection: Keep-Alive
 Transfer-Encoding: chunked
