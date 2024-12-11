@@ -53,15 +53,9 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="OpenLandingPage__*delimiter*__OpenRegistrationPage__*delimiter*__UserRegistered__*delimiter*__press continue__*delimiter*__SignOff"
+Order=
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
-[Transactions]
-OpenLandingPage=
-OpenRegistrationPage=
-UserRegistered=
-"press continue"=
-SignOff=

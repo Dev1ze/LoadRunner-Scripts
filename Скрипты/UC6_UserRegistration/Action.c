@@ -96,12 +96,13 @@ Action()
 	    /*-------------------------------*/
 		
 		
+	   	lr_think_time(5);
+	    
 		
 		/*ярпюмхжю пецяхрпюжхх онкэгнбюрекъ*/
 	    /*---------------------------------*/
 		lr_start_transaction("OpenRegistrationPage");
 		web_add_auto_header("Sec-Fetch-User", "?1");
-		lr_think_time(18);
 		web_url("login.pl", 
 			"URL=http://127.0.0.1:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
 			"TargetFrame=body", 
@@ -116,6 +117,8 @@ Action()
 		/*ярпюмхжю пецяхрпюжхх онкэгнбюрекъ*/
 	
 		
+		lr_think_time(5);
+		
 		
 		/*нропюбйю дюммшу пецяхрпюжхх онкэгнбюрекъ*/
 	    /*----------------------------------------*/
@@ -124,7 +127,6 @@ Action()
 		web_reg_find("Text=Thank you, <b>{userNameBuffer}</b>, for registering and welcome to the Web Tours family", LAST);
 		/*-----------------------------*/
 		web_add_header("Origin", "http://127.0.0.1:1080");
-		lr_think_time(47);
 		web_submit_data("login.pl_2", 
 			"Action=http://127.0.0.1:1080/cgi-bin/login.pl", 
 			"Method=POST", 
@@ -149,6 +151,7 @@ Action()
 	    /*----------------------------------------*/
 		
 		
+	   	lr_think_time(5);
 	
 		
 		/*бунд мю ярпюмхжс онд мнбшл онкэгнбюрекел*/
@@ -159,7 +162,6 @@ Action()
 		/*-------------------------------------------------*/
 		web_revert_auto_header("Sec-Fetch-User");
 		web_add_auto_header("Sec-Fetch-User", "?1");
-		lr_think_time(23);
 		web_url("button_next.gif", 
 			"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=menus", 
 			"TargetFrame=body", 
@@ -174,6 +176,8 @@ Action()
 		/*бунд мю ярпюмхжс онд мнбшл онкэгнбюрекел*/
 	
 		
+		lr_think_time(5);	
+		
 		
 		/*бшунд хг юййюсмрю*/
 	    /*-----------------*/
@@ -182,7 +186,6 @@ Action()
 		web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 		/*-----------------------------*/
 		web_revert_auto_header("Sec-Fetch-User");
-		lr_think_time(22);
 		web_url("SignOff Button", 
 			"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 			"TargetFrame=body", 

@@ -55,6 +55,9 @@ Action()
 	/*-------------------------------*/
 	/*КОНЕЦ ОТКРЫТИЯ ГЛАВНОЙ СТРАНИЦИ*/
 	
+	
+	lr_think_time(5);
+	
 
 	web_websocket_send("ID=2", 
 		"Buffer={\"messageType\":\"hello\",\"broadcasts\":{\"remote-settings/monitor_changes\":\"\\\"1733335428139\\\"\"},\"use_webpush\":true}", 
@@ -65,15 +68,12 @@ Action()
 	/*НАЧАЛО АВТОРИЗАЦИИ*/
     /*------------------*/
 	lr_start_transaction("Login");
-	
 	/*Проверка на успешную авторизацию*/
 	/*--------------------------------*/
 	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", LAST);
 	/*--------------------------------*/
-	
 	web_revert_auto_header("Origin");
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(41);
 	web_submit_data("login.pl_2",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -93,21 +93,19 @@ Action()
 	lr_end_transaction("Login",LR_AUTO);
 	/*-----------------*/
 	/*КОНЕЦ АВТОРИЗАЦИИ*/
+	
+	
+	lr_think_time(5);
 
 	
 	/*НАЧАЛО ОТКРЫТИЯ СТРАНИЦЫ ПОИСКА БИЛЕТА*/
 	/*--------------------------------------*/
 	lr_start_transaction("OpenPage_FindFlight");
-	
 	/*Проверка на успешную открытие страницы поиска билета*/
 	/*----------------------------------------------------*/
 	web_reg_find("Text=Find Flight", LAST);
 	/*----------------------------------------------------*/
-	
 	web_revert_auto_header("Sec-Fetch-User");
-	lr_think_time(13);
-	
-		/*Correlation comment - Do not change!  Original value='12/05/2024' Name ='departDate' Type ='RecordReplay'*/
     web_reg_save_param_attrib(
         "ParamName=departDate",
         "TagName=input",
@@ -117,7 +115,6 @@ Action()
         SEARCH_FILTERS,
         "RequestUrl=*/reservations.pl*",
         LAST);
-
     /*Correlation comment - Do not change!  Original value='12/06/2024' Name ='returnDate' Type ='RecordReplay'*/
     web_reg_save_param_attrib(
         "ParamName=returnDate",
@@ -128,7 +125,6 @@ Action()
         SEARCH_FILTERS,
         "RequestUrl=*/reservations.pl*",
         LAST);
-	
 	web_url("Search Flights Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
 		"TargetFrame=body", 
@@ -143,6 +139,9 @@ Action()
 	/*КОНЕЦ ОТКРЫТИЯ СТРАНИЦЫ ПОИСКА БИЛЕТА*/
 	
 	
+	lr_think_time(5);
+	
+	
 	/*Фильтр всех возможных билетов*/
 	/*-----------------------------*/
 	web_reg_save_param_regexp(
@@ -155,7 +154,6 @@ Action()
 	
 	/*ТРАНЗАКЦИЯ ВЫБОРА КОНКРЕТНОГО РЕЙСА*/
 	/*-----------------------------------*/
-	
 	/*Проверка на не совпадение городов*/
 	lr_set_debug_message(LR_MSG_CLASS_FULL_TRACE, LR_SWITCH_ON);
 	strcpy(departCity, lr_eval_string("{depart}"));
@@ -171,16 +169,13 @@ Action()
 	/*---------------------------------*/
 	
 	lr_start_transaction("SubmitFlight");
-	
 	/*Проверка корректности выбранных пунктов */
 	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>",LAST);
 	/*----------------------------------------*/
-	
 	strcpy(_numPassengers, lr_eval_string("{numPassengers}"));
 	lr_save_string(_numPassengers, "_numPassengers");
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_add_header("Sec-Fetch-User", "?1");
-	lr_think_time(22);
 	web_submit_data("reservations.pl", 
 		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -209,8 +204,7 @@ Action()
 	/*КОНЕЦ ТРАНЗАКЦИИ ВЫБОРА КОНКРЕТНОГО РЕЙСА*/
 	
 	
-	lr_think_time(30);
-
+	lr_think_time(5);
 	
 
 	/*Получение рандомного id билета из всех на странице*/
@@ -278,12 +272,11 @@ Action()
 	/*КОНЕЦ ТРАНЗАКЦИИ ВЫБОРА ВРЕМЕНИ РЕЙСА*/
 	
 
-	lr_think_time(57);
+	lr_think_time(5);
 
 	
 	/*ТРАНЗАКЦИЯ ПОКУПКИ БИЛЕТА*/
 	/*-------------------------*/
-	
 	/*Проверка корректности конфигурации полета */
 	if(numPassengersInt == 1)
 	{
@@ -327,6 +320,10 @@ Action()
 	/*-------------------------*/
 	/*ТРАНЗАКЦИЯ ПОКУПКИ БИЛЕТА*/
 	
+	
+	lr_think_time(5);
+	
+	
 	/*ВЫХОД ИЗ АККАУНТА*/
 	/*-----------------*/
 	lr_start_transaction("SignOff");
@@ -334,7 +331,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	/*-----------------------------*/
 	web_revert_auto_header("Sec-Fetch-User");
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 

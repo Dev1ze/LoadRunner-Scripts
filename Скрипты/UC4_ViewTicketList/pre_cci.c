@@ -2661,6 +2661,8 @@ Action()
 	 
 	
 	
+	lr_think_time(5);
+	
 	
 	 
      
@@ -2673,7 +2675,6 @@ Action()
 	
 	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(41);
 	web_submit_data("login.pl_2",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -2694,11 +2695,12 @@ Action()
 	 
 	 
 	
-
+	
+	lr_think_time(5);
+	
 	
 	 
 	 
-	
 	 
 	 
 	web_reg_find("Text=Itinerary", "LAST");
@@ -2707,8 +2709,6 @@ Action()
 	lr_start_transaction("ViewTicketList");
 	web_add_header("Sec-Fetch-User", "?1");
 	web_add_header("Upgrade-Insecure-Requests", "1");
-	lr_think_time(11);
-
 	web_url("Itinerary Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=body", 
@@ -2724,6 +2724,8 @@ Action()
 	 
 	
 	
+	lr_think_time(5);
+	
 	
 	 
 	 
@@ -2732,7 +2734,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
 	 
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 

@@ -2675,6 +2675,8 @@ Action()
 	 
 
 	
+	lr_think_time(5);	
+	
 	
 	 
      
@@ -2706,7 +2708,9 @@ Action()
 	lr_end_transaction("Login",2);
      
 	 
-
+	
+	
+	lr_think_time(5);	
 
 	
 	 
@@ -2716,7 +2720,6 @@ Action()
 	web_reg_find("Text=Itinerary", "LAST");
 	 
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(15);
 	web_reg_save_param("c_flightids",
     	"lb=<input type=\"hidden\" name=\"flightID\" value=\"",
     	"rb=\"  />",
@@ -2741,6 +2744,9 @@ Action()
 	 
 	
 	
+	lr_think_time(5);	
+	
+	
  	 
 	 
 	lr_save_string("", "c_buffer");  
@@ -2762,7 +2768,6 @@ Action()
 	web_reg_find("Text={deletedTicket}", "Fail=Found", "LAST");
 	    
 	web_add_header("Origin", "http://127.0.0.1:1080");
-	lr_think_time(24);
     web_custom_request("itinerary.pl_2",
         "URL=http://127.0.0.1:1080/cgi-bin/itinerary.pl",
         "Method=POST",
@@ -2778,6 +2783,8 @@ Action()
  	 
  	
  	
+ 	lr_think_time(5);	
+ 	
  	
  	 
 	 
@@ -2786,7 +2793,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
 	 
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 

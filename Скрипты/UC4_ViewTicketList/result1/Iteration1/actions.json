@@ -6,62 +6,62 @@
                 "stepId": "STEP1",
                 "stepName": "Url: WebTours",
                 "infFile": "t2.inf",
-                "time": 1733663153910
+                "time": 1733917525612
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Submit Data: login.pl_2",
                 "infFile": "t3.inf",
-                "time": 1733663154112
+                "time": 1733917525817
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Url: Itinerary Button",
                 "infFile": "t4.inf",
-                "time": 1733663154333
+                "time": 1733917526039
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Url: SignOff Button",
                 "infFile": "t5.inf",
-                "time": 1733663154478
+                "time": 1733917526184
             }
         ],
         "transactions": [
             {
                 "transactionName": "OpenLandingPage",
-                "rawStartTime": 1733663153623,
-                "rawEndTime": 1733663153926,
+                "rawStartTime": 1733917525325,
+                "rawEndTime": 1733917525629,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06597137451171875
+                "wastedTime": 0.07257795333862305
             },
             {
                 "transactionName": "Login",
-                "rawStartTime": 1733663153942,
-                "rawEndTime": 1733663154115,
+                "rawStartTime": 1733917525661,
+                "rawEndTime": 1733917525821,
                 "thinkTime": 0.0,
-                "wastedTime": 0.003652334213256836
+                "wastedTime": 0.0036745071411132814
             },
             {
                 "transactionName": "ViewTicketList",
-                "rawStartTime": 1733663154146,
-                "rawEndTime": 1733663154335,
+                "rawStartTime": 1733917525869,
+                "rawEndTime": 1733917526042,
                 "thinkTime": 0.0,
-                "wastedTime": 0.003987550735473633
+                "wastedTime": 0.004088878631591797
             },
             {
                 "transactionName": "SignOff",
-                "rawStartTime": 1733663154350,
-                "rawEndTime": 1733663154491,
+                "rawStartTime": 1733917526073,
+                "rawEndTime": 1733917526196,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0022690296173095705
+                "wastedTime": 0.002309560775756836
             },
             {
                 "transactionName": "UC4_ViewTicketList",
-                "rawStartTime": 1733663153607,
-                "rawEndTime": 1733663154507,
+                "rawStartTime": 1733917525309,
+                "rawEndTime": 1733917526211,
                 "thinkTime": 0.0,
-                "wastedTime": 0.07588028907775879
+                "wastedTime": 0.08265089988708496
             }
         ]
     }
