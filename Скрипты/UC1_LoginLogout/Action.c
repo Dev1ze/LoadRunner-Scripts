@@ -7,9 +7,9 @@ Action()
 		LAST);
 
 	
-	web_reg_find("Text=Welcome to the Web Tours site", LAST); //Проверка на успешный вход на гл. страницу
-	
+
 	lr_start_transaction("OpenLandingPage"); /*НАЧАЛО ПЕРЕХОДА НА ГЛАВНУЮ СТРАНИЦУ*/
+	web_reg_find("Text=Welcome to the Web Tours site", LAST); //Проверка на успешный вход на гл. страницу
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 	web_add_header("Sec-Fetch-Dest", "document");
 	web_add_header("Sec-Fetch-Site", "none");
@@ -17,7 +17,6 @@ Action()
 	web_add_auto_header("Sec-Fetch-Mode", "navigate");
 	web_add_header("Sec-Fetch-User", "?1");
 	web_add_auto_header("Upgrade-Insecure-Requests", "1");
-	lr_think_time(14);
 	web_url("WebTours", 
 		"URL=http://127.0.0.1:1080/WebTours", 
 		"TargetFrame=", 
@@ -39,8 +38,7 @@ Action()
 		LAST);
 	web_revert_auto_header("Upgrade-Insecure-Requests");
 	web_add_auto_header("Upgrade-Insecure-Requests", "1");
-	
-/*Correlation comment - Do not change!  Original value='140404.85508303HcccAHtpHDDDDDDDtDDDcpttit' Name ='userSession' Type ='ResponseBased'*/
+	/*Correlation comment - Do not change!  Original value='140404.85508303HcccAHtpHDDDDDDDtDDDcpttit' Name ='userSession' Type ='ResponseBased'*/
 	web_reg_save_param_attrib(
 		"ParamName=userSession",
 		"TagName=input",
@@ -51,7 +49,6 @@ Action()
 		"IgnoreRedirections=No",
 		"RequestUrl=*/nav.pl*",
 		LAST);
-		
 	web_url("welcome.pl", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true", 
 		"TargetFrame=", 
@@ -64,13 +61,13 @@ Action()
 	lr_end_transaction("OpenLandingPage",LR_AUTO); /*ЗАВЕРШЕНИЕ ПЕРЕХОДА НА ГЛАВНУЮ СТРАНИЦУ*/
 	
 	
-	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", LAST); //Проверка на успешность авторизации 
+	lr_think_time(5);
 	
 	
 	lr_start_transaction("Login"); 	/*НАЧАЛО АВТОРИЗАЦИИ*/
+	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", LAST); //Проверка на успешность авторизации 
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(25);
 	web_submit_data("login.pl",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -90,12 +87,12 @@ Action()
 	lr_end_transaction("Login",LR_AUTO); /*ЗАВРЕШЕНИЕ АВТОРИЗАЦИИ*/
 	
 	
-	web_reg_find("Text=please enter your account information",LAST); //Проверка на выход из аккаунта
+	lr_think_time(5);
 	
 	
 	lr_start_transaction("Logout"); /*НАЧАЛО Logout*/
+	web_reg_find("Text=please enter your account information",LAST); //Проверка на выход из аккаунта
 	web_revert_auto_header("Sec-Fetch-User");
-	lr_think_time(4);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 
@@ -106,7 +103,6 @@ Action()
 		"Mode=HTML", 
 		LAST);
 	lr_end_transaction("Logout",LR_AUTO); /*ЗАВРЕШЕНИЕ Logout*/
-	lr_think_time(7);
 	web_websocket_close("ID=0", "Code=1000", LAST);
 	
 	

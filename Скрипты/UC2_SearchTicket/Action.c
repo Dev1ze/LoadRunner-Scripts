@@ -7,6 +7,7 @@ Action()
 	/*Õ¿◊¿ÀŒ √À¿¬ÕŒ… “–¿Õ«¿ ÷»»*/
 	/*-------------------------*/
 	lr_start_transaction("UC2_SearchTicket");
+	
 
 	/*Õ¿◊¿ÀŒ œ≈–≈’Œƒ¿ Õ¿ √À¿¬Õ”ﬁ —“–¿Õ»÷”*/
 	/*-----------------------------------*/
@@ -22,8 +23,7 @@ Action()
 	web_add_auto_header("Sec-Fetch-Mode", "navigate");
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	web_add_auto_header("Upgrade-Insecure-Requests", "1");
-	
-/*Correlation comment - Do not change!  Original value='140408.070797894HcccctApVtVzzzzHtDDDDpttAif' Name ='userSession' Type ='ResponseBased'*/
+	/*Correlation comment - Do not change!  Original value='140408.070797894HcccctApVtVzzzzHtDDDDpttAif' Name ='userSession' Type ='ResponseBased'*/
 	web_reg_save_param_attrib(
 		"ParamName=userSession",
 		"TagName=input",
@@ -34,7 +34,6 @@ Action()
 		"IgnoreRedirections=No",
 		"RequestUrl=*/nav.pl*",
 		LAST);
-
 	web_url("WebTours", 
 		"URL=http://127.0.0.1:1080/WebTours/", 
 		"TargetFrame=", 
@@ -51,6 +50,9 @@ Action()
 	/*«¿¬≈–ÿ≈Õ»≈ œ≈–≈’Œƒ¿ Õ¿ √À¿¬Õ”ﬁ —“–¿Õ»÷”*/
 	
 	
+	lr_think_time(5);
+	
+	
 	/*Õ¿◊¿ÀŒ ¿¬“Œ–»»«¿÷»»*/
 	/*-------------------*/
 	lr_start_transaction("Login");
@@ -63,7 +65,6 @@ Action()
 	web_add_auto_header("Priority", "u=4");
 	web_add_auto_header("Sec-Fetch-Dest", "frame");
 	web_add_auto_header("Sec-Fetch-Site", "same-origin");
-	lr_think_time(8);
 	web_submit_data("login.pl",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -83,6 +84,9 @@ Action()
 	lr_end_transaction("Login",LR_AUTO); 
 	/*------------------*/
 	/* ŒÕ≈÷ ¿¬“Œ–»»«¿÷»»*/
+	
+	
+	lr_think_time(5);
 
 	
 	/*Õ¿◊¿ÀŒ Œ“ –€“»ﬂ —“–¿Õ»÷€ œŒ»— ¿ ¡»À≈“¿*/
@@ -93,8 +97,6 @@ Action()
 	web_reg_find("Text=Find Flight", LAST);
 	/*----------------------------------------------------*/
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(27);
-	
 	/*Correlation comment - Do not change!  Original value='12/05/2024' Name ='departDate' Type ='RecordReplay'*/
     web_reg_save_param_attrib(
         "ParamName=departDate",
@@ -105,7 +107,6 @@ Action()
         SEARCH_FILTERS,
         "RequestUrl=*/reservations.pl*",
         LAST);
-
     /*Correlation comment - Do not change!  Original value='12/06/2024' Name ='returnDate' Type ='RecordReplay'*/
     web_reg_save_param_attrib(
         "ParamName=returnDate",
@@ -116,8 +117,6 @@ Action()
         SEARCH_FILTERS,
         "RequestUrl=*/reservations.pl*",
         LAST);
-
-
 	web_url("Search Flights Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
 		"TargetFrame=body", 
@@ -130,8 +129,10 @@ Action()
 	lr_end_transaction("OpenPage_FindFlights",LR_AUTO);
 	/*-------------------------------------*/
 	/* ŒÕ≈÷ Œ“ –€“»ﬂ —“–¿Õ»÷€ œŒ»— ¿ ¡»À≈“¿*/
-	
 
+	
+	lr_think_time(5);
+	
 	
 	/*“–¿Õ«¿ ÷»ﬂ ¬€¡Œ–¿  ŒÕ –≈“ÕŒ√Œ –≈…—¿*/
 	/*-----------------------------------*/
@@ -183,6 +184,9 @@ Action()
 	/* ŒÕ≈÷ “–¿Õ«¿ ÷»» ¬€¡Œ–¿  ŒÕ –≈“ÕŒ√Œ –≈…—¿*/
 	
 	
+	lr_think_time(5);
+	
+	
 	/*¬€’Œƒ »« ¿  ¿”Õ“¿*/
 	/*-----------------*/
 	lr_start_transaction("SignOff");
@@ -190,7 +194,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	/*-----------------------------*/
 	web_revert_auto_header("Sec-Fetch-User");
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 

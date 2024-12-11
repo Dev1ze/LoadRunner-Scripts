@@ -2745,6 +2745,7 @@ Action()
 	 
 	 
 	lr_start_transaction("UC2_SearchTicket");
+	
 
 	 
 	 
@@ -2760,8 +2761,7 @@ Action()
 	web_add_auto_header("Sec-Fetch-Mode", "navigate");
 	web_add_auto_header("Sec-Fetch-User", "?1");
 	web_add_auto_header("Upgrade-Insecure-Requests", "1");
-	
- 
+	 
 	web_reg_save_param_attrib(
 		"ParamName=userSession",
 		"TagName=input",
@@ -2772,7 +2772,6 @@ Action()
 		"IgnoreRedirections=No",
 		"RequestUrl=*/nav.pl*",
 		"LAST");
-
 	web_url("WebTours", 
 		"URL=http://127.0.0.1:1080/WebTours/", 
 		"TargetFrame=", 
@@ -2789,6 +2788,9 @@ Action()
 	 
 	
 	
+	lr_think_time(5);
+	
+	
 	 
 	 
 	lr_start_transaction("Login");
@@ -2801,7 +2803,6 @@ Action()
 	web_add_auto_header("Priority", "u=4");
 	web_add_auto_header("Sec-Fetch-Dest", "frame");
 	web_add_auto_header("Sec-Fetch-Site", "same-origin");
-	lr_think_time(8);
 	web_submit_data("login.pl",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -2821,6 +2822,9 @@ Action()
 	lr_end_transaction("Login",2); 
 	 
 	 
+	
+	
+	lr_think_time(5);
 
 	
 	 
@@ -2831,8 +2835,6 @@ Action()
 	web_reg_find("Text=Find Flight", "LAST");
 	 
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(27);
-	
 	 
     web_reg_save_param_attrib(
         "ParamName=departDate",
@@ -2843,7 +2845,6 @@ Action()
         "SEARCH_FILTERS",
         "RequestUrl=*/reservations.pl*",
         "LAST");
-
      
     web_reg_save_param_attrib(
         "ParamName=returnDate",
@@ -2854,8 +2855,6 @@ Action()
         "SEARCH_FILTERS",
         "RequestUrl=*/reservations.pl*",
         "LAST");
-
-
 	web_url("Search Flights Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
 		"TargetFrame=body", 
@@ -2868,8 +2867,10 @@ Action()
 	lr_end_transaction("OpenPage_FindFlights",2);
 	 
 	 
-	
 
+	
+	lr_think_time(5);
+	
 	
 	 
 	 
@@ -2921,6 +2922,9 @@ Action()
 	 
 	
 	
+	lr_think_time(5);
+	
+	
 	 
 	 
 	lr_start_transaction("SignOff");
@@ -2928,7 +2932,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
 	 
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 
