@@ -2624,9 +2624,9 @@ Action()
 		"LAST");
 
 	
-	web_reg_find("Text=Welcome to the Web Tours site", "LAST");  
-	
+
 	lr_start_transaction("OpenLandingPage");  
+	web_reg_find("Text=Welcome to the Web Tours site", "LAST");  
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 	web_add_header("Sec-Fetch-Dest", "document");
 	web_add_header("Sec-Fetch-Site", "none");
@@ -2634,7 +2634,6 @@ Action()
 	web_add_auto_header("Sec-Fetch-Mode", "navigate");
 	web_add_header("Sec-Fetch-User", "?1");
 	web_add_auto_header("Upgrade-Insecure-Requests", "1");
-	lr_think_time(14);
 	web_url("WebTours", 
 		"URL=http://127.0.0.1:1080/WebTours", 
 		"TargetFrame=", 
@@ -2656,8 +2655,7 @@ Action()
 		"LAST");
 	(web_remove_auto_header("Upgrade-Insecure-Requests", "ImplicitGen=Yes", "LAST"));
 	web_add_auto_header("Upgrade-Insecure-Requests", "1");
-	
- 
+	 
 	web_reg_save_param_attrib(
 		"ParamName=userSession",
 		"TagName=input",
@@ -2668,7 +2666,6 @@ Action()
 		"IgnoreRedirections=No",
 		"RequestUrl=*/nav.pl*",
 		"LAST");
-		
 	web_url("welcome.pl", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true", 
 		"TargetFrame=", 
@@ -2681,13 +2678,13 @@ Action()
 	lr_end_transaction("OpenLandingPage",2);  
 	
 	
-	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", "LAST");  
+	
 	
 	
 	lr_start_transaction("Login"); 	 
+	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", "LAST");  
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(25);
 	web_submit_data("login.pl",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -2707,12 +2704,12 @@ Action()
 	lr_end_transaction("Login",2);  
 	
 	
-	web_reg_find("Text=please enter your account information","LAST");  
+	
 	
 	
 	lr_start_transaction("Logout");  
+	web_reg_find("Text=please enter your account information","LAST");  
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-	lr_think_time(4);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 
@@ -2723,7 +2720,6 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 	lr_end_transaction("Logout",2);  
-	lr_think_time(7);
 	web_websocket_close("ID=0", "Code=1000", "LAST");
 	
 	

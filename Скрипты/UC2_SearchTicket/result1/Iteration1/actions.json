@@ -6,75 +6,75 @@
                 "stepId": "STEP1",
                 "stepName": "Url: WebTours",
                 "infFile": "t2.inf",
-                "time": 1733917671842
+                "time": 1733930871847
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Submit Data: login.pl",
                 "infFile": "t3.inf",
-                "time": 1733917672101
+                "time": 1733930872108
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Url: Search Flights Button",
                 "infFile": "t6.inf",
-                "time": 1733917672336
+                "time": 1733930872346
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Submit Data: reservations.pl",
                 "infFile": "t7.inf",
-                "time": 1733917672634
+                "time": 1733930872632
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Url: SignOff Button",
                 "infFile": "t8.inf",
-                "time": 1733917672798
+                "time": 1733930872797
             }
         ],
         "transactions": [
             {
                 "transactionName": "OpenLandingPage",
-                "rawStartTime": 1733917671546,
-                "rawEndTime": 1733917671866,
+                "rawStartTime": 1733930871549,
+                "rawEndTime": 1733930871870,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06739163398742676
+                "wastedTime": 0.06619000434875488
             },
             {
                 "transactionName": "Login",
-                "rawStartTime": 1733917671882,
-                "rawEndTime": 1733917672104,
+                "rawStartTime": 1733930871902,
+                "rawEndTime": 1733930872110,
                 "thinkTime": 0.0,
-                "wastedTime": 0.004539012908935547
+                "wastedTime": 0.00443267822265625
             },
             {
                 "transactionName": "OpenPage_FindFlights",
-                "rawStartTime": 1733917672120,
-                "rawEndTime": 1733917672338,
+                "rawStartTime": 1733930872142,
+                "rawEndTime": 1733930872349,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0062754154205322269
+                "wastedTime": 0.00603485107421875
             },
             {
                 "transactionName": "SubmitFlight",
-                "rawStartTime": 1733917672508,
-                "rawEndTime": 1733917672649,
+                "rawStartTime": 1733930872506,
+                "rawEndTime": 1733930872647,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0025548934936523439
+                "wastedTime": 0.002758026123046875
             },
             {
                 "transactionName": "SignOff",
-                "rawStartTime": 1733917672665,
-                "rawEndTime": 1733917672807,
+                "rawStartTime": 1733930872680,
+                "rawEndTime": 1733930872807,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0025663375854492189
+                "wastedTime": 0.0023522377014160158
             },
             {
                 "transactionName": "UC2_SearchTicket",
-                "rawStartTime": 1733917671530,
-                "rawEndTime": 1733917672823,
+                "rawStartTime": 1733930871534,
+                "rawEndTime": 1733930872823,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0833272933959961
+                "wastedTime": 0.08176779747009278
             }
         ]
     }
