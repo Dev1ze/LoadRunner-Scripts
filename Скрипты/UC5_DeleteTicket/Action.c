@@ -48,6 +48,8 @@ Action()
 	/*ÎÒÊĞÛÒÈÅ ÃËÀÂÍÎÉ ÑÒĞÀÍÈÖÈ*/
 
 	
+	lr_think_time(5);	
+	
 	
 	/*ÍÀ×ÀËÎ ÀÂÒÎĞÈÇÀÖÈÈ*/
     /*------------------*/
@@ -79,7 +81,9 @@ Action()
 	lr_end_transaction("Login",LR_AUTO);
     /*-----------------*/
 	/*ÊÎÍÅÖ ÀÂÒÎĞÈÇÀÖÈÈ*/
-
+	
+	
+	lr_think_time(5);	
 
 	
 	/*ÏÅĞÅÕÎÄ ÍÀ ÑÒĞÀÍÈÖÓ ÏÓÒÅÂÛÕ ËÈÑÒÎÂ*/
@@ -89,7 +93,6 @@ Action()
 	web_reg_find("Text=Itinerary", LAST);
 	/*----------------------------------------------*/
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(15);
 	web_reg_save_param("c_flightids",
     	"lb=<input type=\"hidden\" name=\"flightID\" value=\"",
     	"rb=\"  />",
@@ -114,6 +117,9 @@ Action()
 	/*ÏÅĞÅÕÎÄ ÍÀ ÑÒĞÀÍÈÖÓ ÏÓÒÅÂÛÕ ËÈÑÒÎÂ*/
 	
 	
+	lr_think_time(5);	
+	
+	
  	/*Ôîğìèğîâàíèå òåëà äëÿ óäàëåíèÿ ıëåìåíòà ñïèñêà*/
 	/*----------------------------------------------*/
 	lr_save_string("", "c_buffer"); //c_buffer áóäåò õğàíèò çíà÷åíèå â ôîğìàòå "flightID=ÀÉÄÈÁÈËÅÒÀ&.cgifields=ÍÎÌÅĞÁÈËÅÒÀ&flightID=ÀÉÄÈÁÈËÅÒÀ&.cgifields=ÍÎÌÅĞÁÈËÅÒÀ&... è ò.ä"
@@ -135,7 +141,6 @@ Action()
 	web_reg_find("Text={deletedTicket}", "Fail=Found", LAST);
 	/*----------------------------------------*/   
 	web_add_header("Origin", "http://127.0.0.1:1080");
-	lr_think_time(24);
     web_custom_request("itinerary.pl_2",
         "URL=http://127.0.0.1:1080/cgi-bin/itinerary.pl",
         "Method=POST",
@@ -151,6 +156,8 @@ Action()
  	/*ÓÄÀËÅÍÈÅ ÁÓÒÅÂÎÃÎ ËÈÑÒÀ*/
  	
  	
+ 	lr_think_time(5);	
+ 	
  	
  	/*ÂÛÕÎÄ ÈÇ ÀÊÊÀÓÍÒÀ*/
 	/*-----------------*/
@@ -159,7 +166,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	/*-----------------------------*/
 	web_revert_auto_header("Sec-Fetch-User");
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 

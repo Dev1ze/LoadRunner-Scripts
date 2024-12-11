@@ -1,4 +1,4 @@
 "firstName=Tony&lastName=Stark&address1=10880+Malibu+Point&address2=+Malibu+CA&pass1=Tony+Stark"
-"&creditCard=47894563&expDate=03%2F25&oldCCOption=&numPassengers=2&seatType=First&seatPref=Aisl"
-"e&outboundFlight=950%3B866%3B12%2F09%2F2024&advanceDiscount=0&returnFlight=&JSFormSubmit=off&b"
+"&creditCard=47894563&expDate=03%2F25&oldCCOption=&numPassengers=1&seatType=Coach&seatPref=Aisl"
+"e&outboundFlight=612%3B407%3B12%2F12%2F2024&advanceDiscount=0&returnFlight=&JSFormSubmit=off&b"
 "uyFlights.x=14&buyFlights.y=11&.cgifields=saveCC"

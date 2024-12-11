@@ -3034,6 +3034,9 @@ Action()
 	 
 	 
 	
+	
+	lr_think_time(5);
+	
 
 	web_websocket_send("ID=2", 
 		"Buffer={\"messageType\":\"hello\",\"broadcasts\":{\"remote-settings/monitor_changes\":\"\\\"1733335428139\\\"\"},\"use_webpush\":true}", 
@@ -3044,15 +3047,12 @@ Action()
 	 
      
 	lr_start_transaction("Login");
-	
 	 
 	 
 	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", "LAST");
 	 
-	
 	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(41);
 	web_submit_data("login.pl_2",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -3072,21 +3072,19 @@ Action()
 	lr_end_transaction("Login",2);
 	 
 	 
+	
+	
+	lr_think_time(5);
 
 	
 	 
 	 
 	lr_start_transaction("OpenPage_FindFlight");
-	
 	 
 	 
 	web_reg_find("Text=Find Flight", "LAST");
 	 
-	
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-	lr_think_time(13);
-	
-		 
     web_reg_save_param_attrib(
         "ParamName=departDate",
         "TagName=input",
@@ -3096,7 +3094,6 @@ Action()
         "SEARCH_FILTERS",
         "RequestUrl=*/reservations.pl*",
         "LAST");
-
      
     web_reg_save_param_attrib(
         "ParamName=returnDate",
@@ -3107,7 +3104,6 @@ Action()
         "SEARCH_FILTERS",
         "RequestUrl=*/reservations.pl*",
         "LAST");
-	
 	web_url("Search Flights Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
 		"TargetFrame=body", 
@@ -3122,6 +3118,9 @@ Action()
 	 
 	
 	
+	lr_think_time(5);
+	
+	
 	 
 	 
 	web_reg_save_param_regexp(
@@ -3134,7 +3133,6 @@ Action()
 	
 	 
 	 
-	
 	 
 	lr_set_debug_message(8, 1);
 	strcpy(departCity, lr_eval_string("{depart}"));
@@ -3150,16 +3148,13 @@ Action()
 	 
 	
 	lr_start_transaction("SubmitFlight");
-	
 	 
 	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>","LAST");
 	 
-	
 	strcpy(_numPassengers, lr_eval_string("{numPassengers}"));
 	lr_save_string(_numPassengers, "_numPassengers");
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_add_header("Sec-Fetch-User", "?1");
-	lr_think_time(22);
 	web_submit_data("reservations.pl", 
 		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -3188,8 +3183,7 @@ Action()
 	 
 	
 	
-	lr_think_time(30);
-
+	lr_think_time(5);
 	
 
 	 
@@ -3257,12 +3251,11 @@ Action()
 	 
 	
 
-	lr_think_time(57);
+	lr_think_time(5);
 
 	
 	 
 	 
-	
 	 
 	if(numPassengersInt == 1)
 	{
@@ -3306,6 +3299,10 @@ Action()
 	 
 	 
 	
+	
+	lr_think_time(5);
+	
+	
 	 
 	 
 	lr_start_transaction("SignOff");
@@ -3313,7 +3310,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
 	 
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 

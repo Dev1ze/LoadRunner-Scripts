@@ -2710,7 +2710,7 @@ Action()
 	web_reg_find("Text=please enter your account information","LAST");  
 	
 	
-	lr_start_transaction("SIGNOFF");  
+	lr_start_transaction("Logout");  
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
 	lr_think_time(4);
 	web_url("SignOff Button", 
@@ -2722,15 +2722,13 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"LAST");
-	lr_end_transaction("SIGNOFF",2);  
+	lr_end_transaction("Logout",2);  
 	lr_think_time(7);
 	web_websocket_close("ID=0", "Code=1000", "LAST");
 	
 	
 	
  	lr_end_transaction("UC1_LoginLogout", 2);  
-
-
  	return 0;
 }
 # 5 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2

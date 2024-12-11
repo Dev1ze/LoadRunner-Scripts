@@ -46,6 +46,8 @@ Action()
 	/*ÊÎÍÅÖ ÎÒÊĞÛÒÈß ÃËÀÂÍÎÉ ÑÒĞÀÍÈÖÈ*/
 	
 	
+	lr_think_time(5);
+	
 	
 	/*ÀÂÒÎĞÈÇÀÖÈß*/
     /*-----------*/
@@ -58,7 +60,6 @@ Action()
 	
 	web_revert_auto_header("Origin");
 	web_add_auto_header("Sec-Fetch-User", "?1");
-	lr_think_time(41);
 	web_submit_data("login.pl_2",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
@@ -79,11 +80,12 @@ Action()
 	/*-----------*/
 	/*ÀÂÒÎĞÈÇÀÖÈß*/
 	
-
+	
+	lr_think_time(5);
+	
 	
 	/*ÏĞÎÑÌÎÒĞ ÑÏÈÑÊÀ ÁÈËÅÒÎÂ*/
 	/*-----------------------*/
-	
 	/*Ïğîâåğêà íà óñïåøíûé ïåğåõîä íà ñòğàíèöó ñî ñïèñêîì*/
 	/*---------------------------------------------------*/
 	web_reg_find("Text=Itinerary", LAST);
@@ -92,8 +94,6 @@ Action()
 	lr_start_transaction("ViewTicketList");
 	web_add_header("Sec-Fetch-User", "?1");
 	web_add_header("Upgrade-Insecure-Requests", "1");
-	lr_think_time(11);
-
 	web_url("Itinerary Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=body", 
@@ -109,6 +109,8 @@ Action()
 	/*ÏĞÎÑÌÎÒĞ ÑÏÈÑÊÀ ÁÈËÅÒÎÂ*/
 	
 	
+	lr_think_time(5);
+	
 	
 	/*ÂÛÕÎÄ ÈÇ ÀÊÊÀÓÍÒÀ*/
 	/*-----------------*/
@@ -117,7 +119,6 @@ Action()
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	/*-----------------------------*/
 	web_revert_auto_header("Sec-Fetch-User");
-	lr_think_time(22);
 	web_url("SignOff Button", 
 		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
 		"TargetFrame=body", 
