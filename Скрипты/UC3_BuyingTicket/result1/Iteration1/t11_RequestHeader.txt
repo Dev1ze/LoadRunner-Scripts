@@ -12,6 +12,6 @@ Accept-Language: en-US,en;q=0.5
 Accept: */*
 Connection: Keep-Alive
 Host: 127.0.0.1:1080
-Cookie: MSO=SID&1733914759; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%20CA&username&ironman131&hash&81&lastName&Stark%0A&address1&10880%20Malibu%20Point&creditCard&&expDate&%0A
-Content-Length: 330
+Cookie: MSO=SID&1734117510; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&New%20York%20NY&username&captainAmerica45&hash&53&lastName&Rogers%0A&address1&177A%20Bleecker%20St.&creditCard&&expDate&%0A
+Content-Length: 339
 

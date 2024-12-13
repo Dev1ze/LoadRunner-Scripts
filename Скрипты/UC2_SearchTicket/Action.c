@@ -2,18 +2,26 @@ Action()
 {
 	char departCity[100];
 	char arriveCity[100];
-	char _numPassangers[50];
+	char _numPassengers[50];
+	int numPassengersInt;
+	int i, countTicket;
+	char *randTicketId;
+	char paramName[50];
+    int randomValue;
+    char *token; 
+    char priceTicket[10];
+    int priceTicketInt;
+    int totalPrice;
+    char totalPriceStr[10];
 	
 	/*ÍÀ×ÀËÎ ÃËÀÂÍÎÉ ÒĞÀÍÇÀÊÖÈÈ*/
-	/*-------------------------*/
+    /*-------------------------*/
 	lr_start_transaction("UC2_SearchTicket");
-	
 
-	/*ÍÀ×ÀËÎ ÏÅĞÅÕÎÄÀ ÍÀ ÃËÀÂÍÓŞ ÑÒĞÀÍÈÖÓ*/
-	/*-----------------------------------*/
+	/*ÍÀ×ÀËÎ ÎÒÊĞÛÒÈß ÃËÀÂÍÎÉ ÑÒĞÀÍÈÖÈ*/
+    /*--------------------------------*/
 	lr_start_transaction("OpenLandingPage");
 	/*Ïğîâåğêà íà óñïåøíóş âõîä íà ñòğàíèöó*/
-	/*-------------------------------------*/
 	web_reg_find("Text=Welcome to the Web Tours site", LAST);
 	/*-------------------------------------*/
 	web_set_sockets_option("SSL_VERSION", "AUTO");
@@ -46,12 +54,17 @@ Action()
 	web_websocket_send("ID=0", "Buffer={\"messageType\":\"hello\",\"broadcasts\":{\"remote-settings/monitor_changes\":\"\\\"1733335428139\\\"\"},\"use_webpush\":true}", "IsBinary=0", LAST);
 	/*Connection ID 0 received buffer WebSocketReceive0*/
 	lr_end_transaction("OpenLandingPage",LR_AUTO);
-	/*---------------------------------------*/
-	/*ÇÀÂÅĞØÅÍÈÅ ÏÅĞÅÕÎÄÀ ÍÀ ÃËÀÂÍÓŞ ÑÒĞÀÍÈÖÓ*/
+	/*-------------------------------*/
+	/*ÊÎÍÅÖ ÎÒÊĞÛÒÈß ÃËÀÂÍÎÉ ÑÒĞÀÍÈÖÈ*/
 	
 	
 	lr_think_time(5);
 	
+
+	web_websocket_send("ID=2", 
+		"Buffer={\"messageType\":\"hello\",\"broadcasts\":{\"remote-settings/monitor_changes\":\"\\\"1733335428139\\\"\"},\"use_webpush\":true}", 
+		"IsBinary=0", 
+		LAST);
 	
 	/*ÍÀ×ÀËÎ ÀÂÒÎĞÈÈÇÀÖÈÈ*/
 	/*-------------------*/
@@ -60,12 +73,9 @@ Action()
 	/*--------------------------------*/
 	web_reg_find("Text=Welcome, <b>{userName}</b>, to the Web Tours reservation pages", LAST);
 	/*--------------------------------*/
-	web_revert_auto_header("Sec-Fetch-User");
-	web_add_header("Origin", "http://127.0.0.1:1080");
-	web_add_auto_header("Priority", "u=4");
-	web_add_auto_header("Sec-Fetch-Dest", "frame");
-	web_add_auto_header("Sec-Fetch-Site", "same-origin");
-	web_submit_data("login.pl",
+	web_revert_auto_header("Origin");
+	web_add_auto_header("Sec-Fetch-User", "?1");
+	web_submit_data("login.pl_2",
 		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
 		"Method=POST",
 		"TargetFrame=body",
@@ -77,13 +87,13 @@ Action()
 		"Name=userSession", "Value={userSession}", ENDITEM,
 		"Name=username", "Value={userName}", ENDITEM,
 		"Name=password", "Value={password}", ENDITEM,
-		"Name=login.x", "Value=36", ENDITEM,
-		"Name=login.y", "Value=12", ENDITEM,
+		"Name=login.x", "Value=48", ENDITEM,
+		"Name=login.y", "Value=13", ENDITEM,
 		"Name=JSFormSubmit", "Value=off", ENDITEM,
 		LAST);
-	lr_end_transaction("Login",LR_AUTO); 
-	/*------------------*/
-	/*ÊÎÍÅÖ ÀÂÒÎĞÈÈÇÀÖÈÈ*/
+	lr_end_transaction("Login",LR_AUTO);
+	/*-----------------*/
+	/*ÊÎÍÅÖ ÀÂÒÎĞÈÇÀÖÈÈ*/
 	
 	
 	lr_think_time(5);
@@ -96,8 +106,7 @@ Action()
 	/*----------------------------------------------------*/
 	web_reg_find("Text=Find Flight", LAST);
 	/*----------------------------------------------------*/
-	web_add_auto_header("Sec-Fetch-User", "?1");
-	/*Correlation comment - Do not change!  Original value='12/05/2024' Name ='departDate' Type ='RecordReplay'*/
+	web_revert_auto_header("Sec-Fetch-User");
     web_reg_save_param_attrib(
         "ParamName=departDate",
         "TagName=input",
@@ -129,9 +138,19 @@ Action()
 	lr_end_transaction("OpenPage_FindFlights",LR_AUTO);
 	/*-------------------------------------*/
 	/*ÊÎÍÅÖ ÎÒÊĞÛÒÈß ÑÒĞÀÍÈÖÛ ÏÎÈÑÊÀ ÁÈËÅÒÀ*/
-
+	
 	
 	lr_think_time(5);
+	
+	
+	/*Ôèëüòğ âñåõ âîçìîæíûõ áèëåòîâ*/
+	/*-----------------------------*/
+	web_reg_save_param_regexp(
+		"ParamName=idTicket",
+		"RegExp=name\=\"outboundFlight\" value\=\"(.*?)\"",
+		"Ordinal=ALL", // Çàõâàò âñåõ ñîâïàäåíèé
+         LAST);
+	/*-----------------------------*/
 	
 	
 	/*ÒĞÀÍÇÀÊÖÈß ÂÛÁÎĞÀ ÊÎÍÊĞÅÒÍÎÃÎ ĞÅÉÑÀ*/
@@ -153,37 +172,38 @@ Action()
 	/*Ïğîâåğêà êîğğåêòíîñòè âûáğàííûõ ïóíêòîâ */
 	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>",LAST);
 	/*----------------------------------------*/
-	strcpy(_numPassangers, lr_eval_string("{numPassengers}"));
-	lr_save_string(_numPassangers, "_numPassangers");
+	strcpy(_numPassengers, lr_eval_string("{numPassengers}"));
+	lr_save_string(_numPassengers, "_numPassengers");
 	web_add_header("Origin", "http://127.0.0.1:1080");
-	web_submit_data("reservations.pl",
-		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl",
-		"Method=POST",
-		"TargetFrame=",
-		"RecContentType=text/html",
-		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome",
-		"Snapshot=t6.inf",
-		"Mode=HTML",
-		ITEMDATA,
-		"Name=advanceDiscount", "Value=0", ENDITEM,
-		"Name=depart", "Value={departCity}", ENDITEM,
-		"Name=departDate", "Value={departDate}", ENDITEM,
-		"Name=arrive", "Value={arriveCity}", ENDITEM,
-		"Name=returnDate", "Value={returnDate}", ENDITEM,
-		"Name=numPassengers", "Value={_numPassangers}", ENDITEM,
-		"Name=seatPref", "Value={seatingPreference}", ENDITEM,
-		"Name=seatType", "Value={typeSeat}", ENDITEM,
-		"Name=findFlights.x", "Value=59", ENDITEM,
-		"Name=findFlights.y", "Value=3", ENDITEM,
-		"Name=.cgifields", "Value=roundtrip", ENDITEM,
-		"Name=.cgifields", "Value=seatType", ENDITEM,
-		"Name=.cgifields", "Value=seatPref", ENDITEM,
+	web_add_header("Sec-Fetch-User", "?1");
+	web_submit_data("reservations.pl", 
+		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome", 
+		"Snapshot=t6.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=depart", "Value={departCity}", ENDITEM, 
+		"Name=departDate", "Value={departDate}", ENDITEM, 
+		"Name=arrive", "Value={arriveCity}", ENDITEM, 
+		"Name=returnDate", "Value={returnDate}", ENDITEM, 
+		"Name=numPassengers", "Value={_numPassengers}", ENDITEM, 
+		"Name=seatPref", "Value={seatingPreference}", ENDITEM, 
+		"Name=seatType", "Value={typeSeat}", ENDITEM, 
+		"Name=findFlights.x", "Value=68", ENDITEM, 
+		"Name=findFlights.y", "Value=6", ENDITEM, 
+		"Name=.cgifields", "Value=roundtrip", ENDITEM, 
+		"Name=.cgifields", "Value=seatType", ENDITEM, 
+		"Name=.cgifields", "Value=seatPref", ENDITEM, 
 		LAST);
 	lr_end_transaction("SubmitFlight",LR_AUTO);
 	/*-----------------------------------------*/
 	/*ÊÎÍÅÖ ÒĞÀÍÇÀÊÖÈÈ ÂÛÁÎĞÀ ÊÎÍÊĞÅÒÍÎÃÎ ĞÅÉÑÀ*/
 	
-	
+
 	lr_think_time(5);
 	
 	
