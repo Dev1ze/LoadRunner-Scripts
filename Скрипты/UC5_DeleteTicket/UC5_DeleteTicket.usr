@@ -53,7 +53,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC5_DeleteTicket__*delimiter*__OpenLandingPage__*delimiter*__Login__*delimiter*__Litinerary__*delimiter*__DeleteTicket__*delimiter*__SignOff"
+Order="UC5_DeleteTicket__*delimiter*__OpenLandingPage__*delimiter*__Login__*delimiter*__Litinerary__*delimiter*__DeleteTicket__*delimiter*__Litinerary__*delimiter*__DeleteTicket__*delimiter*__Litinerary__*delimiter*__DeleteTicket__*delimiter*__Litinerary__*delimiter*__OpenPage_FindFlight__*delimiter*__SubmitFlight"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -65,4 +65,5 @@ OpenLandingPage=
 Login=
 Litinerary=
 DeleteTicket=
-SignOff=
+OpenPage_FindFlight=
+SubmitFlight=

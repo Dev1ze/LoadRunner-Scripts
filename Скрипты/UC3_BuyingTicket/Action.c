@@ -324,6 +324,33 @@ Action()
 	lr_think_time(5);
 	
 	
+	/*ПРОСМОТР СПИСКА БИЛЕТОВ*/
+	/*-----------------------*/
+	/*Проверка на успешный переход на страницу со списком*/
+	/*---------------------------------------------------*/
+	web_reg_find("Text=Itinerary", LAST);
+	/*---------------------------------------------------*/
+	lr_start_transaction("ViewTicketList");
+	web_add_header("Sec-Fetch-User", "?1");
+	web_add_header("Upgrade-Insecure-Requests", "1");
+	web_url("Itinerary Button", 
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t3.inf", 
+		"Mode=HTML", 
+		LAST);
+
+	lr_end_transaction("ViewTicketList",LR_AUTO);
+	/*-----------------------*/
+	/*ПРОСМОТР СПИСКА БИЛЕТОВ*/
+	
+	
+	lr_think_time(5);
+	
+	
 	/*ВЫХОД ИЗ АККАУНТА*/
 	/*-----------------*/
 	lr_start_transaction("SignOff");
