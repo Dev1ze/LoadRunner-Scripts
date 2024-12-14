@@ -1,0 +1,2049 @@
+****** Start Log Message ******
+Web Recorder version : 2020.0.0.793 
+Recording Mode: HTML-based script containing explicit URLs only
+Recording headers not in list:
+	accept
+	accept-charset
+	accept-encoding
+	accept-language
+	accept-ranges
+	age
+	allow
+	cache-control
+	content-base
+	content-disposition
+	content-encoding
+	content-language
+	content-location
+	content-md5
+	content-range
+	content-type
+	date
+	etag
+	expires
+	from
+	if-modified-since
+	if-match
+	if-none-match
+	if-range
+	if-unmodified-since
+	location
+	last-modified
+	max-forwards
+	pragma
+	public
+	range
+	retry-after
+	server
+	transfer-encoding
+	upgrade
+	user-agent
+	vary
+	via
+	warning
+	method
+	path
+	scheme
+Not excluding content types
+Do not record this content types as a resource:
+	text/html
+	text/xml
+	application/json
+Reset context between actions
+Record non-HTML elements as separate functions
+Protocol Type: Multi-QTWeb
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 2020.0.0.793
+
+****** Analyze segments filter initialization ******
+[Traffic Filtering] Filtering 34.107.221.82
+[Traffic Filtering] Filtering 34.107.221.82
+[Traffic Filtering] Filtering 34.107.221.82
+[Traffic Filtering] Filtering 34.107.221.82
+[Traffic Filtering] Filtering 34.117.188.166
+[Traffic Filtering] Filtering 34.117.188.166
+[Traffic Filtering] Filtering 34.117.188.166
+[Traffic Filtering] Filtering 34.117.188.166
+[Traffic Filtering] Filtering 34.160.144.191
+[Traffic Filtering] Filtering 34.160.144.191
+[Traffic Filtering] Filtering 34.160.144.191
+[Traffic Filtering] Filtering 34.160.144.191
+[Traffic Filtering] Filtering 34.149.100.209
+[Traffic Filtering] Filtering 34.149.100.209
+[Traffic Filtering] Filtering 34.149.100.209
+[Traffic Filtering] Filtering 34.149.100.209
+[Traffic Filtering] Filtering 34.107.243.93
+[Traffic Filtering] Filtering 34.107.243.93
+[Traffic Filtering] Filtering 34.107.243.93
+[Traffic Filtering] Filtering 34.107.243.93
+[Traffic Filtering] Filtering 34.120.208.123
+[Traffic Filtering] Filtering 34.120.208.123
+[Traffic Filtering] Filtering 34.120.208.123
+[Traffic Filtering] Filtering 34.120.208.123
+[Traffic Filtering] Filtering 35.244.181.201
+[Traffic Filtering] Filtering 35.244.181.201
+[Traffic Filtering] Filtering 35.244.181.201
+[Traffic Filtering] Filtering 35.244.181.201
+[Traffic Filtering] Filtering 34.107.243.93
+[Traffic Filtering] Filtering 34.107.243.93
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.75
+[Traffic Filtering] Filtering 192.229.221.95
+[Traffic Filtering] Filtering 192.229.221.95
+[Traffic Filtering] Filtering 192.229.221.95
+[Traffic Filtering] Filtering 192.229.221.95
+[Traffic Filtering] Filtering detectportal.firefox.com
+****** Request Header For Transaction With Id 1055 ******
+GET /success.txt?ipv4 HTTP/1.1
+Host: detectportal.firefox.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Priority: u=4
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 1055 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1055 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 8
+Via: 1.1 google
+Date: Wed, 04 Dec 2024 23:48:03 GMT
+Age: 65132
+Content-Type: text/plain
+Cache-Control: public,must-revalidate,max-age=0,s-maxage=3600
+
+
+$$$$$$ Response Header For Transaction With Id 1055 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1055 ******
+success
+
+$$$$$$ Response Body For Transaction With Id 1055 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1066 ******
+GET /WebTours/ HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+If-Modified-Since: Mon, 27 May 2013 11:20:22 GMT
+If-None-Match: "100000005f655-16e-4ddb1559ac980"
+Priority: u=0, i
+
+
+$$$$$$ Request Header For Transaction With Id 1066 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1066 ******
+HTTP/1.1 304 Not Modified
+Date: Thu, 05 Dec 2024 17:53:36 GMT
+Server: Apache/2.2.21 (Win32)
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+ETag: "100000005f655-16e-4ddb1559ac980"
+
+
+$$$$$$ Response Header For Transaction With Id 1066 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Start Log Message ******
+Set SSL version to 'AUTO'
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1066 ****** (Location Flag : tFlagInsertEnd, Location ID : 1066)
+	web_url("WebTours",
+		"URL=http://127.0.0.1:1080/WebTours/",
+		"TargetFrame=",
+		"Resource=0",
+		"Referer=",
+		"Snapshot=t8.inf",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 1066 Ended $$$$$$
+
+[Traffic Filtering] Filtering detectportal.firefox.com
+****** Request Header For Transaction With Id 1072 ******
+GET /canonical.html HTTP/1.1
+Host: detectportal.firefox.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cache-Control: no-cache
+Pragma: no-cache
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1072 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1072 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 90
+Via: 1.1 google
+Date: Thu, 05 Dec 2024 04:47:04 GMT
+Age: 47192
+Content-Type: text/html
+Cache-Control: public,must-revalidate,max-age=0,s-maxage=3600
+
+
+$$$$$$ Response Header For Transaction With Id 1072 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1072 ******
+<meta http-equiv="refresh" content="0;url=https://support.mozilla.org/kb/captive-portal"/>
+$$$$$$ Response Body For Transaction With Id 1072 Ended $$$$$$
+
+[Traffic Filtering] Filtering r11.o.lencr.org
+****** Request Header For Transaction With Id 1077 ******
+POST / HTTP/1.1
+Host: r11.o.lencr.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/ocsp-request
+Content-Length: 85
+Connection: keep-alive
+Priority: u=2
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 1077 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1077 ******
+0S0Q0O0M0K0	\x06\x05+\x0E\x03\x02\x1A\x05\x00\x04\x14t\x02F\xF2Z\\B\x12 \xB5\xBD]v	\xA6\xBA\\\xA3G\xDF\x04\x14$\xF2.N\x0F\xBD\xCA\xF7>)U\xCAr\x8Di\x87VD\xE9z\x02\x12\x03g\x1C\xE3=\x8A\x89\x190Y8y|.'\x0B\x94c
+$$$$$$ Request Body For Transaction With Id 1077 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1077 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 5
+Cache-Control: no-cache
+Expires: Thu, 05 Dec 2024 17:53:40 GMT
+Date: Thu, 05 Dec 2024 17:53:40 GMT
+Connection: keep-alive
+
+
+$$$$$$ Response Header For Transaction With Id 1077 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1077 ******
+0\x03
+\x01\x06
+$$$$$$ Response Body For Transaction With Id 1077 Ended $$$$$$
+
+[Traffic Filtering] Filtering r10.o.lencr.org
+****** Request Header For Transaction With Id 1082 ******
+POST / HTTP/1.1
+Host: r10.o.lencr.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/ocsp-request
+Content-Length: 85
+Connection: keep-alive
+Priority: u=2
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 1082 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1082 ******
+0S0Q0O0M0K0	\x06\x05+\x0E\x03\x02\x1A\x05\x00\x04\x14t\x02F\xF2Z\\B\x12 \xB5\xBD]v	\xA6\xBA\\\xA3G\xDF\x04\x14$\xF2.N\x0F\xBD\xCA\xF7>)U\xCAr\x8Di\x87VD\xE9z\x02\x12\x03\xB7\x02\x9C\x18D.\xC5$I\xE9d\xED\xED`!\x8D\xB3
+$$$$$$ Request Body For Transaction With Id 1082 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1082 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 5
+Cache-Control: no-cache
+Expires: Thu, 05 Dec 2024 17:53:45 GMT
+Date: Thu, 05 Dec 2024 17:53:45 GMT
+Connection: keep-alive
+
+
+$$$$$$ Response Header For Transaction With Id 1082 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1082 ******
+0\x03
+\x01\x06
+$$$$$$ Response Body For Transaction With Id 1082 Ended $$$$$$
+
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.48
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.48
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.48
+[Traffic Filtering] Filtering 2.16.20.59
+[Traffic Filtering] Filtering 2.16.20.48
+[Traffic Filtering] Filtering r10.o.lencr.org
+****** Request Header For Transaction With Id 1108 ******
+POST / HTTP/1.1
+Host: r10.o.lencr.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/ocsp-request
+Content-Length: 85
+Connection: keep-alive
+Priority: u=2
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 1108 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1108 ******
+0S0Q0O0M0K0	\x06\x05+\x0E\x03\x02\x1A\x05\x00\x04\x14t\x02F\xF2Z\\B\x12 \xB5\xBD]v	\xA6\xBA\\\xA3G\xDF\x04\x14$\xF2.N\x0F\xBD\xCA\xF7>)U\xCAr\x8Di\x87VD\xE9z\x02\x12\x03\xAC+h\xD4\x0E\x1D\\N
+\xBE\xD89\xB8Y\xDB\x82k
+$$$$$$ Request Body For Transaction With Id 1108 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1108 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 5
+Cache-Control: no-cache
+Expires: Thu, 05 Dec 2024 17:53:50 GMT
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Connection: keep-alive
+
+
+$$$$$$ Response Header For Transaction With Id 1108 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1108 ******
+0\x03
+\x01\x06
+$$$$$$ Response Body For Transaction With Id 1108 Ended $$$$$$
+
+[Traffic Filtering] Filtering firefox.settings.services.mozilla.com
+****** Request Header For Transaction With Id 1110 ******
+GET /v1/buckets/main/collections/ms-language-packs/records/cfr-v1-en-US HTTP/1.1
+Host: firefox.settings.services.mozilla.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/json
+Connection: keep-alive
+If-Modified-Since: Mon, 02 Dec 2024 22:25:11 GMT
+If-None-Match: "1733178311775"
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1110 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1110 ******
+HTTP/1.1 304 Not Modified
+Date: Thu, 05 Dec 2024 17:23:36 GMT
+Age: 1814
+ETag: "1733178311775"
+Cache-Control: public,max-age=3600
+Alt-Svc: clear
+
+
+$$$$$$ Response Header For Transaction With Id 1110 Ended $$$$$$
+
+[Traffic Filtering] Filtering push.services.mozilla.com
+****** Request Header For Transaction With Id 1112 ******
+GET / HTTP/1.1
+Host: push.services.mozilla.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Sec-WebSocket-Version: 13
+Origin: wss://push.services.mozilla.com/
+Sec-WebSocket-Protocol: push-notification
+Sec-WebSocket-Extensions: permessage-deflate
+Sec-WebSocket-Key: KOUTCo9aY76+tlo44Be4GQ==
+Connection: keep-alive, Upgrade
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: websocket
+Sec-Fetch-Site: cross-site
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+
+$$$$$$ Request Header For Transaction With Id 1112 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1112 ******
+HTTP/1.1 101 Switching Protocols
+sec-websocket-accept: gk/CrTk6yttfaXaAOl3ahn2uilA=
+date: Thu, 05 Dec 2024 17:53:50 GMT
+Via: 1.1 google
+Upgrade: websocket
+Connection: Upgrade
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+$$$$$$ Response Header For Transaction With Id 1112 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1112 ******
+
+$$$$$$ Response Body For Transaction With Id 1112 Ended $$$$$$
+
+[Traffic Filtering] Filtering push.services.mozilla.com
+****** Request Header For Transaction With Id 1114 ******
+GET / HTTP/1.1
+Host: push.services.mozilla.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Sec-WebSocket-Version: 13
+Origin: wss://push.services.mozilla.com/
+Sec-WebSocket-Protocol: push-notification
+Sec-WebSocket-Extensions: permessage-deflate
+Sec-WebSocket-Key: ir5JwNbe37Az6l4Qozj11Q==
+Connection: keep-alive, Upgrade
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: websocket
+Sec-Fetch-Site: cross-site
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+
+$$$$$$ Request Header For Transaction With Id 1114 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1114 ******
+HTTP/1.1 101 Switching Protocols
+sec-websocket-accept: YYMFMTSXv8OqO1OqEVGRX7njasE=
+date: Thu, 05 Dec 2024 17:53:49 GMT
+Via: 1.1 google
+Upgrade: websocket
+Connection: Upgrade
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+$$$$$$ Response Header For Transaction With Id 1114 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1114 ******
+
+$$$$$$ Response Body For Transaction With Id 1114 Ended $$$$$$
+
+[Traffic Filtering] Filtering ocsp.digicert.com
+****** Request Header For Transaction With Id 1116 ******
+POST / HTTP/1.1
+Host: ocsp.digicert.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/ocsp-request
+Content-Length: 83
+Connection: keep-alive
+Priority: u=2
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 1116 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1116 ******
+0Q0O0M0K0I0	\x06\x05+\x0E\x03\x02\x1A\x05\x00\x04\x14t\x02F\xF2Z\\B\x12 \xB5\xBD]v	\xA6\xBA\\\xA3G\xDF\x04\x14$\xF2.N\x0F\xBD\xCA\xF7>)U\xCAr\x8Di\x87VD\xE9z\x02\x10\x03\x9A\xBF\xFD\xB0\xF0\xAE#\x1F9\x939\xA4\xF3Y3
+$$$$$$ Request Body For Transaction With Id 1116 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1116 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=600
+Content-Type: application/ocsp-response
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Server: ECAcc (amb/6ABC)
+Content-Length: 5
+
+
+$$$$$$ Response Header For Transaction With Id 1116 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1116 ******
+0\x03
+\x01\x06
+$$$$$$ Response Body For Transaction With Id 1116 Ended $$$$$$
+
+[Traffic Filtering] Filtering aus5.mozilla.org
+****** Request Header For Transaction With Id 1118 ******
+GET /update/6/Firefox/132.0.2/20241110231641/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%252010.0.0.0.19045.5131%2520(x64)/ISET%3ASSE4_2%2CMEM%3A32694/portableapps/1.0/update.xml?force=1 HTTP/1.1
+Host: aus5.mozilla.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Cache-Control: no-cache
+Pragma: no-cache
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1118 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1118 ******
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Content-Type: text/xml; charset=utf-8
+Vary: Accept-Encoding
+Rule-ID: 145
+Rule-Data-Version: 623
+Strict-Transport-Security: max-age=31536000;
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; frame-ancestors 'none'
+X-Proxy-Cache-Status: MISS
+Content-Encoding: gzip
+Via: 1.1 google
+Cache-Control: public,max-age=90
+Alt-Svc: clear
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 1118 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1118 ******
+<?xml version="1.0"?>
+<updates>
+    <update actions="showURL" appVersion="133.0" buildID="20241121140525" detailsURL="https://www.mozilla.org/en-US/firefox/133.0/releasenotes/" displayVersion="133.0" openURL="https://www.mozilla.org/firefox/133.0/whatsnew/?oldversion=%OLD_VERSION%&amp;utm_medium=firefox-desktop&amp;utm_source=update&amp;utm_campaign=133" type="minor">
+        <patch type="complete" URL="https://download.mozilla.org/?product=firefox-133.0-complete&amp;os=win64&amp;lang=en-US" hashFunction="sha512" hashValue="c38fbe3323fc43632ba32d9336c34c4be95cfeb36d1705cd7703c0dcb84b4a79515d514355458bb56439a204aa29ee9df909afa56760320d8eb4f6c7c584e151" size="73569790"/>
+        <patch type="partial" URL="https://download.mozilla.org/?product=firefox-133.0-partial-132.0.2&amp;os=win64&amp;lang=en-US" hashFunction="sha512" hashValue="51ea880d2cc0de73d414f4a8396affd91b750ef5391606e376efe1e6281abc1a3bfdba2a9f10d25f83320d6ef86d6a53f786e87d3050963fcc64bcaa41b0b220" size="17754615"/>
+    </update>
+</updates>
+$$$$$$ Response Body For Transaction With Id 1118 Ended $$$$$$
+
+[Traffic Filtering] Filtering ocsp.digicert.com
+****** Request Header For Transaction With Id 1120 ******
+POST / HTTP/1.1
+Host: ocsp.digicert.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/ocsp-request
+Content-Length: 83
+Connection: keep-alive
+Priority: u=2
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 1120 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1120 ******
+0Q0O0M0K0I0	\x06\x05+\x0E\x03\x02\x1A\x05\x00\x04\x14t\x02F\xF2Z\\B\x12 \xB5\xBD]v	\xA6\xBA\\\xA3G\xDF\x04\x14$\xF2.N\x0F\xBD\xCA\xF7>)U\xCAr\x8Di\x87VD\xE9z\x02\x10\x06\xBA\xAD\x9A4\xCC\x06O\x8C\xD0`k\x99]\x9C$
+$$$$$$ Request Body For Transaction With Id 1120 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1120 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=600
+Content-Type: application/ocsp-response
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Server: ECAcc (amb/6B4F)
+Content-Length: 5
+
+
+$$$$$$ Response Header For Transaction With Id 1120 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1120 ******
+0\x03
+\x01\x06
+$$$$$$ Response Body For Transaction With Id 1120 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1127 ******
+GET /WebTours/header.html HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/WebTours/
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+If-Modified-Since: Mon, 27 May 2013 11:20:22 GMT
+If-None-Match: "100000005f653-2c6-4ddb1559ac980"
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1127 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1127 ******
+HTTP/1.1 304 Not Modified
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Server: Apache/2.2.21 (Win32)
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+ETag: "100000005f653-2c6-4ddb1559ac980"
+
+
+$$$$$$ Response Header For Transaction With Id 1127 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/WebTours/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1127 ****** (Location Flag : tFlagInsertEnd, Location ID : 1127)
+	web_url("header.html",
+		"URL=http://127.0.0.1:1080/WebTours/header.html",
+		"TargetFrame=",
+		"Resource=0",
+		"Referer=http://127.0.0.1:1080/WebTours/",
+		"Snapshot=t9.inf",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 1127 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1066)
+	web_add_header("Sec-Fetch-Dest",
+		"document");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1066)
+	web_add_header("Sec-Fetch-Site",
+		"none");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1066)
+	web_add_header("Priority",
+		"u=0, i");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1066)
+	web_add_auto_header("Sec-Fetch-Mode",
+		"navigate");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1066)
+	web_add_header("Sec-Fetch-User",
+		"?1");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1066)
+	web_add_auto_header("Upgrade-Insecure-Requests",
+		"1");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1130 ******
+GET /cgi-bin/welcome.pl?signOff=true HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/WebTours/
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1130 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1130 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Server: Apache/2.2.21 (Win32)
+Set-Cookie: MSO=SID&1733421230; path=/
+Set-Cookie: MTUserInfo=; path=/; expires=Wed, 04-Dec-2024 17:53:50 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1130 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1130 ******
+<!-- 
+ A Session ID has been created and loaded into a cookie called MSO.
+ Also, the server options have been loaded into the cookie called
+ MSO as well.  The server options can be set via the Admin page.
+ --->
+
+<html>
+<title>Web Tours</title>
+   <!-- Frame Set -->
+   <frameset cols="160,*" border="1" frameborder="1">
+      <!-- Navigation Frame -->
+      <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" 
+            noresize="noresize" scrolling="auto"/>
+      <!-- Home Frame -->
+      <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" 
+            noresize="noresize" scrolling="auto"/>
+   </frameset>
+</html>
+
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 1130 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/WebTours/header.html
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1130 ****** (Location Flag : tFlagInsertEnd, Location ID : 1130)
+	web_url("welcome.pl",
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true",
+		"TargetFrame=",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://127.0.0.1:1080/WebTours/",
+		"Snapshot=t10.inf",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 1130 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1127)
+	web_add_auto_header("Priority",
+		"u=4");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1127)
+	web_add_auto_header("Sec-Fetch-Dest",
+		"frame");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1127)
+	web_add_auto_header("Sec-Fetch-Site",
+		"same-origin");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1135 ******
+GET /WebTours/images/webtours.png HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/WebTours/header.html
+Cookie: MSO=SID&1733421230
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Priority: u=5, i
+
+
+$$$$$$ Request Header For Transaction With Id 1135 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1135 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Server: Apache/2.2.21 (Win32)
+Last-Modified: Mon, 04 Nov 2013 13:47:02 GMT
+ETag: "100000005f678-105b-4ea5a26938180"
+Accept-Ranges: bytes
+Content-Length: 4187
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: image/png
+
+
+$$$$$$ Response Header For Transaction With Id 1135 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1135 ******
+\x89PNG
+\x1A
+\x00\x00\x00IHDR\x00\x00\x00\x82\x00\x00\x00-\x08\x03\x00\x00\x00U\x97C\xF4\x00\x00\x00	pHYs\x00\x00\x0B\x13\x00\x00\x0B\x13\x01\x00\x9A\x9C\x18\x00\x00
+OiCCPPhotoshop ICC profile\x00\x00x\xDA\x9DSgTS\xE9\x16=\xF7\xDE\xF4BK\x88\x80\x94KoR\x15\x08 RB\x8B\x80\x14\x91&*!	\x10J\x88!\xA1\xD9\x15Q\xC1\x11EE\x04\x1B\xC8\xA0\x88\x03\x8E\x8E\x80\x8C\x15Q,\x0C\x8A
+\xD8\x07\xE4!\xA2\x8E\x83\xA3\x88\x8A\xCA\xFB\xE1{\xA3k\xD6\xBC\xF7\xE6\xCD\xFE\xB5\xD7>\xE7\xAC\xF3\x9D\xB3\xCF\x07\xC0\x08\x0C\x96H3Q5\x80\x0C\xA9B\x1E\x11\xE0\x83\xC7\xC4\xC6\xE1\xE4.@\x81
+$p\x00\x10\x08\xB3d!s\xFD#\x01\x00\xF8~<<+"\xC0\x07\xBE\x00\x01x\xD3\x0B\x08\x00\xC0M\x9B\xC00\x1C\x87\xFF\x0F\xEAB\x99\\\x01\x80\x84\x01\xC0t\x918K\x08\x80\x14\x00@z\x8EB\xA6\x00@F\x01\x80\x9D\x98&S\x00\xA0\x04\x00`\xCBcb\xE3\x00P-\x00`'\x7F\xE6\xD3\x00\x80\x9D\xF8\x99{\x01\x00[\x94!\x15\x01\xA0\x91\x00 \x13e\x88D\x00h;\x00\xAC\xCFV\x8AE\x00X0\x00\x14fK\xC49\x00\xD8-\x000IWfH\x00\xB0\xB7\x00\xC0\xCE\x10\x0B\xB2\x00\x08\x0C\x000Q\x88\x85)\x00\x04{\x00`\xC8##x\x00\x84\x99\x00\x14F\xF2W<\xF1+\xAE\x10\xE7*\x00\x00x\x99\xB2<\xB9$9E\x81[\x08-q\x07WW.\x1E(\xCEI\x17+\x146a\x02a\x9A@.\xC2y\x99\x192\x814\x0F\xE0\xF3\xCC\x00\x00\xA0\x91\x15\x11\xE0\x83\xF3\xFDx\xCE\x0E\xAE\xCE\xCE6\x8E\xB6\x0E_-\xEA\xBF\x06\xFF"bb\xE3\xFE\xE5\xCF\xABp@\x00\x00\xE1t~\xD1\xFE,/\xB3\x1A\x80;\x06\x80m\xFE\xA2%\xEE\x04h^\x0B\xA0u\xF7\x8Bf\xB2\x0F@\xB5\x00\xA0\xE9\xDAW\xF3p\xF8~<<E\xA1\x90\xB9\xD9\xD9\xE5\xE4\xE4\xD8J\xC4B[a\xCAW}\xFEg\xC2_\xC0W\xFDl\xF9~<\xFC\xF7\xF5\xE0\xBE\xE2$\x812]\x81G\x04\xF8\xE0\xC2\xCC\xF4L\xA5\x1C\xCF\x92	\x84b\xDC\xE6\x8FG\xFC\xB7\x0B\xFF\xFC\x1D\xD3"\xC4Ib\xB9X*\x14\xE3Q\x12q\x8ED\x9A\x8C\xF32\xA5"\x89B\x92)\xC5%\xD2\xFFd\xE2\xDF,\xFB\x03>\xDF5\x00\xB0j>\x01{\x91-\xA8]c\x03\xF6K'\x10Xt\xC0\xE2\xF7\x00\x00\xF2\xBBo\xC1\xD4(\x08\x03\x80h\x83\xE1\xCFw\xFF\xEF?\xFDG\xA0%\x00\x80fI\x92q\x00\x00^D$.T\xCA\xB3?\xC7\x08\x00\x00D\xA0\x81*\xB0A\x1B\xF4\xC1\x18,\xC0\x06\x1C\xC1\x05\xDC\xC1\x0B\xFC`6\x84B$\xC4\xC2B\x10B
+d\x80\x1Cr`)\xAC\x82B(\x86\xCD\xB0\x1D*`/\xD4@\x1D4\xC0Qh\x86\x93p\x0E.\xC2U\xB8\x0E=p\x0F\xFAa\x08\x9E\xC1(\xBC\x81	\x04A\xC8\x08\x13a!\xDA\x88\x01b\x8AX#\x8E\x08\x17\x99\x85\xF8!\xC1H\x04\x12\x8B$ \xC9\x88\x14Q"K\x915H1R\x8AT UH\x1D\xF2=r\x029\x87\\F\xBA\x91;\xC8\x002\x82\xFC\x86\xBCG1\x94\x81\xB2Q=\xD4\x0C\xB5C\xB9\xA87\x1A\x84F\xA2\x0B\xD0dt1\x9A\x8F\x16\xA0\x9B\xD0r\xB4\x1A=\x8C6\xA1\xE7\xD0\xABh\x0F\xDA\x8F>C\xC70\xC0\xE8\x18\x073\xC4l0.\xC6\xC3B\xB18,	\x93c\xCB\xB1"\xAC\x0C\xAB\xC6\x1A\xB0V\xAC\x03\xBB\x89\xF5c\xCF\xB1w\x04\x12\x81E\xC0	6\x04wB a\x1EAHXLXN\xD8H\xA8 \x1C$4\x11\xDA	7	\x03\x84Q\xC2'"\x93\xA8K\xB4&\xBA\x11\xF9\xC4\x18b21\x87XH,#\xD6\x12\x8F\x13/\x10{\x88C\xC47$\x12\x89C2'\xB9\x90\x02I\xB1\xA4T\xD2\x12\xD2F\xD2nR#\xE9,\xA9\x9B4H\x1A#\x93\xC9\xDAdk\xB2\x079\x94, +\xC8\x85\xE4\x9D\xE4\xC3\xE43\xE4\x1B\xE4!\xF2[
+\x9Db@q\xA4\xF8S\xE2(R\xCAjJ\x19\xE5\x10\xE54\xE5\x06e\x982AU\xA3\x9AR\xDD\xA8\xA1T\x115\x8FZB\xAD\xA1\xB6R\xAFQ\x87\xA8\x134u\x9A9\xCD\x83\x16IK\xA5\xAD\xA2\x95\xD3\x1Ah\x17h\xF7i\xAF\xE8t\xBA\x11\xDD\x95\x1EN\x97\xD0W\xD2\xCB\xE9G\xE8\x97\xE8\x03\xF4w\x0C\x86\x15\x83\xC7\x88g(\x19\x9B\x18\x07\x18g\x19w\x18\xAF\x98L\xA6\x19\xD3\x8B\x19\xC7T071\xEB\x98\xE7\x99\x0F\x99oUX*\xB6*|\x15\x91\xCA
+\x95J\x95&\x95\x1B*/T\xA9\xAA\xA6\xAA\xDE\xAA\x0BU\xF3U\xCBT\x8F\xA9^S}\xAEFU3S\xE3\xA9	\xD4\x96\xABU\xAA\x9DP\xEBS\x1BSg\xA9;\xA8\x87\xAAg\xA8oT?\xA4~Y\xFD\x89\x06Y\xC3L\xC3OC\xA4Q\xA0\xB1_\xE3\xBC\xC6 \x0Bc\x19\xB3x,!k\xAB\x86u\x815\xC4&\xB1\xCD\xD9|v*\xBB\x98\xFD\x1D\xBB\x8B=\xAA\xA9\xA19C3J3W\xB3R\xF3\x94f?\x07\xE3\x98q\xF8\x9CtN	\xE7(\xA7\x97\xF3~\x8A\xDE\x14\xEF)\xE2)\x1B\xA64L\xB91e\\k\xAA\x96\x97\x96X\xABH\xABQ\xABG\xEB\xBD6\xAE\xED\xA7\x9D\xA6\xBDE\xBBY\xFB\x81\x0EA\xC7J'\\'Gg\x8F\xCE\x05\x9D\xE7S\xD9S\xDD\xA7
+\xA7\x16M=:\xF5\xAE.\xAAk\xA5\x1B\xA1\xBBDw\xBFn\xA7\xEE\x98\x9E\xBE^\x80\x9ELo\xA7\xDEy\xBD\xE7\xFA\x1C}/\xFDT\xFDm\xFA\xA7\xF5G\x0CX\x06\xB3\x0C$\x06\xDB\x0C\xCE\x18<\xC55qo<\x1D/\xC7\xDB\xF1QC]\xC3@C\xA5a\x95a\x97\xE1\x84\x91\xB9\xD1<\xA3\xD5F\x8DF\x0F\x8Ci\xC6\\\xE3$\xE3m\xC6m\xC6\xA3&\x06&!&KM\xEAM\xEE\x9ARM\xB9\xA6)\xA6;L;L\xC7\xCD\xCC\xCD\xA2\xCD\xD6\x995\x9B=1\xD72\xE7\x9B\xE7\x9B\xD7\x9B\xDF\xB7`ZxZ,\xB6\xA8\xB6\xB8eI\xB2\xE4Z\xA6Y\xEE\xB6\xBCn\x85Z9Y\xA5XUZ]\xB3F\xAD\x9D\xAD%\xD6\xBB\xAD\xBB\xA7\x11\xA7\xB9N\x93N\xAB\x9E\xD6g\xC3\xB0\xF1\xB6\xC9\xB6\xA9\xB7\x19\xB0\xE5\xD8\x06\xDB\xAE\xB6m\xB6}agb\x17g\xB7\xC5\xAE\xC3\xEE\x93\xBD\x93}\xBA}\x8D\xFD=\x07\x87\xD9\x0E\xAB\x1DZ\x1D~s\xB4r\x14:V:\xDE\x9A\xCE\x9C\xEE?}\xC5\xF4\x96\xE9/gX\xCF\x10\xCF\xD83\xE3\xB6\x13\xCB)\xC4i\x9DS\x9B\xD3Gg\x17g\xB9s\x83\xF3\x88\x8B\x89K\x82\xCB.\x97>.\x9B\x1B\xC6\xDD\xC8\xBD\xE4Jt\xF5q]\xE1z\xD2\xF5\x9D\x9B\xB3\x9B\xC2\xED\xA8\xDB\xAF\xEE6\xEEi\xEE\x87\xDC\x9F\xCC4\x9F)\x9EY3s\xD0\xC3\xC8C\xE0Q\xE5\xD1?\x0B\x9F\x950k\xDF\xAC~OCO\x81g\xB5\xE7#/c/\x91W\xAD\xD7\xB0\xB7\xA5w\xAA\xF7a\xEF\x17>\xF6>r\x9F\xE3>\xE3<7\xDE2\xDEY_\xCC7\xC0\xB7\xC8\xB7\xCBO\xC3o\x9E_\x85\xDFC\x7F#\xFFd\xFFz\xFF\xD1\x00\xA7\x80%\x01g\x03\x89\x81A\x81[\x02\xFB\xF8z|!\xBF\x8E?:\xDBe\xF6\xB2\xD9\xEDA\x8C\xA0\xB9A\x15A\x8F\x82\xAD\x82\xE5\xC1\xAD!h\xC8\xEC\x90\xAD!\xF7\xE7\x98\xCE\x91\xCEi\x0E\x85P~\xE8\xD6\xD0\x07a\xE6a\x8B\xC3~\x0C'\x85\x87\x85W\x86?\x8Ep\x88X\x1A\xD11\x975w\xD1\xDCCs\xDFD\xFAD\x96D\xDE\x9Bg1O9\xAF-J5*>\xAA.j<\xDA7\xBA4\xBA?\xC6.fY\xCC\xD5X\x9DXIlK\x1C9.*\xAE6nl\xBE\xDF\xFC\xED\xF3\x87\xE2\x9D\xE2\x0B\xE3{\x17\x98/\xC8]py\xA1\xCE\xC2\xF4\x85\xA7\x16\xA9.\x12,:\x96@L\x88N8\x94\xF0A\x10*\xA8\x16\x8C%\xF2\x13w%\x8E
+y\xC2\x1D\xC2g"/\xD16\xD1\x88\xD8C\\*\x1EN\xF2H*Mz\x92\xEC\x91\xBC5y$\xC53\xA5,\xE5\xB9\x84'\xA9\x90\xBCLL\xDD\x9B:\x9E\x16\x9Av m2=:\xBD1\x83\x92\x91\x90qB\xAA!M\x93\xB6g\xEAg\xE6fv\xCB\xACe\x85\xB2\xFE\xC5n\x8B\xB7/\x1E\x95\x07\xC9k\xB3\x90\xAC\x05Y-
+\xB6B\xA6\xE8TZ(\xD7*\x07\xB2geWf\xBF\xCD\x89\xCA9\x96\xAB\x9E+\xCD\xED\xCC\xB3\xCA\xDB\x907\x9C\xEF\x9F\xFF\xED\x12\xC2\x12\xE1\x92\xB6\xA5\x86KW-\x1DX\xE6\xBD\xACj9\xB2<qy\xDB
+\xE3\x15\x05+\x86V\x06\xAC<\xB8\x8A\xB6*m\xD5O\xAB\xEDW\x97\xAE~\xBD&zMk\x81^\xC1\xCA\x82\xC1\xB5\x01k\xEB\x0BU
+\xE5\x85}\xEB\xDC\xD7\xED]OX/Y\xDF\xB5a\xFA\x86\x9D\x1B>\x15\x89\x8A\xAE\x14\xDB\x17\x97\x15\x7F\xD8(\xDCx\xE5\x1B\x87o\xCA\xBF\x99\xDC\x94\xB4\xA9\xAB\xC4\xB9d\xCFf\xD2f\xE9\xE6\xDE-\x9E[\x0E\x96\xAA\x97\xE6\x97\x0En\xD9\xDA\xB4\xDFV\xB4\xED\xF5\xF6E\xDB/\x97\xCD(\xDB\xBB\x83\xB6C\xB9\xA3\xBF<\xB8\xBCe\xA7\xC9\xCE\xCD;?T\xA4T\xF4T\xFAT6\xEE\xD2\xDD\xB5a\xD7\xF8n\xD1\xEE\x1B{\xBC\xF64\xEC\xD5\xDB[\xBC\xF7\xFD>\xC9\xBE\xDBU\x01UM\xD5f\xD5e\xFBI\xFB\xB3\xF7?\xAE\x89\xAA\xE9\xF8\x96\xFBm]\xADNmq\xED\xC7\x03\xD2\x03\xFD\x07#\x0E\xB6\xD7\xB9\xD4\xD5\x1D\xD2=TR\x8F\xD6+\xEBG\x0E\xC7\x1F\xBE\xFE\x9D\xEFw-6U\x8D\x9C\xC6\xE2#pDy\xE4\xE9\xF7	\xDF\xF7\x1E:\xDAv\x8C{\xAC\xE1\x07\xD3\x1Fv\x1Dg\x1D/jB\x9A\xF2\x9AF\x9BS\x9A\xFB[b[\xBAO\xCC>\xD1\xD6\xEA\xDEz\xFCG\xDB\x1F\x0F\x9C4<YyJ\xF3T\xC9i\xDA\xE9\x82\xD3\x93g\xF2\xCF\x8C\x9D\x95\x9D}~.\xF9\xDC`\xDB\xA2\xB6{\xE7c\xCE\xDFj\x0Fo\xEF\xBA\x10t\xE1\xD2E\xFF\x8B\xE7;\xBC;\xCE\\\xF2\xB8t\xF2\xB2\xDB\xE5\x13W\xB8W\x9A\xAF:_m\xEAt\xEA<\xFE\x93\xD3O\xC7\xBB\x9C\xBB\x9A\xAE\xB9\\k\xB9\xEEz\xBD\xB5{f\xF7\xE9\x1B\x9E7\xCE\xDD\xF4\xBDy\xF1\x16\xFF\xD6\xD5\x9E9=\xDD\xBD\xF3zo\xF7\xC5\xF7\xF5\xDF\x16\xDD~r'\xFD\xCE\xCB\xBB\xD9w'\xEE\xAD\xBCO\xBC_\xF4@\xEDA\xD9C\xDD\x87\xD5?[\xFE\xDC\xD8\xEF\xDC\x7Fj\xC0w\xA0\xF3\xD1\xDCG\xF7\x06\x85\x83\xCF\xFE\x91\xF5\x8F\x0FC\x05\x8F\x99\x8F\xCB\x86\x86\xEB\x9E8>99\xE2?r\xFD\xE9\xFC\xA7C\xCFd\xCF&\x9E\x17\xFE\xA2\xFE\xCB\xAE\x17\x16/~\xF8\xD5\xEB\xD7\xCE\xD1\x98\xD1\xA1\x97\xF2\x97\x93\xBFm|\xA5\xFD\xEA\xC0\xEB\x19\xAF\xDB\xC6\xC2\xC6\x1E\xBE\xC9x31^\xF4V\xFB\xED\xC1w\xDCw\x1D\xEF\xA3\xDF\x0FO\xE4| \x7F(\xFFh\xF9\xB1\xF5S\xD0\xA7\xFB\x93\x19\x93\x93\xFF\x04\x03\x98\xF3\xFCc3-\xDB\x00\x00\x00 cHRM\x00\x00z%\x00\x00\x80\x83\x00\x00\xF9\xFF\x00\x00\x80\xE9\x00\x00u0\x00\x00\xEA`\x00\x00:\x98\x00\x00\x17o\x92_\xC5F\x00\x00\x03\x00PLTE\xFF\xFF\xFFw\x92\xAD\xBB\xC9\xD6Di\x8F\x11Ap\xEE\xF1\xF5\xDD\xE4\xEB3\\\x85\xCC\xD6\xE0\x99\xAD\xC2f\x85\xA3"Nz\xAA\xBB\xCC\x88\xA0\xB8Uw\x99\x003f\x10\x10\x10\x11\x11\x11\x12\x12\x12\x13\x13\x13\x14\x14\x14\x15\x15\x15\x16\x16\x16\x17\x17\x17\x18\x18\x18\x19\x19\x19\x1A\x1A\x1A\x1B\x1B\x1B\x1C\x1C\x1C\x1D\x1D\x1D\x1E\x1E\x1E\x1F\x1F\x1F   !!!"""###$$$%%%&&&'''((()))***+++,,,---...///000111222333444555666777888999:::;;;<<<===>>>???@@@AAABBBCCCDDDEEEFFFGGGHHHIIIJJJKKKLLLMMMNNNOOOPPPQQQRRRSSSTTTUUUVVVWWWXXXYYYZZZ[[[\\\\\\]]]^^^___```aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrssstttuuuvvvwwwxxxyyyzzz{{{|||}}}~~~\x7F\x7F\x7F\x80\x80\x80\x81\x81\x81\x82\x82\x82\x83\x83\x83\x84\x84\x84\x85\x85\x85\x86\x86\x86\x87\x87\x87\x88\x88\x88\x89\x89\x89\x8A\x8A\x8A\x8B\x8B\x8B\x8C\x8C\x8C\x8D\x8D\x8D\x8E\x8E\x8E\x8F\x8F\x8F\x90\x90\x90\x91\x91\x91\x92\x92\x92\x93\x93\x93\x94\x94\x94\x95\x95\x95\x96\x96\x96\x97\x97\x97\x98\x98\x98\x99\x99\x99\x9A\x9A\x9A\x9B\x9B\x9B\x9C\x9C\x9C\x9D\x9D\x9D\x9E\x9E\x9E\x9F\x9F\x9F\xA0\xA0\xA0\xA1\xA1\xA1\xA2\xA2\xA2\xA3\xA3\xA3\xA4\xA4\xA4\xA5\xA5\xA5\xA6\xA6\xA6\xA7\xA7\xA7\xA8\xA8\xA8\xA9\xA9\xA9\xAA\xAA\xAA\xAB\xAB\xAB\xAC\xAC\xAC\xAD\xAD\xAD\xAE\xAE\xAE\xAF\xAF\xAF\xB0\xB0\xB0\xB1\xB1\xB1\xB2\xB2\xB2\xB3\xB3\xB3\xB4\xB4\xB4\xB5\xB5\xB5\xB6\xB6\xB6\xB7\xB7\xB7\xB8\xB8\xB8\xB9\xB9\xB9\xBA\xBA\xBA\xBB\xBB\xBB\xBC\xBC\xBC\xBD\xBD\xBD\xBE\xBE\xBE\xBF\xBF\xBF\xC0\xC0\xC0\xC1\xC1\xC1\xC2\xC2\xC2\xC3\xC3\xC3\xC4\xC4\xC4\xC5\xC5\xC5\xC6\xC6\xC6\xC7\xC7\xC7\xC8\xC8\xC8\xC9\xC9\xC9\xCA\xCA\xCA\xCB\xCB\xCB\xCC\xCC\xCC\xCD\xCD\xCD\xCE\xCE\xCE\xCF\xCF\xCF\xD0\xD0\xD0\xD1\xD1\xD1\xD2\xD2\xD2\xD3\xD3\xD3\xD4\xD4\xD4\xD5\xD5\xD5\xD6\xD6\xD6\xD7\xD7\xD7\xD8\xD8\xD8\xD9\xD9\xD9\xDA\xDA\xDA\xDB\xDB\xDB\xDC\xDC\xDC\xDD\xDD\xDD\xDE\xDE\xDE\xDF\xDF\xDF\xE0\xE0\xE0\xE1\xE1\xE1\xE2\xE2\xE2\xE3\xE3\xE3\xE4\xE4\xE4\xE5\xE5\xE5\xE6\xE6\xE6\xE7\xE7\xE7\xE8\xE8\xE8\xE9\xE9\xE9\xEA\xEA\xEA\xEB\xEB\xEB\xEC\xEC\xEC\xED\xED\xED\xEE\xEE\xEE\xEF\xEF\xEF\xF0\xF0\xF0\xF1\xF1\xF1\xF2\xF2\xF2\xF3\xF3\xF3\xF4\xF4\xF4\xF5\xF5\xF5\xF6\xF6\xF6\xF7\xF7\xF7\xF8\xF8\xF8\xF9\xF9\xF9\xFA\xFA\xFA\xFB\xFB\xFB\xFC\xFC\xFC\xFD\xFD\xFD\xFE\xFE\xFE\xFF\xFF\xFF\xAA\x8A\xD4\x02\x00\x00\x00\x10tRNS\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\xE0#]\x19\x00\x00\x02^IDATx\xDA\xEC\xD6\xDBn\xA30\x10\x06\xE0\x7F\xC6\x9E\xF1	\xF8\xDF\xFFm\xF7\xC26$P\xDA\x95\xAAv\xA5\x15\xBE\x88\x1CC\x92\x8F9\xD8\x01\xFF\xF9\xC0Cx\x08\x0F\xE1!<\x84\xFF\x81P\xB5\xFE !\x1Ek1\xDD\xDD-\x90\x1F$(\xF6\x07\\\xB1{\x0C\xEDKB\xC0>\xF4[\x04A\x99S\xDF5\x01\xFEu\x14\x92\xAA\xAA!\xAB\xEA\xFA-B\x83\x1DO\xB5\xEC\xF1X\xFF2\x11\x8A\xF0\xFDr\xF4\xF9%\x05\x98\xE1w\xA4\xDF$\xECOl>\x7F\xA9\x9D\xF2\xF0\xD3\x84\x84\xDC\x1B\x0Fk\x1B\xD3\x97\xFA\xF8\x15\xC2\xAC\xFE\x05\x89yN7\x92qU\xD3\x12&\xA1.>\xDE}D\x88\xA2\x9E\x97^\xCEA\xFA\x9AH\x7F\x11U2\x96\x9CK\xBA!\x14\x08\xC9\x08'\xEB\x98\x1A\xC9`\xD0U\xD2	
+\xD7\x8Csx&!\x19L\x15\xC8\xF1%f\x00I\xA0\x00\x99\xD1\x90\x17{+\xB1\x17\xC2\x86e~.\xC2\xE7B2K$c\xC6F
+\xCC\x02\xC9\xE0\xE7\x8CtB\xEB\xD2X\x90\xAF\x04K\x8C}\xAD\xC9M\x14"@\x8E\x1C,HdA%\x97\x11\xE1\x06'\x05\xC3\x9F\xF6\x16~#,S\xB6\xA0^\x08\xB5\xA7r\xFB\xEC\x8CX\xB0qTb\xC5J\x1A"\xE3\xA8\xCC\xAE\x92}\xC7(\xA7\xF2S\x84\x19\xBC\x0E\xCE\x17B\xEA\x9B\x8E\xD5O\x08\x82B\xE9\xD8\x08g\x82\x92\x01\xA6}8\xC2KG\x9C{C\x11\xC8p\xECd\x8E\x0Ba\x9Ct\x06\x97xGhp\xFA8\x1F\x16l+\x84\x0Cp\x99\xE3/\x08\xFBb\xBE#0\x8A\xC3\xD3\xDDa\x9DQg\xA4+JFc\x0F\x05\xAF\x07\xC9\xFAQ"\xDAqs\xAF\x1C\xD9\xE7\x07\x81d\xD9\xF3y!\x080O\xA8h\xD6\xAB\xC0\xE7f\xBDm\x91\x02\x8B\xE32\xE2\x07\xE5\xB8\xDF,X\xC7\xCB\x84B\xBF\xBE\x17\xD8\x85\x90p\x14zA\x7F\x86\xDA{\x9C[/\xB0\xEE\x8F\xCB\xE9\xFC\x1A\x84ys2kd\x83\xC7\xC9\x19\x84d\x95d\xBA\x8F\x02\xFD\xD8r\xB6\xD9\x7F\x05.a+\xB0D
+\x8A\xB9T\xF1\xF1S\x97\xAD\xA9\xC0\xD6*\x05\xBD\xF5\x16d	+\xAC\xED\x84\x98QB\xF5\xB7,\xBE\x13\xCAK\xD7\xDAl0q\x00(c\xBFK
+\x00k\xBC\xD9\xA0\xAB\x03\x80v}\\\x01\x8C\xDA\x1B\x89\x88
+\x9C\xFA\xF2\x9D\x90^\xCA\xBC\x1E\x9A\x14^\xD5-|z"\xA5\x10\x0E_\x0C\xA1\x9D\xAE_>\xFE\xFC\x89\x7F\x08\x0F\xE1!<\x84\x87p7\xFE\x0C\x003E5\xCBq\xB3\x1F<\x00\x00\x00\x00IEND\xAEB`\x82
+$$$$$$ Response Body For Transaction With Id 1135 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/cgi-bin/welcome.pl?signOff=true
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1135 ****** (Location Flag : tFlagInsertEnd, Location ID : 1135)
+	web_url("webtours.png",
+		"URL=http://127.0.0.1:1080/WebTours/images/webtours.png",
+		"TargetFrame=",
+		"Resource=1",
+		"RecContentType=image/png",
+		"Referer=http://127.0.0.1:1080/WebTours/header.html",
+		"Snapshot=t11.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 1135 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1142 ******
+GET /WebTours/home.html HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true
+Cookie: MSO=SID&1733421230
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+If-Modified-Since: Mon, 27 May 2013 11:20:22 GMT
+If-None-Match: "100000005f654-551-4ddb1559ac980"
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1142 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1142 ******
+HTTP/1.1 304 Not Modified
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Server: Apache/2.2.21 (Win32)
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+ETag: "100000005f654-551-4ddb1559ac980"
+
+
+$$$$$$ Response Header For Transaction With Id 1142 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/cgi-bin/welcome.pl?signOff=true
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Request Header For Transaction With Id 1144 ******
+GET /cgi-bin/nav.pl?in=home HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true
+Cookie: MSO=SID&1733421230
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1144 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1144 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:53:50 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: Wed, 04 Dec 2024 17:53:50 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1144 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1144 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Web Tours Navigation Bar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<style>
+blockquote {font-family: tahoma; font-size : 10pt}
+H1 {font-family: tahoma; font-size : 22pt; color: #993333}
+H3 {font-family: tahoma; font-size : 10pt; color: black}
+small {font-family: tahoma; font-size : 8pt}
+</style>
+<form method="post" action="/cgi-bin/login.pl" target="body">
+<input type="hidden" name="userSession" value="140414.842446335HcccfiiptfiDDDDDtDDDfpfDAHf"/>
+<table border="0"><tr><td>&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td>
+<td><small>&nbsp;Username</small></td></tr>
+<tr><td>&nbsp;</td>
+<td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>
+<tr><td>&nbsp;</td>
+<td><small>&nbsp;Password</small></td>
+<tr><td>&nbsp;</td>
+<td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td>
+<td><input type="image" name="login" value="Login" alt="Login" border="1" 
+src="/WebTours/images/mer_login.gif"/></td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table><input type="hidden" name="JSFormSubmit" value="off"/>
+</form>
+
+</body>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 1144 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/cgi-bin/welcome.pl?signOff=true
+	The Node is NULL
+	/WebTours/home.html
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+[Traffic Filtering] Filtering firefox.settings.services.mozilla.com
+****** Request Header For Transaction With Id 1158 ******
+GET /v1/buckets/monitor/collections/changes/changeset?_expected=%221733419754116%22 HTTP/1.1
+Host: firefox.settings.services.mozilla.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1158 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1158 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 32355
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Type, Content-Length, Alert, Backoff, Retry-After
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; frame-ancestors 'none'; base-uri 'none';
+Strict-Transport-Security: max-age=31536000
+Via: 1.1 google
+Date: Thu, 05 Dec 2024 17:30:04 GMT
+Age: 1426
+Last-Modified: Thu, 05 Dec 2024 17:29:14 GMT
+Content-Type: application/json
+Cache-Control: public,max-age=3600
+Alt-Svc: clear
+
+
+$$$$$$ Response Header For Transaction With Id 1158 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1158 ******
+{"metadata":{"bucket":"monitor"},"timestamp":1733419754116,"changes":[{"id":"c521b443-368f-2e18-a853-066abaa1e9e3","last_modified":1732624571832,"bucket":"blocklists","collection":"addons-bloomfilters","host":"firefox.settings.services.mozilla.com"},{"id":"0e543556-43bf-3139-1fda-2a0068116c6d","last_modified":1727384103227,"bucket":"blocklists","collection":"certificates","host":"firefox.settings.services.mozilla.com"},{"id":"19e79f22-62cf-92e1-c12c-a3b4b9cf51be","last_modified":1603126502200,"bucket":"blocklists","collection":"plugins","host":"firefox.settings.services.mozilla.com"},{"id":"b7f595f9-5fc5-d863-b5dd-e5425dcf427a","last_modified":1604940558744,"bucket":"blocklists","collection":"addons","host":"firefox.settings.services.mozilla.com"},{"id":"061d4584-acd0-fecc-b5fb-dcfe0ad5e123","last_modified":1624388514784,"bucket":"blocklists","collection":"qa","host":"firefox.settings.services.mozilla.com"},{"id":"3fadb169-e5de-a2f0-374e-6eeb3eac3dbb","last_modified":1731615130278,"bucket":"blocklists","collection":"gfx","host":"firefox.settings.services.mozilla.com"},{"id":"3ace9d8e-00b5-a353-7fd5-1f081ff482ba","last_modified":1603099530179,"bucket":"blocklists-preview","collection":"plugins","host":"firefox.settings.services.mozilla.com"},{"id":"c6671b58-a04c-2753-1904-decfb584f9ce","last_modified":1604936711141,"bucket":"blocklists-preview","collection":"addons","host":"firefox.settings.services.mozilla.com"},{"id":"e42f495f-e3fb-6d65-4edd-51dd0f3985f3","last_modified":1573556826481,"bucket":"blocklists-preview","collection":"qa","host":"firefox.settings.services.mozilla.com"},{"id":"be77064f-af40-d297-93f9-91e676ec04ea","last_modified":1731615082712,"bucket":"blocklists-preview","collection":"gfx","host":"firefox.settings.services.mozilla.com"},{"id":"501583ca-d580-51de-0584-dab08102506d","last_modified":1733419754116,"bucket":"main","collection":"nimbus-desktop-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"380cd5a8-a585-42ef-3ee6-93bc618bcc36","last_modified":1733419459315,"bucket":"main","collection":"nimbus-preview","host":"firefox.settings.services.mozilla.com"},{"id":"274942c0-0ac3-cabd-0eca-3889bdfa926b","last_modified":1733413822366,"bucket":"main","collection":"cfr","host":"firefox.settings.services.mozilla.com"},{"id":"5a30bf02-8b01-b6f6-fa9f-c34cdd3a1042","last_modified":1733410696872,"bucket":"main","collection":"nimbus-mobile-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"683fdccf-2d79-2787-ad3c-c0b8e32d53ed","last_modified":1733388015114,"bucket":"main","collection":"crash-reports-ondemand","host":"firefox.settings.services.mozilla.com"},{"id":"8e0dffc7-d526-aa8d-759c-0882dfda733c","last_modified":1718898145959,"bucket":"main","collection":"message-groups","host":"firefox.settings.services.mozilla.com"},{"id":"da65fbf9-7ed0-d839-d23a-1dbf9ef6601f","last_modified":1719504277655,"bucket":"main","collection":"search-config-icons","host":"firefox.settings.services.mozilla.com"},{"id":"d5795030-b96f-0d09-e315-f8f02cfe2932","last_modified":1719847110309,"bucket":"main","collection":"backup-recovery-download-links","host":"firefox.settings.services.mozilla.com"},{"id":"2567487c-641d-8efe-bf09-4c9ceca0811d","last_modified":1719927826949,"bucket":"main","collection":"urlbar-persisted-search-terms","host":"firefox.settings.services.mozilla.com"},{"id":"2a96d2c2-ee2c-92d9-4415-3996dd1aef47","last_modified":1720004688246,"bucket":"main","collection":"url-classifier-skip-urls","host":"firefox.settings.services.mozilla.com"},{"id":"800de7cf-140e-6617-2685-c0490d8d29cb","last_modified":1720457798358,"bucket":"main","collection":"bounce-tracking-protection-exceptions","host":"firefox.settings.services.mozilla.com"},{"id":"cfe13ca2-8007-1935-aea8-b31c7bcefd8d","last_modified":1721063513248,"bucket":"main","collection":"search-default-override-allowlist","host":"firefox.settings.services.mozilla.com"},{"id":"3e829a4c-383d-93ea-bef4-49f2560e1d83","last_modified":1722426875987,"bucket":"main","collection":"backup-common-passwords-list","host":"firefox.settings.services.mozilla.com"},{"id":"0b696c37-e442-b92f-65ee-a0123223f224","last_modified":1724163826841,"bucket":"main","collection":"ms-images","host":"firefox.settings.services.mozilla.com"},{"id":"ecf46491-801a-ee6b-c771-432925b584da","last_modified":1725526980846,"bucket":"main","collection":"cookie-banner-rules-list","host":"firefox.settings.services.mozilla.com"},{"id":"31ea171e-5558-f27b-3633-67abd4363c52","last_modified":1725548360015,"bucket":"main","collection":"third-party-cookie-blocking-exempt-urls","host":"firefox.settings.services.mozilla.com"},{"id":"6eb5c7d5-d063-34f2-f7f6-0440d029672b","last_modified":1726182473065,"bucket":"main","collection":"content-relevance","host":"firefox.settings.services.mozilla.com"},{"id":"8b878038-f209-6179-d981-2ebf0a5c0214","last_modified":1726769128879,"bucket":"main","collection":"url-parser-default-unknown-schemes-interventions","host":"firefox.settings.services.mozilla.com"},{"id":"8da7db1e-dffb-18c9-2efe-0e9d7459a0f4","last_modified":1728173402797,"bucket":"main","collection":"normandy-recipes","host":"firefox.settings.services.mozilla.com"},{"id":"aebe2560-a214-46a3-e18f-82912d0a7707","last_modified":1729618200384,"bucket":"main","collection":"newtab-wallpapers-v2","host":"firefox.settings.services.mozilla.com"},{"id":"7a804898-26d6-ff1b-096a-df6246714e38","last_modified":1731362767688,"bucket":"main","collection":"websites-with-shared-credential-backends","host":"firefox.settings.services.mozilla.com"},{"id":"dd040ff6-583c-d16b-2816-5d8079aba996","last_modified":1731429440245,"bucket":"main","collection":"search-telemetry-v2","host":"firefox.settings.services.mozilla.com"},{"id":"2c2bcb35-b5f7-e015-b54f-3d60feccf26d","last_modified":1731438148174,"bucket":"main","collection":"password-rules","host":"firefox.settings.services.mozilla.com"},{"id":"a7fb0c00-2166-93ab-8261-d6110ffd1212","last_modified":1731445663451,"bucket":"main","collection":"nimbus-secure-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"c9a369e7-cbe2-f617-0ebf-c5e892b829e4","last_modified":1732038464522,"bucket":"main","collection":"fakespot-suggest-products","host":"firefox.settings.services.mozilla.com"},{"id":"28f0e7fd-7af7-617f-eba3-ba80e5f7148f","last_modified":1733343786142,"bucket":"main","collection":"translations-wasm","host":"firefox.settings.services.mozilla.com"},{"id":"772d1b8b-89e9-bfd6-32ba-a0fc9713179f","last_modified":1733333783644,"bucket":"main","collection":"nimbus-web-preview","host":"firefox.settings.services.mozilla.com"},{"id":"c067f022-492c-fb50-3c8a-5800b383fb5d","last_modified":1733330692175,"bucket":"main","collection":"ml-inference-options","host":"firefox.settings.services.mozilla.com"},{"id":"b39a6955-c9c9-8671-4823-7ea117a81e66","last_modified":1733253635039,"bucket":"main","collection":"fxrelay-allowlist","host":"firefox.settings.services.mozilla.com"},{"id":"3ddbe540-6900-30ef-7853-199a3b4bc6df","last_modified":1733242309482,"bucket":"main","collection":"quicksuggest","host":"firefox.settings.services.mozilla.com"},{"id":"4e8c259b-da76-6b65-9b1b-7f41ee14e3f6","last_modified":1733238125023,"bucket":"main","collection":"tracking-protection-lists-ios","host":"firefox.settings.services.mozilla.com"},{"id":"e9f76a09-1c31-7dce-7c40-8abfbcfb244d","last_modified":1733184064025,"bucket":"main","collection":"normandy-recipes-capabilities","host":"firefox.settings.services.mozilla.com"},{"id":"09b4c573-0b2a-e099-cc0c-32f84d78cd59","last_modified":1726599273951,"bucket":"main","collection":"search-categorization","host":"firefox.settings.services.mozilla.com"},{"id":"85fc8c6a-75fc-501e-9d4b-08306b7f81e6","last_modified":1727212608981,"bucket":"main","collection":"moz-essential-domain-fallbacks","host":"firefox.settings.services.mozilla.com"},{"id":"714b69f3-69fb-0b5e-9c4a-e73c07aa2858","last_modified":1732526227194,"bucket":"main","collection":"tracking-protection-lists","host":"firefox.settings.services.mozilla.com"},{"id":"d7bee3b1-5225-494c-c375-72931c7407bf","last_modified":1733178311927,"bucket":"main","collection":"ms-language-packs","host":"firefox.settings.services.mozilla.com"},{"id":"0ad92238-e4ce-dd27-57f8-c97134add3c9","last_modified":1544035467383,"bucket":"main","collection":"sites-classification","host":"firefox.settings.services.mozilla.com"},{"id":"0164d8d8-c422-4215-1f5a-70f62b85bf44","last_modified":1562796064168,"bucket":"main","collection":"focus-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"248f8630-6807-ab30-6370-14918dc824c2","last_modified":1564511755134,"bucket":"main","collection":"anti-tracking-url-decoration","host":"firefox.settings.services.mozilla.com"},{"id":"e02dce4c-7a13-3dda-6e62-d6d9084e82f5","last_modified":1569443132800,"bucket":"main","collection":"cfr-srg","host":"firefox.settings.services.mozilla.com"},{"id":"5f39c5e3-7a2a-3868-c29d-e7f11d76d66b","last_modified":1575468539758,"bucket":"main","collection":"public-suffix-list","host":"firefox.settings.services.mozilla.com"},{"id":"0d61e3ec-c708-b839-512a-e09c3f5f1880","last_modified":1581703205374,"bucket":"main","collection":"personality-provider-models","host":"firefox.settings.services.mozilla.com"},{"id":"5b1ab327-5196-0f05-629f-fdd288138d69","last_modified":1593104364892,"bucket":"main","collection":"windows-default-browser-agent","host":"firefox.settings.services.mozilla.com"},{"id":"e535535a-be20-8cb5-d162-ba72b1d81f3f","last_modified":1595950625167,"bucket":"main","collection":"pioneer-study-addons","host":"firefox.settings.services.mozilla.com"},{"id":"3f7e9dcc-c522-ea35-c98b-9334230153aa","last_modified":1600363002708,"bucket":"main","collection":"regions","host":"firefox.settings.services.mozilla.com"},{"id":"2ca9d0dc-f44b-9e48-5f37-37a90600b10f","last_modified":1602876354998,"bucket":"main","collection":"mobile-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"958b14fa-88b0-ec42-8e68-464502a21eb1","last_modified":1603308987530,"bucket":"main","collection":"personality-provider-recipe","host":"firefox.settings.services.mozilla.com"},{"id":"10583668-d3dc-6025-0200-dbcec975ac47","last_modified":1604450883297,"bucket":"main","collection":"pioneer-content-v1","host":"firefox.settings.services.mozilla.com"},{"id":"8451eb15-8141-758c-6dd1-6d9f04146fa9","last_modified":1605801189258,"bucket":"main","collection":"hijack-blocklists","host":"firefox.settings.services.mozilla.com"},{"id":"6fcd379b-83fc-111c-e7f5-c9fa9d7caf25","last_modified":1607042143590,"bucket":"main","collection":"pioneer-study-addons-v1","host":"firefox.settings.services.mozilla.com"},{"id":"a998e5e0-c645-25e4-8306-d22953baacb4","last_modified":1607983636189,"bucket":"main","collection":"pioneer-content-v2","host":"firefox.settings.services.mozilla.com"},{"id":"2652b5c8-7854-2c47-d567-19bbcaae38e5","last_modified":1607983639228,"bucket":"main","collection":"pioneer-study-addons-v2","host":"firefox.settings.services.mozilla.com"},{"id":"1611c176-3998-f3df-07b7-c1858138d48b","last_modified":1617030573137,"bucket":"main","collection":"whats-new-panel","host":"firefox.settings.services.mozilla.com"},{"id":"e4764d29-ebad-2f17-3945-cdff8214f400","last_modified":1627481728329,"bucket":"main","collection":"tippytop","host":"firefox.settings.services.mozilla.com"},{"id":"6f8a35aa-c73e-2e16-bff9-956ee6f17a46","last_modified":1635892651252,"bucket":"main","collection":"nimbus-desktop-defaults","host":"firefox.settings.services.mozilla.com"},{"id":"45a93597-80e3-cc6c-f29c-1ad6e0dd4455","last_modified":1641843848274,"bucket":"main","collection":"rally-studies-v1","host":"firefox.settings.services.mozilla.com"},{"id":"6caeca19-d819-2f9c-cfe3-8b0c1de9b52b","last_modified":1644517845433,"bucket":"main","collection":"search-telemetry","host":"firefox.settings.services.mozilla.com"},{"id":"a252dd48-1252-7149-1c3f-1e82697843af","last_modified":1647549722107,"bucket":"main","collection":"doh-providers","host":"firefox.settings.services.mozilla.com"},{"id":"42830d75-4c14-f884-1ceb-05febc3902b9","last_modified":1651753780606,"bucket":"main","collection":"doh-config","host":"firefox.settings.services.mozilla.com"},{"id":"568454e9-c59e-4b6f-0c12-3dcd53a12296","last_modified":1653469171354,"bucket":"main","collection":"devtools-devices","host":"firefox.settings.services.mozilla.com"},{"id":"eb808f2d-5de3-89d6-4252-03823ccaded5","last_modified":1672463216411,"bucket":"main","collection":"rally-studies-v2","host":"firefox.settings.services.mozilla.com"},{"id":"8c581745-110d-0d30-f0f2-fe999bc1fde7","last_modified":1673270322227,"bucket":"main","collection":"language-dictionaries","host":"firefox.settings.services.mozilla.com"},{"id":"71e468d0-8006-a831-873e-64d518cd8515","last_modified":1674595048726,"bucket":"main","collection":"password-recipes","host":"firefox.settings.services.mozilla.com"},{"id":"4bf857cb-8e73-0d27-ddcf-08f2bb797163","last_modified":1681500405555,"bucket":"main","collection":"translations-identification-models","host":"firefox.settings.services.mozilla.com"},{"id":"8ee6692e-d686-a614-6e4f-23d71b55b7f3","last_modified":1683667257606,"bucket":"main","collection":"fxmonitor-breaches","host":"firefox.settings.services.mozilla.com"},{"id":"e80aaa02-f8ae-a788-8426-059a8c4fcd2e","last_modified":1688747728721,"bucket":"main","collection":"addons-manager-settings","host":"firefox.settings.services.mozilla.com"},{"id":"651e8969-24fa-eb4a-aa3d-d64b894cbe9a","last_modified":1694689843914,"bucket":"main","collection":"query-stripping","host":"firefox.settings.services.mozilla.com"},{"id":"889a101d-bade-d030-e233-a18beceba9cf","last_modified":1702403047185,"bucket":"main","collection":"partitioning-exempt-urls","host":"firefox.settings.services.mozilla.com"},{"id":"49db3966-ee3d-979b-5014-4011f6d5e79b","last_modified":1709217485713,"bucket":"main","collection":"search-config-overrides","host":"firefox.settings.services.mozilla.com"},{"id":"92c52502-9661-6d8b-9389-f2732f6f5caf","last_modified":1710333238310,"bucket":"main","collection":"search-config-overrides-v2","host":"firefox.settings.services.mozilla.com"},{"id":"aea574eb-2997-6453-0c09-1851fc1b2561","last_modified":1710766850143,"bucket":"main","collection":"search-config","host":"firefox.settings.services.mozilla.com"},{"id":"b482b902-198d-8d2f-16b0-3510f086dceb","last_modified":1711033331878,"bucket":"main","collection":"devtools-news","host":"firefox.settings.services.mozilla.com"},{"id":"03247ba1-6c92-841f-f282-1ee436cc8a1d","last_modified":1715008862535,"bucket":"main","collection":"fingerprinting-protection-overrides","host":"firefox.settings.services.mozilla.com"},{"id":"572c01f9-9f5b-5de0-717b-b4e9a21c9cf0","last_modified":1716487426093,"bucket":"main","collection":"newtab-wallpapers","host":"firefox.settings.services.mozilla.com"},{"id":"301b5e58-eec9-4f1e-2f97-09abedfef627","last_modified":1723136665642,"bucket":"main","collection":"top-sites","host":"firefox.settings.services.mozilla.com"},{"id":"9cee02bd-bc7a-cacc-333f-61dbc4575260","last_modified":1728419357989,"bucket":"main","collection":"translations-models","host":"firefox.settings.services.mozilla.com"},{"id":"b39de954-4216-fecc-150f-7a08e837b373","last_modified":1729004089310,"bucket":"main","collection":"search-config-v2","host":"firefox.settings.services.mozilla.com"},{"id":"b1da8a52-9524-3fff-1a51-6f05fe13ca77","last_modified":1730278443662,"bucket":"main","collection":"remote-permissions","host":"firefox.settings.services.mozilla.com"},{"id":"22625625-0f03-7107-1d3e-a8484d109ca7","last_modified":1732905275303,"bucket":"main","collection":"ml-onnx-runtime","host":"firefox.settings.services.mozilla.com"},{"id":"a3c0cb7d-dad1-a596-8cc4-8ceaec428e4b","last_modified":1732897509042,"bucket":"main","collection":"devtools-compatibility-browsers","host":"firefox.settings.services.mozilla.com"},{"id":"447cbbca-247c-25ea-e1eb-68e922864d1e","last_modified":1730911887646,"bucket":"main","collection":"nimbus-web-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"396b50ef-ee78-d4ff-e110-468732ed1c24","last_modified":1731508034290,"bucket":"main","collection":"ml-model-allow-deny-list","host":"firefox.settings.services.mozilla.com"},{"id":"a0e7d312-12ed-a188-65c4-5e178ca5f261","last_modified":1733419750061,"bucket":"main-preview","collection":"nimbus-desktop-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"a60ac63f-506b-5d85-78a6-443c7e69d09b","last_modified":1733419459070,"bucket":"main-preview","collection":"nimbus-preview","host":"firefox.settings.services.mozilla.com"},{"id":"461e4691-5c0d-5dad-321d-cd9d61a5c640","last_modified":1733405632629,"bucket":"main-preview","collection":"cfr","host":"firefox.settings.services.mozilla.com"},{"id":"19f7ec86-7cc3-46d8-21d0-f1aeb80ba2ea","last_modified":1733410664197,"bucket":"main-preview","collection":"nimbus-mobile-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"7d94b957-1705-d6fe-d4a0-6436123cb6cf","last_modified":1733388013986,"bucket":"main-preview","collection":"crash-reports-ondemand","host":"firefox.settings.services.mozilla.com"},{"id":"45bf3f78-8f3f-28f6-5a1d-8a2bb6d3a2b2","last_modified":1733361212451,"bucket":"main-preview","collection":"tracking-protection-lists","host":"firefox.settings.services.mozilla.com"},{"id":"9a2e66c0-f96b-fa05-92da-8d62775e102b","last_modified":1718434781891,"bucket":"main-preview","collection":"message-groups","host":"firefox.settings.services.mozilla.com"},{"id":"cea550ab-c8d5-f309-d445-969a81ee51cd","last_modified":1719499750277,"bucket":"main-preview","collection":"search-config-icons","host":"firefox.settings.services.mozilla.com"},{"id":"eec76038-1880-058e-672b-dea34e735acc","last_modified":1719847110215,"bucket":"main-preview","collection":"backup-recovery-download-links","host":"firefox.settings.services.mozilla.com"},{"id":"ef5ddee3-314b-197c-35a1-2943fe96c573","last_modified":1719588521214,"bucket":"main-preview","collection":"urlbar-persisted-search-terms","host":"firefox.settings.services.mozilla.com"},{"id":"4bbeba46-f780-10cb-16ea-2bc48ec77807","last_modified":1717072578555,"bucket":"main-preview","collection":"url-classifier-skip-urls","host":"firefox.settings.services.mozilla.com"},{"id":"ee5f80a9-784c-add7-857f-016be20523a3","last_modified":1720457798276,"bucket":"main-preview","collection":"bounce-tracking-protection-exceptions","host":"firefox.settings.services.mozilla.com"},{"id":"b271319d-3db1-b78c-b058-7a3e7704c80f","last_modified":1721062345952,"bucket":"main-preview","collection":"search-default-override-allowlist","host":"firefox.settings.services.mozilla.com"},{"id":"241130b1-a088-265c-39e2-ad1e1adaf115","last_modified":1722426875836,"bucket":"main-preview","collection":"backup-common-passwords-list","host":"firefox.settings.services.mozilla.com"},{"id":"5141c7f4-3a3e-d7bd-7cfb-cca1f1796418","last_modified":1724878927202,"bucket":"main-preview","collection":"ms-images","host":"firefox.settings.services.mozilla.com"},{"id":"fb10b66d-50d9-8e4a-5874-52d7a0a6af01","last_modified":1725494410559,"bucket":"main-preview","collection":"cookie-banner-rules-list","host":"firefox.settings.services.mozilla.com"},{"id":"06026d31-633c-e362-24b4-36b0dd091cd1","last_modified":1725548359879,"bucket":"main-preview","collection":"third-party-cookie-blocking-exempt-urls","host":"firefox.settings.services.mozilla.com"},{"id":"2e2ce4af-06be-5dfe-97aa-4f511a5cf606","last_modified":1726180363239,"bucket":"main-preview","collection":"content-relevance","host":"firefox.settings.services.mozilla.com"},{"id":"9d4824c1-5be6-ce43-9ca9-468dd370b054","last_modified":1726749149123,"bucket":"main-preview","collection":"url-parser-default-unknown-schemes-interventions","host":"firefox.settings.services.mozilla.com"},{"id":"b5dcf818-f36f-19ad-380a-a6dbeebd08a0","last_modified":1729617931385,"bucket":"main-preview","collection":"newtab-wallpapers-v2","host":"firefox.settings.services.mozilla.com"},{"id":"fa35c1eb-3355-f100-ab9a-e4d909948e37","last_modified":1731690004455,"bucket":"main-preview","collection":"websites-with-shared-credential-backends","host":"firefox.settings.services.mozilla.com"},{"id":"68692045-6d1b-1419-071f-eed1d9f5c262","last_modified":1730995009416,"bucket":"main-preview","collection":"search-telemetry-v2","host":"firefox.settings.services.mozilla.com"},{"id":"cde3c31e-c1b8-b24e-a494-454fdb830abf","last_modified":1733072410200,"bucket":"main-preview","collection":"password-rules","host":"firefox.settings.services.mozilla.com"},{"id":"4ebcda67-0fb6-46f6-2f1a-6d246923bb48","last_modified":1731445646566,"bucket":"main-preview","collection":"nimbus-secure-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"34d68bb2-6416-0978-cc5b-de1fc1af8382","last_modified":1731448629164,"bucket":"main-preview","collection":"fakespot-suggest-products","host":"firefox.settings.services.mozilla.com"},{"id":"347711a1-df95-2461-f315-f36e4c457397","last_modified":1733327982779,"bucket":"main-preview","collection":"translations-wasm","host":"firefox.settings.services.mozilla.com"},{"id":"cba62179-d21e-aef6-f1ba-0745a83be31a","last_modified":1733333783520,"bucket":"main-preview","collection":"nimbus-web-preview","host":"firefox.settings.services.mozilla.com"},{"id":"071bcd17-1c4d-5cdd-7ff0-b17bef25fb92","last_modified":1733329965721,"bucket":"main-preview","collection":"ml-inference-options","host":"firefox.settings.services.mozilla.com"},{"id":"7b97eca9-f25a-76ee-5c38-61e06e831ac2","last_modified":1733252915052,"bucket":"main-preview","collection":"fxrelay-allowlist","host":"firefox.settings.services.mozilla.com"},{"id":"8195b5b2-fd71-f382-9458-5028ef84e90d","last_modified":1733239539657,"bucket":"main-preview","collection":"quicksuggest","host":"firefox.settings.services.mozilla.com"},{"id":"746576e8-f650-113b-24aa-7875fa5bf3e0","last_modified":1733238124901,"bucket":"main-preview","collection":"tracking-protection-lists-ios","host":"firefox.settings.services.mozilla.com"},{"id":"818868b5-18ae-a588-e1d6-8d067a64e5c0","last_modified":1726580945389,"bucket":"main-preview","collection":"search-categorization","host":"firefox.settings.services.mozilla.com"},{"id":"d4f2309b-56a0-a4c2-78cd-f216b1209a81","last_modified":1727212608847,"bucket":"main-preview","collection":"moz-essential-domain-fallbacks","host":"firefox.settings.services.mozilla.com"},{"id":"6133f0b4-fe59-a2ad-6839-b159c6dabc9c","last_modified":1733173118429,"bucket":"main-preview","collection":"ms-language-packs","host":"firefox.settings.services.mozilla.com"},{"id":"2c434b22-08f9-ed9a-914c-ef5c30ebcb82","last_modified":1544035467383,"bucket":"main-preview","collection":"sites-classification","host":"firefox.settings.services.mozilla.com"},{"id":"e1afa4ff-ea74-d142-eff6-4c5c3d27ce8c","last_modified":1562796064168,"bucket":"main-preview","collection":"focus-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"4ceae968-33e3-b09e-fce7-87edfd15923a","last_modified":1564511755134,"bucket":"main-preview","collection":"anti-tracking-url-decoration","host":"firefox.settings.services.mozilla.com"},{"id":"ad9b4281-cfdf-902c-de11-366a78030ed5","last_modified":1569443132231,"bucket":"main-preview","collection":"cfr-srg","host":"firefox.settings.services.mozilla.com"},{"id":"2e5fede5-45b1-2e91-626c-371c244ad1b2","last_modified":1646406194397,"bucket":"main-preview","collection":"public-suffix-list","host":"firefox.settings.services.mozilla.com"},{"id":"58667b5b-2afa-c9ea-a95d-d6081529dbee","last_modified":1581701665749,"bucket":"main-preview","collection":"personality-provider-models","host":"firefox.settings.services.mozilla.com"},{"id":"3f3cc33f-0a47-9621-ca08-6f1d0d55bb7c","last_modified":1593104012343,"bucket":"main-preview","collection":"windows-default-browser-agent","host":"firefox.settings.services.mozilla.com"},{"id":"9dbb7b11-e456-bb51-2f14-f3a17ef76326","last_modified":1595950571495,"bucket":"main-preview","collection":"pioneer-study-addons","host":"firefox.settings.services.mozilla.com"},{"id":"91607703-59bd-95a1-7734-a987332bc619","last_modified":1591566906097,"bucket":"main-preview","collection":"regions","host":"firefox.settings.services.mozilla.com"},{"id":"23ee4721-520a-33d1-2063-51f8ff4fed96","last_modified":1602780283316,"bucket":"main-preview","collection":"mobile-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"3f33d824-d485-658d-ab8e-f498e6f83c8a","last_modified":1603308808124,"bucket":"main-preview","collection":"personality-provider-recipe","host":"firefox.settings.services.mozilla.com"},{"id":"415edb28-1f34-f530-ecf7-1e243652be16","last_modified":1604442382323,"bucket":"main-preview","collection":"pioneer-content-v1","host":"firefox.settings.services.mozilla.com"},{"id":"cdf5b0ef-a720-05b9-cc9f-ca272d916d46","last_modified":1605800480144,"bucket":"main-preview","collection":"hijack-blocklists","host":"firefox.settings.services.mozilla.com"},{"id":"4367935e-3364-caff-464b-db690e567471","last_modified":1607041879513,"bucket":"main-preview","collection":"pioneer-study-addons-v1","host":"firefox.settings.services.mozilla.com"},{"id":"093951eb-e25b-150b-d55f-a8da62e1e995","last_modified":1607981769164,"bucket":"main-preview","collection":"pioneer-content-v2","host":"firefox.settings.services.mozilla.com"},{"id":"45a0f571-e2c2-dddb-8f21-3d4cd7d909f7","last_modified":1607981725045,"bucket":"main-preview","collection":"pioneer-study-addons-v2","host":"firefox.settings.services.mozilla.com"},{"id":"b4759cb6-c501-cea0-ba70-8ab04c89b171","last_modified":1617029179150,"bucket":"main-preview","collection":"whats-new-panel","host":"firefox.settings.services.mozilla.com"},{"id":"101f5b7a-c0d0-247e-2c0d-0cc89d5ff7c2","last_modified":1627480834563,"bucket":"main-preview","collection":"tippytop","host":"firefox.settings.services.mozilla.com"},{"id":"eaf8523e-8945-a9c0-82dc-313a7cefead3","last_modified":1635891524078,"bucket":"main-preview","collection":"nimbus-desktop-defaults","host":"firefox.settings.services.mozilla.com"},{"id":"ead8cf13-b099-9545-b44c-e03c4270bafd","last_modified":1641843577359,"bucket":"main-preview","collection":"rally-studies-v1","host":"firefox.settings.services.mozilla.com"},{"id":"30f49866-e6b6-6377-1714-d967d46c2cc9","last_modified":1644491477799,"bucket":"main-preview","collection":"search-telemetry","host":"firefox.settings.services.mozilla.com"},{"id":"bcde7ed4-4637-5b47-922e-c8df09ece804","last_modified":1647548788458,"bucket":"main-preview","collection":"doh-providers","host":"firefox.settings.services.mozilla.com"},{"id":"03502cb8-a932-eb71-c910-0a9adb597757","last_modified":1651738492284,"bucket":"main-preview","collection":"doh-config","host":"firefox.settings.services.mozilla.com"},{"id":"bbc8352c-1fd5-7a96-a4d5-332b56d90c3c","last_modified":1653402346692,"bucket":"main-preview","collection":"devtools-devices","host":"firefox.settings.services.mozilla.com"},{"id":"d794c574-a4c6-b888-d8d7-96024e07d4b1","last_modified":1672349611696,"bucket":"main-preview","collection":"rally-studies-v2","host":"firefox.settings.services.mozilla.com"},{"id":"9f66a403-06b9-1f49-179b-8bde4f9e1d3a","last_modified":1672846460810,"bucket":"main-preview","collection":"language-dictionaries","host":"firefox.settings.services.mozilla.com"},{"id":"ab724da6-2405-a097-9ca2-e638a61eaca4","last_modified":1673279640190,"bucket":"main-preview","collection":"password-recipes","host":"firefox.settings.services.mozilla.com"},{"id":"3f7fc0d0-04af-6c69-dd93-2a29d4243407","last_modified":1681344840786,"bucket":"main-preview","collection":"translations-identification-models","host":"firefox.settings.services.mozilla.com"},{"id":"c2349d3f-a0f0-2550-1e35-ee993f8a1c8d","last_modified":1682640078021,"bucket":"main-preview","collection":"fxmonitor-breaches","host":"firefox.settings.services.mozilla.com"},{"id":"bad6f034-2d51-c5b3-6cc1-a2ff19440327","last_modified":1688675787185,"bucket":"main-preview","collection":"addons-manager-settings","host":"firefox.settings.services.mozilla.com"},{"id":"00b04ed4-cacb-1281-1c64-813c2d1e5714","last_modified":1694689766005,"bucket":"main-preview","collection":"query-stripping","host":"firefox.settings.services.mozilla.com"},{"id":"d02d3098-a22d-738c-9de1-1a3688e8cda8","last_modified":1702402201064,"bucket":"main-preview","collection":"partitioning-exempt-urls","host":"firefox.settings.services.mozilla.com"},{"id":"accb70b3-679a-9d45-ed6f-0f5a845bf850","last_modified":1709157022845,"bucket":"main-preview","collection":"search-config-overrides","host":"firefox.settings.services.mozilla.com"},{"id":"3a960198-3d00-820d-449f-09aff056c65b","last_modified":1710170849382,"bucket":"main-preview","collection":"search-config-overrides-v2","host":"firefox.settings.services.mozilla.com"},{"id":"d6bac357-17c7-e551-94e7-9fb97f908dec","last_modified":1710757058760,"bucket":"main-preview","collection":"search-config","host":"firefox.settings.services.mozilla.com"},{"id":"530bef41-bbef-f783-33e5-b7deb2568002","last_modified":1711033331748,"bucket":"main-preview","collection":"devtools-news","host":"firefox.settings.services.mozilla.com"},{"id":"c90c4f3d-7e2b-b146-ded8-84385fb2e646","last_modified":1714419364737,"bucket":"main-preview","collection":"fingerprinting-protection-overrides","host":"firefox.settings.services.mozilla.com"},{"id":"031decaa-47bd-3d48-b752-1978196eb048","last_modified":1718722597937,"bucket":"main-preview","collection":"newtab-wallpapers","host":"firefox.settings.services.mozilla.com"},{"id":"d5acf05e-c2b7-782b-c5f7-52fd75b10abd","last_modified":1723130676108,"bucket":"main-preview","collection":"top-sites","host":"firefox.settings.services.mozilla.com"},{"id":"d7c0fedd-8531-a315-dc68-23c7abac7088","last_modified":1729098647204,"bucket":"main-preview","collection":"translations-models","host":"firefox.settings.services.mozilla.com"},{"id":"108456a5-3894-c2e1-f74c-24d098107d80","last_modified":1729002752246,"bucket":"main-preview","collection":"search-config-v2","host":"firefox.settings.services.mozilla.com"},{"id":"177ad77b-fda0-02ea-1a7d-7dab72571f01","last_modified":1730278443534,"bucket":"main-preview","collection":"remote-permissions","host":"firefox.settings.services.mozilla.com"},{"id":"d2dbd449-2ec9-60e2-b7c8-a384ea7d0878","last_modified":1732904785168,"bucket":"main-preview","collection":"ml-onnx-runtime","host":"firefox.settings.services.mozilla.com"},{"id":"1fdae7b7-324d-113c-c10c-c4a4a30aba63","last_modified":1732665908432,"bucket":"main-preview","collection":"devtools-compatibility-browsers","host":"firefox.settings.services.mozilla.com"},{"id":"dfb5c030-b786-15e2-0622-ee8c4856abdb","last_modified":1730911880992,"bucket":"main-preview","collection":"nimbus-web-experiments","host":"firefox.settings.services.mozilla.com"},{"id":"4d843a44-b691-2bab-b53e-4d52613c6de0","last_modified":1731501703674,"bucket":"main-preview","collection":"ml-model-allow-deny-list","host":"firefox.settings.services.mozilla.com"},{"id":"eae22ba6-631d-fcab-fa53-8a7c5adb39a9","last_modified":1733410630091,"bucket":"security-state","collection":"cert-revocations","host":"firefox.settings.services.mozilla.com"},{"id":"4dd906e9-fe4e-fd64-8138-a2c7260b2199","last_modified":1727383809894,"bucket":"security-state","collection":"onecrl","host":"firefox.settings.services.mozilla.com"},{"id":"9a0cf117-f8e7-4420-cc60-9fac2c2f6ffa","last_modified":1733237822480,"bucket":"security-state","collection":"intermediates","host":"firefox.settings.services.mozilla.com"},{"id":"e0739440-0519-39e8-a5d5-dfef0832cdf9","last_modified":1725293395611,"bucket":"security-state","collection":"ct-logs","host":"firefox.settings.services.mozilla.com"},{"id":"adc73734-8581-67a0-0516-1d0e427a8cbd","last_modified":1733410033269,"bucket":"security-state-preview","collection":"cert-revocations","host":"firefox.settings.services.mozilla.com"},{"id":"58d1976f-6e75-7728-79da-f4860ed35de5","last_modified":1727370064286,"bucket":"security-state-preview","collection":"onecrl","host":"firefox.settings.services.mozilla.com"},{"id":"7b3f0682-64fd-7b37-3126-3934ea377bcb","last_modified":1733234594602,"bucket":"security-state-preview","collection":"intermediates","host":"firefox.settings.services.mozilla.com"},{"id":"f934c73b-822b-89cd-0df5-3eab4878e47e","last_modified":1725036903715,"bucket":"security-state-preview","collection":"ct-logs","host":"firefox.settings.services.mozilla.com"}]}
+$$$$$$ Response Body For Transaction With Id 1158 Ended $$$$$$
+
+[Traffic Filtering] Filtering firefox.settings.services.mozilla.com
+****** Request Header For Transaction With Id 1183 ******
+GET /v1/buckets/main/collections/nimbus-desktop-experiments/changeset?_expected=1733419754116&_since=%221733343850799%22 HTTP/1.1
+Host: firefox.settings.services.mozilla.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/json
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1183 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1183 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 9078
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Type, Content-Length, Alert, Backoff, Retry-After
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; frame-ancestors 'none'; base-uri 'none';
+Strict-Transport-Security: max-age=31536000
+Via: 1.1 google
+Date: Thu, 05 Dec 2024 17:30:04 GMT
+Age: 1427
+Last-Modified: Thu, 05 Dec 2024 17:29:14 GMT
+Content-Type: application/json
+Cache-Control: public,max-age=3600
+Alt-Svc: clear
+
+
+$$$$$$ Response Header For Transaction With Id 1183 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1183 ******
+{"metadata":{"flags":["startup"],"signature":{"ref":"1i7mvb1xb7ea72we0ahp0500do","x5u":"https://content-signature-2.cdn.mozilla.net/chains/remote-settings.content-signature.mozilla.org-2025-01-17-13-03-17.chain","mode":"p384ecdsa","type":"contentsignaturepki","signature":"7t7WwsMNLTkgViXUYi_k2ZhQwAbqnFBsqGVcoqQBTgC0PcXVgJBJwrWje7Lk5O_RqxmueGJNZu8EtmbhC0PoUqHjXnlZj3MMvNHIreq4uge6lYTrB6kM3ExN5trgch_d","signer_id":"remote-settings","public_key":"MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEPnnK8K6iGGPC2dkFKDqfyUxdkbEYfq+a4YP3EwNmy5BzoT0/Y+UEN7jyMvL58Lh3XUUeepebSoMgfuYPQF0LUAiwqLXT7VgX+gaWeWFI07DflkfzPJQyOE2FYmvDez6r"},"id":"nimbus-desktop-experiments","last_modified":1733419754428,"bucket":"main"},"timestamp":1733419754116,"changes":[{"slug":"new-alt-text-flow-and-generation-treatment-a-rollout-for-non-en-locales","appId":"firefox-desktop","appName":"firefox_desktop","channel":"release","endDate":null,"locales":["ach","af","sq","ar","an","hy-AM","hye","ast","az","eu","be","brx","bs","br","bg","my","ca","ca-valencia","ckb","zh-CN","zh-TW","hr","cs","da","nl","eo","et","fi","fr","fy-NL","ff","gd","gl","ka","de","el","gn","gu-IN","he","hi-IN","hu","is","id","ia","ga-IE","it","ja","ja-JP-macos","kab","kn","cak","kk","km","ko","lo","ltg","lv","lij","lt","dsb","mk","ms","mr","meh","ne-NP","nb-NO","nn-NO","oc","fa","pl","pt-BR","pt-PT","pa-IN","ro","rm","ru","sco","sr","scn","szl","si","sk","sl","son","es-AR","es-CL","es-MX","es-ES","sv-SE","tl","tg","ta","te","th","bo","trs","tr","uk","hsb","ur","uz","vi","cy","wo","xh"],"branches":[{"slug":"treatment-a","ratio":1,"feature":{"value":{},"enabled":false,"featureId":"this-is-included-for-desktop-pre-95-support"},"features":[{"value":{"enableAltText":false,"browserMlEnable":false,"enableUpdatedAddImage":true},"enabled":true,"featureId":"pdfjs"}],"firefoxLabsTitle":null}],"outcomes":[{"slug":"pdf","priority":"secondary"}],"arguments":{},"isRollout":true,"probeSets":[],"startDate":null,"targeting":"(browserSettings.update.channel == \"release\") && ((experiment.slug in activeRollouts) || ((version|versionCompare('131.0.3') >= 0) && (locale in ['ach', 'af', 'an', 'ar', 'ast', 'az', 'be', 'bg', 'bo', 'br', 'brx', 'bs', 'ca', 'ca-valencia', 'cak', 'ckb', 'cs', 'cy', 'da', 'de', 'dsb', 'el', 'eo', 'es-AR', 'es-CL', 'es-ES', 'es-MX', 'et', 'eu', 'fa', 'ff', 'fi', 'fr', 'fy-NL', 'ga-IE', 'gd', 'gl', 'gn', 'gu-IN', 'he', 'hi-IN', 'hr', 'hsb', 'hu', 'hy-AM', 'hye', 'ia', 'id', 'is', 'it', 'ja', 'ja-JP-macos', 'ka', 'kab', 'kk', 'km', 'kn', 'ko', 'lij', 'lo', 'lt', 'ltg', 'lv', 'meh', 'mk', 'mr', 'ms', 'my', 'nb-NO', 'ne-NP', 'nl', 'nn-NO', 'oc', 'pa-IN', 'pl', 'pt-BR', 'pt-PT', 'rm', 'ro', 'ru', 'scn', 'sco', 'si', 'sk', 'sl', 'son', 'sq', 'sr', 'sv-SE', 'szl', 'ta', 'te', 'tg', 'th', 'tl', 'tr', 'trs', 'uk', 'ur', 'uz', 'vi', 'wo', 'xh', 'zh-CN', 'zh-TW']))) && ((experiment.slug in activeRollouts) || ((!('browser.ml.enable'|preferenceIsUserSet)) && (!('pdfjs.enableAltText'|preferenceIsUserSet)) && (!('pdfjs.enableUpdatedAddImage'|preferenceIsUserSet))))","featureIds":["pdfjs"],"application":"firefox-desktop","bucketConfig":{"count":5000,"start":5000,"total":10000,"namespace":"firefox-desktop-pdfjs-release-no_targeting-rollout-3","randomizationUnit":"normandy_id"},"localizations":null,"publishedDate":"2024-12-05T17:29:09.826997Z","schemaVersion":"1.12.0","userFacingName":"New alt text flow in PDFs - for non-EN locales","referenceBranch":"treatment-a","firefoxLabsTitle":null,"proposedDuration":120,"enrollmentEndDate":null,"isEnrollmentPaused":false,"isFirefoxLabsOptIn":false,"proposedEnrollment":7,"userFacingDescription":"This experiment offers users improved alt text flow upon adding an image to a PDF and/or functionality that generates alt text for images they add to PDFs using a small, local, and fully private language model.","firefoxLabsDescription":null,"featureValidationOptOut":false,"id":"new-alt-text-flow-and-generation-treatment-a-rollout-for-non-en-locales","last_modified":1733419754116},{"slug":"new-alt-text-flow-and-generation-treatment-b-rollout","appId":"firefox-desktop","appName":"firefox_desktop","channel":"release","endDate":null,"locales":["en-GB","en-CA","en-US"],"branches":[{"slug":"treatment-b","ratio":1,"feature":{"value":{},"enabled":false,"featureId":"this-is-included-for-desktop-pre-95-support"},"features":[{"value":{"enableAltText":true,"browserMlEnable":true,"enableUpdatedAddImage":true},"enabled":true,"featureId":"pdfjs"}],"firefoxLabsTitle":null}],"outcomes":[{"slug":"pdf","priority":"secondary"}],"arguments":{},"isRollout":true,"probeSets":[],"startDate":null,"targeting":"(browserSettings.update.channel == \"release\") && ((experiment.slug in activeRollouts) || ((version|versionCompare('131.0.3') >= 0) && (locale in ['en-CA', 'en-GB', 'en-US']) && (region in ['AE', 'AF', 'AG', 'AI', 'AL', 'AM', 'AO', 'AQ', 'AR', 'AS', 'AU', 'AW', 'AX', 'AZ', 'BA', 'BB', 'BD', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BL', 'BM', 'BN', 'BO', 'BQ', 'BR', 'BS', 'BT', 'BV', 'BW', 'BY', 'BZ', 'CA', 'CC', 'CD', 'CF', 'CG', 'CI', 'CK', 'CL', 'CM', 'CN', 'CO', 'CR', 'CU', 'CV', 'CW', 'CX', 'DJ', 'DM', 'DO', 'DZ', 'EC', 'EG', 'EH', 'ER', 'ES', 'ET', 'FJ', 'FK', 'FM', 'FO', 'GA', 'GD', 'GE', 'GF', 'GG', 'GH', 'GI', 'GL', 'GM', 'GN', 'GP', 'GQ', 'GS', 'GT', 'GU', 'GW', 'GY', 'HK', 'HM', 'HN', 'HT', 'ID', 'IL', 'IM', 'IN', 'IO', 'IQ', 'IR', 'JE', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH', 'KI', 'KM', 'KN', 'KP', 'KR', 'KW', 'KY', 'KZ', 'LA', 'LB', 'LC', 'LK', 'LR', 'LS', 'LY', 'MA', 'MC', 'MD', 'ME', 'MF', 'MG', 'MH', 'MK', 'ML', 'MM', 'MN', 'MO', 'MP', 'MQ', 'MR', 'MS', 'MU', 'MV', 'MW', 'MX', 'MY', 'MZ', 'NA', 'NC', 'NE', 'NF', 'NG', 'NI', 'NP', 'NR', 'NU', 'NZ', 'OM', 'PA', 'PE', 'PF', 'PG', 'PH', 'PK', 'PM', 'PN', 'PR', 'PS', 'PW', 'PY', 'QA', 'RE', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC', 'SD', 'SG', 'SH', 'SJ', 'SL', 'SM', 'SN', 'SO', 'SR', 'SS', 'ST', 'SV', 'SX', 'SY', 'SZ', 'TC', 'TD', 'TF', 'TG', 'TH', 'TJ', 'TK', 'TL', 'TM', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'UM', 'US', 'UY', 'UZ', 'VA', 'VC', 'VE', 'VG', 'VI', 'VN', 'VU', 'WF', 'WS', 'YE', 'YT', 'ZA', 'ZM', 'ZW']))) && ((experiment.slug in activeRollouts) || ((!('browser.ml.enable'|preferenceIsUserSet)) && (!('pdfjs.enableAltText'|preferenceIsUserSet)) && (!('pdfjs.enableUpdatedAddImage'|preferenceIsUserSet))))","featureIds":["pdfjs"],"application":"firefox-desktop","bucketConfig":{"count":5000,"start":0,"total":10000,"namespace":"firefox-desktop-pdfjs-release-no_targeting-rollout-3","randomizationUnit":"normandy_id"},"localizations":null,"publishedDate":"2024-12-05T17:27:57.454880Z","schemaVersion":"1.12.0","userFacingName":"New alt text flow and generation in PDFs - for EN-* locales outside of EU+EEA","referenceBranch":"treatment-b","firefoxLabsTitle":null,"proposedDuration":120,"enrollmentEndDate":null,"isEnrollmentPaused":false,"isFirefoxLabsOptIn":false,"proposedEnrollment":7,"userFacingDescription":"This experiment offers users improved alt text flow upon adding an image to a PDF and functionality that generates alt text for images added to PDFs using a small, local, and fully private language model.","firefoxLabsDescription":null,"featureValidationOptOut":false,"id":"new-alt-text-flow-and-generation-treatment-b-rollout","last_modified":1733419698189},{"deleted":true,"id":"highlighting-in-pdfs-rollout","last_modified":1733419136665},{"slug":"unified-api-for-spocs-and-top-sites-controlled-rollout-for-beta-134","appId":"firefox-desktop","appName":"firefox_desktop","channel":"beta","endDate":null,"locales":null,"branches":[{"slug":"control","ratio":1,"feature":{"value":{},"enabled":false,"featureId":"this-is-included-for-desktop-pre-95-support"},"features":[{"value":{"unifiedAdsSpocsEnabled":true,"unifiedAdsTilesEnabled":true},"enabled":true,"featureId":"newtabUnifiedAds"}],"firefoxLabsTitle":null}],"outcomes":[{"slug":"newtab_do_no_harm","priority":"primary"},{"slug":"sponsored_tiles","priority":"primary"}],"arguments":{},"isRollout":true,"probeSets":[],"startDate":"2024-12-02","targeting":"(browserSettings.update.channel == \"beta\") && (version|versionCompare('134.!') >= 0)","featureIds":["newtabUnifiedAds"],"application":"firefox-desktop","bucketConfig":{"count":2500,"start":0,"total":10000,"namespace":"firefox-desktop-newtabUnifiedAds-beta-no_targeting-rollout-1","randomizationUnit":"normandy_id"},"localizations":null,"publishedDate":"2024-12-02T20:02:56.630850Z","schemaVersion":"1.12.0","userFacingName":"Unified API for spocs and top sites - controlled rollout for beta 134","referenceBranch":"control","firefoxLabsTitle":null,"proposedDuration":28,"enrollmentEndDate":null,"isEnrollmentPaused":false,"isFirefoxLabsOptIn":false,"proposedEnrollment":7,"userFacingDescription":"We're switching to a new endpoint for the services supplying sponsored content and top sites to the new tab. This is a controlled rollout for 133+ on the Beta channel to that new endpoint.","firefoxLabsDescription":null,"featureValidationOptOut":false,"id":"unified-api-for-spocs-and-top-sites-controlled-rollout-for-beta-134","last_modified":1733412546314}]}
+$$$$$$ Response Body For Transaction With Id 1183 Ended $$$$$$
+
+[Traffic Filtering] Filtering content-signature-2.cdn.mozilla.net
+****** Request Header For Transaction With Id 1195 ******
+GET /chains/remote-settings.content-signature.mozilla.org-2025-01-17-13-03-17.chain HTTP/1.1
+Host: content-signature-2.cdn.mozilla.net
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1195 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1195 ******
+HTTP/1.1 200 OK
+X-Amz-Id-2: rfGpocX9u8+Dc9/KqR23D2jgq1E4xecluwea9mu1C3Y17EfrYLFGYV+cgVWcMUYFmAsX2QBXZB+E35hBjHRLyw==
+X-Amz-Request-Id: P3E5XWCRX7YRVN85
+X-Amz-Server-Side-Encryption: AES256
+Content-Disposition: attachment
+Accept-Ranges: bytes
+Content-Length: 5348
+Server: AmazonS3
+Via: 1.1 google
+Date: Thu, 05 Dec 2024 17:20:04 GMT
+Age: 2027
+Last-Modified: Thu, 28 Nov 2024 13:03:18 GMT
+ETag: "e90b4b26f40b4131c1239c8340204be3"
+Content-Type: binary/octet-stream
+Cache-Control: public,max-age=3600
+Alt-Svc: clear
+
+
+$$$$$$ Response Header For Transaction With Id 1195 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1195 ******
+-----BEGIN CERTIFICATE-----
+MIIDBDCCAougAwIBAgIIGAwjgc79vkcwCgYIKoZIzj0EAwMwgaMxCzAJBgNVBAYT
+AlVTMRwwGgYDVQQKExNNb3ppbGxhIENvcnBvcmF0aW9uMS8wLQYDVQQLEyZNb3pp
+bGxhIEFNTyBQcm9kdWN0aW9uIFNpZ25pbmcgU2VydmljZTFFMEMGA1UEAww8Q29u
+dGVudCBTaWduaW5nIEludGVybWVkaWF0ZS9lbWFpbEFkZHJlc3M9Zm94c2VjQG1v
+emlsbGEuY29tMB4XDTI0MTAyOTEzMDMxN1oXDTI1MDExNzEzMDMxN1owgakxCzAJ
+BgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFp
+biBWaWV3MRwwGgYDVQQKExNNb3ppbGxhIENvcnBvcmF0aW9uMRcwFQYDVQQLEw5D
+bG91ZCBTZXJ2aWNlczE2MDQGA1UEAxMtcmVtb3RlLXNldHRpbmdzLmNvbnRlbnQt
+c2lnbmF0dXJlLm1vemlsbGEub3JnMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEPnnK
+8K6iGGPC2dkFKDqfyUxdkbEYfq+a4YP3EwNmy5BzoT0/Y+UEN7jyMvL58Lh3XUUe
+epebSoMgfuYPQF0LUAiwqLXT7VgX+gaWeWFI07DflkfzPJQyOE2FYmvDez6ro4GD
+MIGAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAfBgNVHSME
+GDAWgBSgHUoXT4zCKzVF8WPx2nBwp8744TA4BgNVHREEMTAvgi1yZW1vdGUtc2V0
+dGluZ3MuY29udGVudC1zaWduYXR1cmUubW96aWxsYS5vcmcwCgYIKoZIzj0EAwMD
+ZwAwZAIwAMBl3p/80izSb2DiCvA50HwJ5QjTk0gNdTcS/qaZNCR5uG5HViO1+TIu
+FaQgN0iKAjBYEyH4jmXid+gKagMq5WE1xjtaHm9j1ykEbfa+fnXl5IHXK7agW2qg
+Ls9XPPdQYZY=
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIFfzCCA2egAwIBAgIDEAAJMA0GCSqGSIb3DQEBDAUAMH0xCzAJBgNVBAYTAlVT
+MRwwGgYDVQQKExNNb3ppbGxhIENvcnBvcmF0aW9uMS8wLQYDVQQLEyZNb3ppbGxh
+IEFNTyBQcm9kdWN0aW9uIFNpZ25pbmcgU2VydmljZTEfMB0GA1UEAxMWcm9vdC1j
+YS1wcm9kdWN0aW9uLWFtbzAiGA8yMDIwMTIzMTAwMDAwMFoYDzIwMjUwMzE0MjI1
+MzU3WjCBozELMAkGA1UEBhMCVVMxHDAaBgNVBAoTE01vemlsbGEgQ29ycG9yYXRp
+b24xLzAtBgNVBAsTJk1vemlsbGEgQU1PIFByb2R1Y3Rpb24gU2lnbmluZyBTZXJ2
+aWNlMUUwQwYDVQQDDDxDb250ZW50IFNpZ25pbmcgSW50ZXJtZWRpYXRlL2VtYWls
+QWRkcmVzcz1mb3hzZWNAbW96aWxsYS5jb20wdjAQBgcqhkjOPQIBBgUrgQQAIgNi
+AAQklaclq89BKPcYIfUdVS4JF/pZxjTVOlYVdj4QJ5xopHAngXkUggYkkHj0tmZV
+EcrXrCVq1qEtB/k7wXXkU4HN9rX7WcUkksClDJmUQ2qabzP7i20q3epGNq57RE2p
+3hKjggGJMIIBhTAMBgNVHRMEBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAWBgNVHSUB
+Af8EDDAKBggrBgEFBQcDAzAdBgNVHQ4EFgQUoB1KF0+Mwis1RfFj8dpwcKfO+OEw
+gagGA1UdIwSBoDCBnYAUs7zqWHSr4W54KrKrnCMeqGMsl7ehgYGkfzB9MQswCQYD
+VQQGEwJVUzEcMBoGA1UEChMTTW96aWxsYSBDb3Jwb3JhdGlvbjEvMC0GA1UECxMm
+TW96aWxsYSBBTU8gUHJvZHVjdGlvbiBTaWduaW5nIFNlcnZpY2UxHzAdBgNVBAMT
+FnJvb3QtY2EtcHJvZHVjdGlvbi1hbW+CAQEwMwYJYIZIAYb4QgEEBCYWJGh0dHA6
+Ly9hZGRvbnMuYWxsaXpvbS5vcmcvY2EvY3JsLnBlbTBOBgNVHR4ERzBFoEMwIIIe
+LmNvbnRlbnQtc2lnbmF0dXJlLm1vemlsbGEub3JnMB+CHWNvbnRlbnQtc2lnbmF0
+dXJlLm1vemlsbGEub3JnMA0GCSqGSIb3DQEBDAUAA4ICAQALeUuF/7hcmM/LFnK6
+6a5lBQk5z5JBr2bNNvKVs/mtdIcVKcxjWxOBM5rorZiM5UWE7BmAm8E7gFCCq30y
+ZnNn6BO04z5LtDRHxa3IGhgECloyOJUSi9xxFxe5p5wJzFdArl7happSOUwOi+z2
+aDqS6uTJWubIY4Uz7h7S2UkUm52CTYnvpioS7eQoovvrlUsgIhkkIwDQnu7RWSej
+6nkc5o5SNwAJWsQvxIko32AxhvPmmtv1T/mtXY488TJ0VoBZ6lRkJJIxIJ48pGHJ
++YRt1tzO2aqCEs9pNPGWfhrpcDc2mu4fvlSX1elWYiGrpQBVbdEJlDkGAD0AC8on
+/7ybD2pEdh7pViVLV78Md+DNNquqqNhRJpn65k4lhvgDLHYvLNOrrtAmcmQonNdU
+OSumIuqcGk7dm/7gr9lrwAm8V8/GwDyzTgi4wNA4vwln3c7iMFGLL/b2piEQCSl+
+mqL1LeWJV+8rkbi8l2T0QIBwjDgR97ZxpLPwmUdDNiGAWeEFxn0jU9CQtQKjOj84
+VPZUM7aSHhVQ0bQpnjua7IWvLKK7F2fOo3PmuLacnnfyrzr2C/Le5k6EK/0q2cKf
+P6JzDWwt8werc6E3C6z3jbUdAwgNpv/fGz8gQBPf7NeiYkqMUNB2Z3aF8He8Jg15
+Abv+2+rSOLpBsTU67AHzMKJ8hw==
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIGYTCCBEmgAwIBAgIBATANBgkqhkiG9w0BAQwFADB9MQswCQYDVQQGEwJVUzEc
+MBoGA1UEChMTTW96aWxsYSBDb3Jwb3JhdGlvbjEvMC0GA1UECxMmTW96aWxsYSBB
+TU8gUHJvZHVjdGlvbiBTaWduaW5nIFNlcnZpY2UxHzAdBgNVBAMTFnJvb3QtY2Et
+cHJvZHVjdGlvbi1hbW8wHhcNMTUwMzE3MjI1MzU3WhcNMjUwMzE0MjI1MzU3WjB9
+MQswCQYDVQQGEwJVUzEcMBoGA1UEChMTTW96aWxsYSBDb3Jwb3JhdGlvbjEvMC0G
+A1UECxMmTW96aWxsYSBBTU8gUHJvZHVjdGlvbiBTaWduaW5nIFNlcnZpY2UxHzAd
+BgNVBAMTFnJvb3QtY2EtcHJvZHVjdGlvbi1hbW8wggIgMA0GCSqGSIb3DQEBAQUA
+A4ICDQAwggIIAoICAQC0u2HXXbrwy36+MPeKf5jgoASMfMNz7mJWBecJgvlTf4hH
+JbLzMPsIUauzI9GEpLfHdZ6wzSyFOb4AM+D1mxAWhuZJ3MDAJOf3B1Rs6QorHrl8
+qqlNtPGqepnpNJcLo7JsSqqE3NUm72MgqIHRgTRsqUs+7LIPGe7262U+N/T0LPYV
+Le4rZ2RDHoaZhYY7a9+49mHOI/g2YFB+9yZjE+XdplT2kBgA4P8db7i7I0tIi4b0
+B0N6y9MhL+CRZJyxdFe2wBykJX14LsheKsM1azHjZO56SKNrW8VAJTLkpRxCmsiT
+r08fnPyDKmaeZ0BtsugicdipcZpXriIGmsZbI12q5yuwjSELdkDV6Uajo2n+2ws5
+uXrP342X71WiWhC/dF5dz1LKtjBdmUkxaQMOP/uhtXEKBrZo1ounDRQx1j7+SkQ4
+BEwjB3SEtr7XDWGOcOIkoJZWPACfBLC3PJCBWjTAyBlud0C5n3Cy9regAAnOIqI1
+t16GU2laRh7elJ7gPRNgQgwLXeZcFxw6wvyiEcmCjOEQ6PM8UQjthOsKlszMhlKw
+vjyOGDoztkqSBy/v+Asx7OW2Q7rlVfKarL0mREZdSMfoy3zTgtMVCM0vhNl6zcvf
+5HNNopoEdg5yuXo2chZ1p1J+q86b0G5yJRMeT2+iOVY2EQ37tHrqUURncCy4uwIB
+A6OB7TCB6jAMBgNVHRMEBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAWBgNVHSUBAf8E
+DDAKBggrBgEFBQcDAzCBkgYDVR0jBIGKMIGHoYGBpH8wfTELMAkGA1UEBhMCVVMx
+HDAaBgNVBAoTE01vemlsbGEgQ29ycG9yYXRpb24xLzAtBgNVBAsTJk1vemlsbGEg
+QU1PIFByb2R1Y3Rpb24gU2lnbmluZyBTZXJ2aWNlMR8wHQYDVQQDExZyb290LWNh
+LXByb2R1Y3Rpb24tYW1vggEBMB0GA1UdDgQWBBSzvOpYdKvhbngqsqucIx6oYyyX
+tzANBgkqhkiG9w0BAQwFAAOCAgEAaNSRYAaECAePQFyfk12kl8UPLh8hBNidP2H6
+KT6O0vCVBjxmMrwr8Aqz6NL+TgdPmGRPDDLPDpDJTdWzdj7khAjxqWYhutACTew5
+eWEaAzyErbKQl+duKvtThhV2p6F6YHJ2vutu4KIciOMKB8dslIqIQr90IX2Usljq
+8Ttdyf+GhUmazqLtoB0GOuESEqT4unX6X7vSGu1oLV20t7t5eCnMMYD67ZBn0YIU
+/cm/+pan66hHrja+NeDGF8wabJxdqKItCS3p3GN1zUGuJKrLykxqbOp/21byAGog
+Z1amhz6NHUcfE6jki7sM7LHjPostU5ZWs3PEfVVgha9fZUhOrIDsyXEpCWVa3481
+LlAq3GiUMKZ5DVRh9/Nvm4NwrTfB3QkQQJCwfXvO9pwnPKtISYkZUqhEqvXk5nBg
+QCkDSLDjXTx39naBBGIVIqBtKKuVTla9enngdq692xX/CgO6QJVrwpqdGjebj5P8
+5fNZPABzTezG3Uls5Vp+4iIWVAEDkK23cUj3c/HhE+Oo7kxfUeu5Y1ZV3qr61+6t
+ZARKjbu1TuYQHf0fs+GwID8zeLc2zJL7UzcHFwwQ6Nda9OJN4uPAuC/BKaIpxCLL
+26b24/tRam4SJjqpiq20lynhUrmTtt6hbG3E1Hpy3bmkt2DYnuMFwEx2gfXNcnbT
+wNuvFqc=
+-----END CERTIFICATE-----
+
+$$$$$$ Response Body For Transaction With Id 1195 Ended $$$$$$
+
+[Traffic Filtering] Filtering firefox.settings.services.mozilla.com
+****** Request Header For Transaction With Id 1201 ******
+GET /v1/buckets/main/collections/cfr/changeset?_expected=1733413822366&_since=%221733343844510%22 HTTP/1.1
+Host: firefox.settings.services.mozilla.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/json
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1201 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1201 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 1454
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Retry-After, Content-Type, Content-Length, Backoff, Alert
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; frame-ancestors 'none'; base-uri 'none';
+Strict-Transport-Security: max-age=31536000
+Via: 1.1 google
+Date: Thu, 05 Dec 2024 17:47:43 GMT
+Age: 368
+Last-Modified: Thu, 05 Dec 2024 15:50:22 GMT
+Content-Type: application/json
+Cache-Control: public,max-age=3600
+Alt-Svc: clear
+
+
+$$$$$$ Response Header For Transaction With Id 1201 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1201 ******
+{"metadata":{"flags":["startup"],"signature":{"ref":"30swu11ftuuii1siebqj55x8to","x5u":"https://content-signature-2.cdn.mozilla.net/chains/remote-settings.content-signature.mozilla.org-2025-01-17-13-03-17.chain","mode":"p384ecdsa","type":"contentsignaturepki","signature":"V9iosb9yqfR_F6MRez82Qw7UpTVKDD6Rxlto90JC8Mjy7o9ryOgn9qMxRZDXpx-Z0edBPyq84RG-ipDNu7ScwOsSYI3SGcEIYSlSW3F6PXBu4sIA8WMo63pMTvlUS-E2","signer_id":"remote-settings","public_key":"MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEPnnK8K6iGGPC2dkFKDqfyUxdkbEYfq+a4YP3EwNmy5BzoT0/Y+UEN7jyMvL58Lh3XUUeepebSoMgfuYPQF0LUAiwqLXT7VgX+gaWeWFI07DflkfzPJQyOE2FYmvDez6r"},"id":"cfr","last_modified":1733413822496,"bucket":"main"},"timestamp":1733413822366,"changes":[{"groups":[],"content":{"action":{"id":"moments-wnp","data":{"url":"https://www.mozilla.org/firefox/welcome/21/","expire":1738627200000}},"bucket_id":"WNP_MOMENTS_22"},"trigger":{"id":"momentsUpdate"},"template":"update_action","targeting":"((browserSettings.update.channel == 'esr' && version|versionCompare('102') >= 0 && version|versionCompare('115.13.0esr') < 0)) || ((browserSettings.update.channel == 'release' && version|versionCompare('102') >= 0 && version|versionCompare('128') < 0)) && (currentDate|date - 1733832000000) > 0 && (currentDate|date - 1738627200000) < 0 && localeLanguageCode in ['en', 'fr', 'ru', 'es', 'zh', 'de', 'pt', 'pl', 'it', 'ja', 'id', 'hu', 'cs', 'ar', 'el']","id":"WNP_MOMENTS_22","last_modified":1733413822366}]}
+$$$$$$ Response Body For Transaction With Id 1201 Ended $$$$$$
+
+[Traffic Filtering] Filtering incoming.telemetry.mozilla.org
+****** Request Header For Transaction With Id 1214 ******
+POST /submit/telemetry/c6abd02c-0a1c-4ba9-98e7-23733f10dea1/event/Firefox/132.0.2/release/20241110231641?v=4 HTTP/1.1
+Host: incoming.telemetry.mozilla.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/json; charset=UTF-8
+Date: Thu, 05 Dec 2024 17:54:06 GMT
+Content-Encoding: gzip
+Content-Length: 3602
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1214 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1214 ******
+{"type":"event","id":"c6abd02c-0a1c-4ba9-98e7-23733f10dea1","creationDate":"2024-12-05T15:04:00.202Z","version":4,"application":{"architecture":"x86-64","buildId":"20241110231641","name":"Firefox","version":"132.0.2","displayVersion":"132.0.2","vendor":"Mozilla","platformVersion":"132.0.2","xpcomAbi":"x86_64-msvc","channel":"release"},"payload":{"reason":"shutdown","processStartTimestamp":1733410740000,"sessionId":"ed15bfbb-609d-4ea7-8641-bd180ea29f0a","subsessionId":"e39e8855-e7f4-4f7a-bd0c-4e2f83811459","lostEventsCount":0,"events":{"parent":[[1054,"session_restore","backup_can_be_loaded","session_file",null,{"can_load":"true","path_key":"clean","loadfail_reason":"N/A"}],[1054,"session_restore","backup_can_be_loaded","session_file",null,{"can_load":"true","path_key":"clean","loadfail_reason":"N/A"}],[1054,"session_restore","shutdown_success","session_startup",null,{"shutdown_ok":"false","shutdown_reason":"N/A"}],[1960,"doh","state","disabled","null"],[1960,"doh","evaluate_v2","heuristics","disable_doh",{"ev
+$$$$$$ Request Body For Transaction With Id 1214 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1214 ******
+HTTP/1.1 200 OK
+Server: openresty
+Date: Thu, 05 Dec 2024 17:54:07 GMT
+Content-Type: text/plain; charset=utf-8
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+X-Frame-Options: DENY
+Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS
+Access-Control-Max-Age: 1728000
+Access-Control-Allow-Headers: Accept-Encoding,Connection,Content-Encoding,Content-Length,Content-Type,DNT,Date,Sec-Fetch-Dest,Sec-Fetch-Mode,Sec-Fetch-Site,User-Agent,X-Client-Type,X-Client-Version,X-Debug-ID,X-Forwarded-For,X-Pingsender-Version,X-Pipeline-Proxy,X-Source-Tags,X-Telemetry-Agent
+Content-Encoding: gzip
+Via: 1.1 google
+Alt-Svc: clear
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 1214 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1214 ******
+
+$$$$$$ Response Body For Transaction With Id 1214 Ended $$$$$$
+
+[Traffic Filtering] Filtering incoming.telemetry.mozilla.org
+****** Request Header For Transaction With Id 1216 ******
+POST /submit/telemetry/647f57cd-7a31-4912-8dd4-c0d15b57bace/main/Firefox/132.0.2/release/20241110231641?v=4 HTTP/1.1
+Host: incoming.telemetry.mozilla.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/json; charset=UTF-8
+Date: Thu, 05 Dec 2024 17:54:06 GMT
+Content-Encoding: gzip
+Content-Length: 15057
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1216 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1216 ******
+{"type":"main","id":"647f57cd-7a31-4912-8dd4-c0d15b57bace","creationDate":"2024-12-05T15:04:00.205Z","version":4,"application":{"architecture":"x86-64","buildId":"20241110231641","name":"Firefox","version":"132.0.2","displayVersion":"132.0.2","vendor":"Mozilla","platformVersion":"132.0.2","xpcomAbi":"x86_64-msvc","channel":"release"},"payload":{"ver":4,"simpleMeasurements":{"totalTime":275,"start":102,"main":494,"selectProfile":507,"afterProfileLocked":509,"startupCrashDetectionBegin":966,"startupCrashDetectionEnd":32652,"firstPaint":1510,"firstPaint2":1510,"sessionRestoreInit":1018,"sessionRestored":1575,"createTopLevelWindow":650,"quitApplication":274538,"profileBeforeChange":274599,"blankWindowShown":967,"AMI_startup_begin":971,"XPI_startup_begin":973,"XPI_bootstrap_addons_begin":975,"XPI_bootstrap_addons_end":986,"XPI_startup_end":986,"AMI_startup_end":987,"XPI_finalUIStartup":1019,"sessionRestoreInitialized":1021,"delayedStartupStarted":1513,"delayedStartupFinished":1543,"sessionRestoreRestoring":1561,"d
+$$$$$$ Request Body For Transaction With Id 1216 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1216 ******
+HTTP/1.1 200 OK
+Server: openresty
+Date: Thu, 05 Dec 2024 17:54:07 GMT
+Content-Type: text/plain; charset=utf-8
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+X-Frame-Options: DENY
+Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS
+Access-Control-Max-Age: 1728000
+Access-Control-Allow-Headers: Accept-Encoding,Connection,Content-Encoding,Content-Length,Content-Type,DNT,Date,Sec-Fetch-Dest,Sec-Fetch-Mode,Sec-Fetch-Site,User-Agent,X-Client-Type,X-Client-Version,X-Debug-ID,X-Forwarded-For,X-Pingsender-Version,X-Pipeline-Proxy,X-Source-Tags,X-Telemetry-Agent
+Content-Encoding: gzip
+Via: 1.1 google
+Alt-Svc: clear
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 1216 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1216 ******
+
+$$$$$$ Response Body For Transaction With Id 1216 Ended $$$$$$
+
+[Traffic Filtering] Filtering detectportal.firefox.com
+****** Request Header For Transaction With Id 1222 ******
+GET /canonical.html HTTP/1.1
+Host: detectportal.firefox.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cache-Control: no-cache
+Pragma: no-cache
+Connection: keep-alive
+
+
+$$$$$$ Request Header For Transaction With Id 1222 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1222 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 90
+Via: 1.1 google
+Date: Thu, 05 Dec 2024 04:47:04 GMT
+Age: 47223
+Content-Type: text/html
+Cache-Control: public,must-revalidate,max-age=0,s-maxage=3600
+
+
+$$$$$$ Response Header For Transaction With Id 1222 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1222 ******
+<meta http-equiv="refresh" content="0;url=https://support.mozilla.org/kb/captive-portal"/>
+$$$$$$ Response Body For Transaction With Id 1222 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1249 ******
+POST /cgi-bin/login.pl HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 131
+Origin: http://127.0.0.1:1080
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?in=home
+Cookie: MSO=SID&1733421230
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1249 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1249 ******
+userSession=140414.842446335HcccfiiptfiDDDDDtDDDfpfDAHf&username=artemironman&password=12345&login.x=58&login.y=10&JSFormSubmit=off
+$$$$$$ Request Body For Transaction With Id 1249 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1249 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:54:07 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Set-Cookie: MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A; path=/
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1249 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1249 ******
+<!--
+User password was correct - added a cookie with the user's default
+information.  Set the user up to make reservations...
+
+--->
+
+<html>
+<title>Web Tours</title>
+<frameset cols="160,*" border=1 frameborder=1>
+<frame src="nav.pl?page=menu&in=home" name="navbar" marginheight="2" marginwidth="2" noresize="noresize" scrolling="auto"/>
+<frame src="login.pl?intro=true" name="info" marginheight="2" marginwidth="2" noresize="noresize" scrolling="auto"/>
+</frameset>
+
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 1249 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/cgi-bin/welcome.pl?signOff=true
+	/cgi-bin/nav.pl?in=home
+	Form: name= action=/cgi-bin/login.pl
+	/WebTours/home.html
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1249 ****** (Location Flag : tFlagInsertEnd, Location ID : 1249)
+	web_submit_data("login.pl",
+		"Action=http://127.0.0.1:1080/cgi-bin/login.pl",
+		"Method=POST",
+		"TargetFrame=body",
+		"RecContentType=text/html",
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?in=home",
+		"Snapshot=t12.inf",
+		"Mode=HTML",
+		ITEMDATA,
+		"Name=userSession", "Value=140414.842446335HcccfiiptfiDDDDDtDDDfpfDAHf", ENDITEM,
+		"Name=username", "Value=artemironman", ENDITEM,
+		"Name=password", "Value=12345", ENDITEM,
+		"Name=login.x", "Value=58", ENDITEM,
+		"Name=login.y", "Value=10", ENDITEM,
+		"Name=JSFormSubmit", "Value=off", ENDITEM,
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 1249 Ended $$$$$$
+
+[Traffic Filtering] Filtering detectportal.firefox.com
+****** Request Header For Transaction With Id 1337 ******
+GET /success.txt?ipv4 HTTP/1.1
+Host: detectportal.firefox.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Priority: u=4
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 1337 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1337 ******
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 8
+Via: 1.1 google
+Date: Wed, 04 Dec 2024 23:48:03 GMT
+Age: 65164
+Content-Type: text/plain
+Cache-Control: public,must-revalidate,max-age=0,s-maxage=3600
+
+
+$$$$$$ Response Header For Transaction With Id 1337 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1337 ******
+success
+
+$$$$$$ Response Body For Transaction With Id 1337 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1341 ******
+GET /cgi-bin/nav.pl?page=menu&in=home HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/login.pl
+Cookie: MSO=SID&1733421230; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1341 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1341 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:54:07 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: Wed, 04 Dec 2024 17:54:07 GMT
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1341 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1341 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Web Tours Navigation Bar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+
+<style>
+	blockquote {font-family: tahoma; font-size : 10pt}
+	H1 {font-family: tahoma; font-size : 22pt; color: #993333}
+	small {font-family: tahoma; font-size : 8pt}
+	H3{font-family: tahoma; font-size : 10pt; color: black}
+	A {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATION: none}
+	A:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DECORATION: underline}
+	TD {font-family: tahoma; font-size : 10pt; color: black}
+</style>
+
+<BR><BR><center>
+
+<br clear="both"/><center><A HREF="welcome.pl?page=search" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/flights.gif" 
+ALT="Search Flights Button"/></A>
+<br clear="both"/><A HREF="welcome.pl?page=itinerary" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/itinerary.gif" 
+ALT="Itinerary Button"/></A>
+<br clear="both"/><A HREF="welcome.pl?page=menus" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/in_home.gif" 
+ALT="Home Button"/></A>
+<br clear><A HREF="welcome.pl?signOff=1" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/signoff.gif" 
+ALT="SignOff Button"/></A></center>
+
+</body>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 1341 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/cgi-bin/welcome.pl?signOff=true
+		/cgi-bin/nav.pl?in=home
+		Form: name= action=/cgi-bin/login.pl
+		/WebTours/home.html
+	/cgi-bin/login.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Request Header For Transaction With Id 1344 ******
+GET /cgi-bin/login.pl?intro=true HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/login.pl
+Cookie: MSO=SID&1733421230; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1344 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1344 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:54:07 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1344 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1344 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Welcome to Web Tours</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><BR/><BR/><BR/><BR/><BR/><blockquote>Welcome, <b>artemironman</b>, to the Web Tours reservation pages.<BR/>Using the menu to the left, you can search for new flights to book, 
+or review/edit the flights already booked.  Don't forget to sign off when
+you're done!
+</blockquote>
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 1344 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/cgi-bin/welcome.pl?signOff=true
+		/cgi-bin/nav.pl?in=home
+		Form: name= action=/cgi-bin/login.pl
+		/WebTours/home.html
+	/cgi-bin/login.pl
+		/cgi-bin/nav.pl?page=menu&in=home
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Request Header For Transaction With Id 1351 ******
+GET /cgi-bin/welcome.pl?page=search HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home
+Cookie: MSO=SID&1733421230; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1351 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1351 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:54:09 GMT
+Server: Apache/2.2.21 (Win32)
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1351 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1351 ******
+<!-- 
+ User has returned to the search page.  Since user has already logged on,
+ we can give them the menu in the navbar.
+ --->
+
+<html>
+<title>Web Tours</title>
+   <!-- Frame Set -->
+   <frameset cols="160,*" border="1" frameborder="1">
+      <!-- Navigation Frame -->
+      <frame src="nav.pl?page=menu&in=flights" name="navbar" 
+            marginheight="2" marginwidth="2" norseize="noresize" scrolling="auto"/>
+      <!-- Reservation Frame -->
+      <frame src="reservations.pl?page=welcome" name="info" 
+            marginheight="2" marginwidth="2" norseize="noresize" scrolling="auto"/>
+   </frameset>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 1351 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/cgi-bin/welcome.pl?signOff=true
+		/cgi-bin/nav.pl?in=home
+		Form: name= action=/cgi-bin/login.pl
+		/WebTours/home.html
+	/cgi-bin/login.pl
+		/cgi-bin/nav.pl?page=menu&in=home
+		/cgi-bin/login.pl?intro=true
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1351 ****** (Location Flag : tFlagInsertEnd, Location ID : 1351)
+	web_url("Search Flights Button",
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search",
+		"TargetFrame=body",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home",
+		"Snapshot=t13.inf",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 1351 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1249)
+	web_add_header("Origin",
+		"http://127.0.0.1:1080");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1249)
+	web_add_auto_header("Sec-Fetch-User",
+		"?1");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1356 ******
+GET /cgi-bin/reservations.pl?page=welcome HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search
+Cookie: MSO=SID&1733421230; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1356 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1356 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:54:09 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: Wed, 04 Dec 2024 17:54:09 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1356 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1356 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Flight Selections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Find Flight</font></b></h1><blockquote>
+<form method="post" action="reservations.pl" enctype="application/x-www-form-urlencoded" onsubmit="" name="DestForm">
+<input type="hidden" name="advanceDiscount" value="0"  /><table border="0" cellspacing="5"><tr><td align="left">Departure City :</td> <td><select name="depart" >
+<option selected="selected" value="Denver">Denver</option>
+<option value="Frankfurt">Frankfurt</option>
+<option value="London">London</option>
+<option value="Los Angeles">Los Angeles</option>
+<option value="Paris">Paris</option>
+<option value="Portland">Portland</option>
+<option value="San Francisco">San Francisco</option>
+<option value="Seattle">Seattle</option>
+<option value="Sydney">Sydney</option>
+<option value="Zurich">Zurich</option>
+</select></td> <td align="left">Departure Date :</td> <td><input type="text" name="departDate" value="12/06/2024" size="10" maxlength="10" /> 
+<!-- Departure Date Applet -->
+<APPLET CODEBASE="/WebTours/classes/" CODE="FormDateUpdate.class" MAYSCRIPT Width=26 Height=28 BORDER=0>
+   <PARAM NAME=CalenderTitle  VALUE="Select Departure Date">
+   <PARAM NAME=HtmlFormIndex  VALUE=0>
+   <PARAM NAME=HtmlEditIndex  VALUE=2>
+   <PARAM NAME=AutoClose      VALUE=1>
+   <PARAM NAME=Label          VALUE="...">
+</APPLET>
+</td></tr> <tr><td align="left">Arrival City :</td> <td><select name="arrive" >
+<option selected="selected" value="Denver">Denver</option>
+<option value="Frankfurt">Frankfurt</option>
+<option value="London">London</option>
+<option value="Los Angeles">Los Angeles</option>
+<option value="Paris">Paris</option>
+<option value="Portland">Portland</option>
+<option value="San Francisco">San Francisco</option>
+<option value="Seattle">Seattle</option>
+<option value="Sydney">Sydney</option>
+<option value="Zurich">Zurich</option>
+</select></td> <td align="left">Return Date :</td> <td><input type="text" name="returnDate" value="12/07/2024" size="10" maxlength="10" /> 
+<!-- Return Date Applet -->
+<APPLET CODEBASE="/WebTours/classes/" CODE="FormDateUpdate.class" MAYSCRIPT Width=26 Height=28 BORDER=0>
+   <PARAM NAME=CalenderTitle  VALUE="Select Return Date">
+   <PARAM NAME=HtmlFormIndex  VALUE=0>
+   <PARAM NAME=HtmlEditIndex  VALUE=4>
+   <PARAM NAME=AutoClose      VALUE=1>
+   <PARAM NAME=Label          VALUE="...">
+</APPLET>
+</td></tr> <tr><td align="left">No. of Passengers : </td> <td><input type="text" name="numPassengers" value="1" size="3" maxlength="8" /></td> <td colspan="2"><label><input type="checkbox" name="roundtrip" value="on" />Roundtrip ticket</label></td></tr> <tr><td>Seating Preference</td> <td /> <td>Type of Seat</td></tr> <tr><td><label><input type="radio" name="seatPref" value="Aisle" />Aisle</label><br /> <label><input type="radio" name="seatPref" value="Window" />Window</label><br /> <label><input type="radio" name="seatPref" value="None" checked="checked" />None</label><br /></td> <td /> <td><label><input type="radio" name="seatType" value="First" />First</label><br /> <label><input type="radio" name="seatType" value="Business" />Business</label><br /> <label><input type="radio" name="seatType" value="Coach" checked="checked" />Coach</label><br /></td></tr> <tr><td height="10" /></tr> <tr><td align="center" colspan="4"><input type="image" name="findFlights" src="/WebTours/images/button_next.gif" border="0" /></td></tr></table><div><input type="hidden" name=".cgifields" value="roundtrip"  /><input type="hidden" name=".cgifields" value="seatType"  /><input type="hidden" name=".cgifields" value="seatPref"  /></div></form>
+</blockquote>
+
+</body>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 1356 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/cgi-bin/welcome.pl?signOff=true
+		/cgi-bin/nav.pl?in=home
+		Form: name= action=/cgi-bin/login.pl
+		/WebTours/home.html
+	/cgi-bin/welcome.pl?page=search
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1351)
+	web_revert_auto_header("Sec-Fetch-User");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 1359 ******
+GET /cgi-bin/nav.pl?page=menu&in=flights HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search
+Cookie: MSO=SID&1733421230; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1359 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1359 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:54:09 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: Wed, 04 Dec 2024 17:54:09 GMT
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1359 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1359 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Web Tours Navigation Bar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+
+<style>
+	blockquote {font-family: tahoma; font-size : 10pt}
+	H1 {font-family: tahoma; font-size : 22pt; color: #993333}
+	small {font-family: tahoma; font-size : 8pt}
+	H3{font-family: tahoma; font-size : 10pt; color: black}
+	A {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATION: none}
+	A:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DECORATION: underline}
+	TD {font-family: tahoma; font-size : 10pt; color: black}
+</style>
+
+<BR><BR><center>
+
+<br clear="both"/><center><A HREF="welcome.pl?page=search" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/in_flights.gif" 
+ALT="Search Flights Button"/></A>
+<br clear="both"/><A HREF="welcome.pl?page=itinerary" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/itinerary.gif" 
+ALT="Itinerary Button"/></A>
+<br clear="both"/><A HREF="welcome.pl?page=menus" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/home.gif" 
+ALT="Home Button"/></A>
+<br clear><A HREF="welcome.pl?signOff=1" TARGET="body"><IMG BORDER="0" SRC="/WebTours/images/signoff.gif" 
+ALT="SignOff Button"/></A></center>
+
+</body>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 1359 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/cgi-bin/welcome.pl?signOff=true
+		/cgi-bin/nav.pl?in=home
+		Form: name= action=/cgi-bin/login.pl
+		/WebTours/home.html
+	/cgi-bin/welcome.pl?page=search
+		The Node is NULL
+		/cgi-bin/reservations.pl?page=welcome
+		Form: name=DestForm action=reservations.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Request Header For Transaction With Id 1369 ******
+POST /cgi-bin/reservations.pl HTTP/1.1
+Host: 127.0.0.1:1080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 236
+Origin: http://127.0.0.1:1080
+Connection: keep-alive
+Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome
+Cookie: MSO=SID&1733421230; MTUserInfo=firstName&Artem&address2&PenzOblast%20Penza&username&artemironman&hash&78&lastName&Kleymenov%0A&address1&Rahmaninova&creditCard&&expDate&%0A
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=4
+
+
+$$$$$$ Request Header For Transaction With Id 1369 Ended $$$$$$
+
+****** Request Body For Transaction With Id 1369 ******
+advanceDiscount=0&depart=Denver&departDate=12%2F06%2F2024&arrive=London&returnDate=12%2F10%2F2024&numPassengers=1&seatPref=None&seatType=Coach&findFlights.x=68&findFlights.y=6&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref
+$$$$$$ Request Body For Transaction With Id 1369 Ended $$$$$$
+
+****** Response Header For Transaction With Id 1369 ******
+HTTP/1.1 200 OK
+Date: Thu, 05 Dec 2024 17:54:32 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: Wed, 04 Dec 2024 17:54:32 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 1369 Ended $$$$$$
+
+****** Response Body For Transaction With Id 1369 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Flight Selections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Find Flight</font></b></h1><blockquote>
+<form method="post" action="reservations.pl" enctype="application/x-www-form-urlencoded">
+
+<center>
+<!-- From Denver (0) To London (2) -->
+<table cellspacing="2" border="0" width="50%">
+<blockquote>Flight departing from <B>Denver</B> to <B>London</B> on <B>12/06/2024</B><BR/><BR/><tr bgcolor="#5E7884"><td align="center"><font color="white"><B>Flight</B></font>
+      		<td align="center"><font color="white"><B>Departure time</B>
+      		<td align="center"><font color="white"><B>Cost</B>
+<tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="outboundFlight" value="020;338;12/06/2024" checked="checked" >Blue Sky Air 020<td align="center">8am<td align="center">$ 338</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="outboundFlight" value="021;301;12/06/2024">Blue Sky Air 021<td align="center">1pm<td align="center">$ 301</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="outboundFlight" value="022;320;12/06/2024">Blue Sky Air 022<td align="center">5pm<td align="center">$ 320</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="outboundFlight" value="023;277;12/06/2024">Blue Sky Air 023<td align="center">11pm<td align="center">$ 277</TD></TR></table>
+
+<input type="hidden" name="numPassengers" value="1"  /><input type="hidden" name="advanceDiscount" value="0"  /><input type="hidden" name="seatType" value="Coach"  /><input type="hidden" name="seatPref" value="None"  />
+<P><center><table width=80% cellspacing=1><tr><td align=center>
+<input type="image" name="reserveFlights" src="/WebTours/images/button_next.gif" border="0" />
+<td>&nbsp;<td align=center></table></center></form></center>
+</blockquote>
+
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 1369 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/cgi-bin/welcome.pl?signOff=true
+		/cgi-bin/nav.pl?in=home
+		Form: name= action=/cgi-bin/login.pl
+		/WebTours/home.html
+	/cgi-bin/welcome.pl?page=search
+		/cgi-bin/nav.pl?page=menu&in=flights
+		/cgi-bin/reservations.pl?page=welcome
+		Form: name=DestForm action=reservations.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1369 ****** (Location Flag : tFlagInsertEnd, Location ID : 1369)
+	web_submit_data("reservations.pl",
+		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl",
+		"Method=POST",
+		"TargetFrame=",
+		"RecContentType=text/html",
+		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome",
+		"Snapshot=t14.inf",
+		"Mode=HTML",
+		ITEMDATA,
+		"Name=advanceDiscount", "Value=0", ENDITEM,
+		"Name=depart", "Value=Denver", ENDITEM,
+		"Name=departDate", "Value=12/06/2024", ENDITEM,
+		"Name=arrive", "Value=London", ENDITEM,
+		"Name=returnDate", "Value=12/10/2024", ENDITEM,
+		"Name=numPassengers", "Value=1", ENDITEM,
+		"Name=seatPref", "Value=None", ENDITEM,
+		"Name=seatType", "Value=Coach", ENDITEM,
+		"Name=findFlights.x", "Value=68", ENDITEM,
+		"Name=findFlights.y", "Value=6", ENDITEM,
+		"Name=.cgifields", "Value=roundtrip", ENDITEM,
+		"Name=.cgifields", "Value=seatType", ENDITEM,
+		"Name=.cgifields", "Value=seatPref", ENDITEM,
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 1369 Ended $$$$$$
+
+Event Matching Error: Two consequent IN events with the same thread ID - ignoring the second event
+Event Matching Error: OUT event (protocol ID="WPLUS") does not match IN event (protocol ID="WEBS")
+Event Matching Error: Two consequent IN events with the same thread ID - ignoring the second event
+Event Matching Error: OUT event (protocol ID="WPLUS") does not match IN event (protocol ID="WEBS")
+Event Matching Error: Two consequent IN events with the same thread ID - ignoring the second event
+Event Matching Error: OUT event (protocol ID="WPLUS") does not match IN event (protocol ID="WEBS")
+Event Matching Error: Two consequent IN events with the same thread ID - ignoring the second event
+Event Matching Error: OUT event (protocol ID="WPLUS") does not match IN event (protocol ID="WEBS")
+Event Matching Error: Two consequent IN events with the same thread ID - ignoring the second event
+Event Matching Error: OUT event (protocol ID="WPLUS") does not match IN event (protocol ID="WEBS")
+Event Matching Error: Two consequent IN events with the same thread ID - ignoring the second event
+Event Matching Error: OUT event (protocol ID="WPLUS") does not match IN event (protocol ID="WEBS")
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1369)
+	web_add_header("Origin",
+		"http://127.0.0.1:1080");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 1369)
+	web_add_header("Sec-Fetch-User",
+		"?1");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+

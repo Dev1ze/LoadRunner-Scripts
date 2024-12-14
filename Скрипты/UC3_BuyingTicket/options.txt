@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--IP:\Programs\FinalTask\Скрипты\UC3_BuyingTicket
--IP:\Programs\LoadRunner\include
--ep:\programs\finaltask\скрипты\uc3_buyingticket\\logfile.log
-p:\programs\finaltask\скрипты\uc3_buyingticket\\combined_UC3_BuyingTicket.c
-p:\programs\finaltask\скрипты\uc3_buyingticket\\pre_cci.c

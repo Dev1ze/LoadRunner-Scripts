@@ -1,0 +1,120 @@
+Virtual User Script started at: 14.12.2024 14:49:51
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (ноя 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0  	[MsgId: MMSG-26988]
+Runtime Settings file: "P:\Programs\FinalTask\Скрипты\UC6_UserRegistration\\default.cfg"  	[MsgId: MMSG-27141]
+Vuser directory: "P:\Programs\FinalTask\Скрипты\UC6_UserRegistration"  	[MsgId: MMSG-27052]
+Vuser output directory: "P:\Programs\FinalTask\Скрипты\UC6_UserRegistration"  	[MsgId: MMSG-27050]
+Operating system's current working directory: "p:\programs\finaltask\скрипты\uc6_userregistration"  	[MsgId: MMSG-27048]
+UTC (GMT) start date/time   : 2024-12-14 11:49:51  	[MsgId: MMSG-26992]
+LOCAL start date/time       : 2024-12-14 14:49:51  	[MsgId: MMSG-26991]
+Local daylight-Savings-Time : No  	[MsgId: MMSG-26990]
+Some of the Runtime Settings:  	[MsgId: MMSG-27142]
+    Download non-HTML resources: Yes  	[MsgId: MMSG-27018]
+    Verification checks: No  	[MsgId: MMSG-27017]
+    Convert from/to UTF-8: No  	[MsgId: MMSG-27016]
+    Simulate a new user each iteration: Yes  	[MsgId: MMSG-27009]
+    Non-critical item errors as warnings: Yes  	[MsgId: MMSG-27008]
+    HTTP errors as warnings: No  	[MsgId: MMSG-27007]
+    WinInet replay instead of Sockets: No  	[MsgId: MMSG-27006]
+    HTTP version: 1.1  	[MsgId: MMSG-27005]
+    Keep-Alive HTTP connections: Yes  	[MsgId: MMSG-27004]
+    Max self Meta refresh updates: 2  	[MsgId: MMSG-27003]
+    No proxy is used (direct connection to the Internet)  	[MsgId: MMSG-27171]
+    DNS caching: Yes  	[MsgId: MMSG-27035]
+    Simulate browser cache: Yes  	[MsgId: MMSG-27034]
+        Cache URLs requiring content (e.g., HTMLs): Yes  	[MsgId: MMSG-27033]
+            Additional URLs requiring content: None  	[MsgId: MMSG-27032]
+        Check for newer versions every visit to the page: No  	[MsgId: MMSG-27031]
+    Page download timeout (sec): 120  	[MsgId: MMSG-27030]
+    Resource Page Timeout is a Warning: No  	[MsgId: MMSG-27029]
+    ContentCheck enabled: Yes  	[MsgId: MMSG-27028]
+    ContentCheck script-level file: "P:\Programs\FinalTask\Скрипты\UC6_UserRegistration\LrwiAedScript.xml"  	[MsgId: MMSG-27027]
+    Enable Web Page Breakdown: No  	[MsgId: MMSG-27026]
+    Enable connection data points: Yes  	[MsgId: MMSG-27023]
+    Process socket after reschedule: Yes  	[MsgId: MMSG-27022]
+    Snapshot on error: No  	[MsgId: MMSG-27021]
+    Define each step as a transaction: No  	[MsgId: MMSG-27020]
+    Read beyond Content-Length: No  	[MsgId: MMSG-26994]
+    Parse HTML Content-Type: TEXT  	[MsgId: MMSG-26999]
+    Graph hits per second and HTTP status codes: Yes  	[MsgId: MMSG-26998]
+    Graph response bytes per second: Yes  	[MsgId: MMSG-26997]
+    Graph pages per second: No  	[MsgId: MMSG-26996]
+    Web recorder version ID: 10  	[MsgId: MMSG-26995]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(24): Колличество 10
+Action.c(29): Notify: Getting new value for parameter 'userName': table = '..\..\data\users.dat' column = '0' row = '1'.
+Action.c(29): Notify: Parameter Substitution: parameter "userName" =  "ironman131"
+Action.c(30): Notify: Saving Parameter "userNameBuffer = ironman131".
+Action.c(31): Notify: Getting new value for parameter 'password': table = '..\..\data\users.dat' column = '1' row = '1'.
+Action.c(31): Notify: Parameter Substitution: parameter "password" =  "stark2021"
+Action.c(32): Notify: Saving Parameter "passwordBuffer = stark2021".
+Action.c(33): Notify: Getting new value for parameter 'passwordConfirm': table = '..\..\data\users.dat' column = '2' row = '1'.
+Action.c(33): Notify: Parameter Substitution: parameter "passwordConfirm" =  "stark2021"
+Action.c(34): Notify: Saving Parameter "passwordConfirmBuffer = stark2021".
+Action.c(35): Notify: Getting new value for parameter 'firstName': table = '..\..\data\users.dat' column = '3' row = '1'.
+Action.c(35): Notify: Parameter Substitution: parameter "firstName" =  "Tony"
+Action.c(36): Notify: Saving Parameter "firtNameBuffer = Tony".
+Action.c(37): Notify: Getting new value for parameter 'lastName': table = '..\..\data\users.dat' column = '4' row = '1'.
+Action.c(37): Notify: Parameter Substitution: parameter "lastName" =  "Stark"
+Action.c(38): Notify: Saving Parameter "lastNameBuffer = Stark".
+Action.c(39): Notify: Getting new value for parameter 'address1': table = '..\..\data\users.dat' column = '5' row = '1'.
+Action.c(39): Notify: Parameter Substitution: parameter "address1" =  "10880 Malibu Point"
+Action.c(40): Notify: Saving Parameter "address1Buffer = 10880 Malibu Point".
+Action.c(41): Notify: Getting new value for parameter 'address2': table = '..\..\data\users.dat' column = '6' row = '1'.
+Action.c(41): Notify: Parameter Substitution: parameter "address2" =  " Malibu CA"
+Action.c(42): Notify: Saving Parameter "address2Buffer =  Malibu CA".
+Action.c(45): Регистрация №1
+Action.c(46): Пользователь №ironman131
+Action.c(50): Notify: Transaction "OpenLandingPage" started.
+Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(54): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(54): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(55): An unrecognized header ("Sec-Fetch-Dest") is being added  	[MsgId: MMSG-26595]
+Action.c(55): "Sec-Fetch-Dest: document" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+Action.c(55): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(56): web_add_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(56): An unrecognized header ("Sec-Fetch-Site") is being added  	[MsgId: MMSG-26595]
+Action.c(56): "Sec-Fetch-Site: none" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+Action.c(56): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(57): web_add_header("Priority") started  	[MsgId: MMSG-26355]
+Action.c(57): An unrecognized header ("Priority") is being added  	[MsgId: MMSG-26595]
+Action.c(57): "Priority: u=0, i" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+Action.c(57): web_add_header("Priority") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(58): An unrecognized header ("Sec-Fetch-Mode") is being added  	[MsgId: MMSG-26595]
+Action.c(58): "Sec-Fetch-Mode: navigate" header registered for adding to requests from all following Action functions  	[MsgId: MMSG-26505]
+Action.c(58): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(59): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(59): An unrecognized header ("Sec-Fetch-User") is being added  	[MsgId: MMSG-26595]
+Action.c(59): "Sec-Fetch-User: ?1" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+Action.c(59): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(60): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(60): An unrecognized header ("Upgrade-Insecure-Requests") is being added  	[MsgId: MMSG-26595]
+Action.c(60): "Upgrade-Insecure-Requests: 1" header registered for adding to requests from all following Action functions  	[MsgId: MMSG-26505]
+Action.c(60): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(61): t=1491ms: Connecting [0] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(61): Error -27792: Failed to connect to server "127.0.0.1:1080": [10061] Connection refused  	[MsgId: MERR-27792]
+Action.c(61): t=3525ms: Closed connection [0] to 127.0.0.1:1080 after completing 0 request(s)  	[MsgId: MMSG-26000]
+Action.c(61): Error -26366: "Text=<B>sign up now</B></A> to get access to all our resources" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(61): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+Action.c(61): web_url("WebTours") highest severity level was "ERROR", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+Action.c(61): Notify: Transaction "OpenLandingPage" ended with a "Fail" status (Duration: 2,2648 Wasted Time: 0,0832).
+Action.c(61): Notify: Transaction "OpenLandingPage" has 3 error message(s).
+Action.c(61): Notify: The 1st error message associated with transaction "OpenLandingPage" is "Error -27792: Failed to connect to server "127.0.0.1:1080": [10061] Connection refused"
+Action.c(61): Notify: The 2nd error message associated with transaction "OpenLandingPage" is "Error -26366: "Text=<B>sign up now</B></A> to get access to all our resources" not found for web_reg_find"
+Action.c(61): Notify: The 3rd error message associated with transaction "OpenLandingPage" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively."
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

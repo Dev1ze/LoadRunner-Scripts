@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Fri, 13 Dec 2024 19:18:30 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Set-Cookie: MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&New%20York%20NY&username&captainAmerica45&hash&53&lastName&Rogers%0A&address1&177A%20Bleecker%20St.&creditCard&&expDate&%0A; path=/
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+

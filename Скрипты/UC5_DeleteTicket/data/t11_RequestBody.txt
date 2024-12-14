@@ -1,2 +1,0 @@
-"flightID=210298231-789-AK&2=on&flightID=210318526-1569-AK&flightID=210297490-2344-AK&removeFli"
-"ghts.x=34&removeFlights.y=5&.cgifields=1&.cgifields=3&.cgifields=2"
