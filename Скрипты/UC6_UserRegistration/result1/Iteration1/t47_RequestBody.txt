@@ -1,3 +1,0 @@
-"username=blackPantherTChalla1&password=wakanda2024&passwordConfirm=wakanda2024&firstName=%7Bfi"
-"rstNameBuffer%7D&lastName=Panther&address1=Wakanda+Palace&address2=Wakanda&register.x=67&regis"
-"ter.y=8"

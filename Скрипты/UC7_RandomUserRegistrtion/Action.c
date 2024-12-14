@@ -73,7 +73,7 @@ Action()
 	lr_end_transaction("OpenLandingPage",LR_AUTO);
 
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 	
 	lr_start_transaction("OpenRegistrationPage");
@@ -91,7 +91,7 @@ Action()
 	lr_end_transaction("OpenRegistrationPage",LR_AUTO);
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 	
 	lr_start_transaction("UserRegistered");
@@ -119,7 +119,7 @@ Action()
 	lr_end_transaction("UserRegistered",LR_AUTO);
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 
 	lr_start_transaction("press continue");
@@ -138,7 +138,7 @@ Action()
 	lr_end_transaction("press continue",LR_AUTO);
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 
 	lr_start_transaction("SignOff");

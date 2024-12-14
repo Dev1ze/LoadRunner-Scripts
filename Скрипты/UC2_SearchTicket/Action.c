@@ -203,6 +203,74 @@ Action()
 	/*-----------------------------------------*/
 	/*КОНЕЦ ТРАНЗАКЦИИ ВЫБОРА КОНКРЕТНОГО РЕЙСА*/
 	
+	
+	lr_think_time(5);
+	
+	
+	/*Получение рандомного id билета из всех на странице*/
+	/*--------------------------------------------------*/
+	countTicket = atoi(lr_eval_string("{idTicket_count}"));
+	srand(time(NULL));
+    randomValue = (rand() % (countTicket - 0)) + 1;
+    lr_output_message("Random  - %d", randomValue);
+	sprintf(paramName, "{idTicket_%d}", randomValue);
+	randTicketId = lr_eval_string(paramName); 
+    lr_output_message("Random ticket - %s", randTicketId);
+    lr_save_string(randTicketId, "randTicketId");
+    /*--------------------------------------------------*/
+    
+    /*Извлечение цены из id билета*/
+	/*----------------------------*/
+	token = strtok(randTicketId, ";");
+	token = strtok(NULL, ";");
+	strcpy(priceTicket, token);
+	lr_output_message("Цена билета: %s", priceTicket);
+	/*----------------------------*/
+	
+	/*Фильтр для итоговой цены билета на странице*/
+	/*-------------------------------------------*/
+	web_reg_save_param_regexp(
+		"ParamName=totalPrice",
+		"RegExp=\\$ (.*?)\<tr",
+		"Ordinal=1",
+         LAST);
+	/*-------------------------------------------*/
+	
+	/*Проверка итоговой цены билета*/
+	/*-----------------------------*/
+	priceTicketInt = atoi(priceTicket);
+	numPassengersInt = atoi(_numPassengers);
+	totalPrice = priceTicketInt * numPassengersInt;
+	sprintf(totalPriceStr, "%d", totalPrice);
+	lr_save_string(totalPriceStr, "totalPriceStr");
+	lr_output_message("totalPriceStr - %s", totalPriceStr);
+	web_reg_find("Text=Total for {_numPassengers} ticket(s) is \= $ {totalPriceStr}", LAST);
+	/*-----------------------------*/
+	
+    /*ТРАНЗАКЦИЯ ВЫБОРА ВРЕМЕНИ РЕЙСА*/
+	/*-------------------------------*/
+	lr_start_transaction("СhooseDepartureTime");
+	web_submit_data("reservations.pl_2", 
+		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
+		"Snapshot=t6.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=outboundFlight", "Value={randTicketId}", ENDITEM, 
+		"Name=numPassengers", "Value={_numPassengers}", ENDITEM, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=seatType", "Value={typeSeat}", ENDITEM, 
+		"Name=seatPref", "Value={seatingPreference}", ENDITEM, 
+		"Name=reserveFlights.x", "Value=42", ENDITEM, 
+		"Name=reserveFlights.y", "Value=9", ENDITEM, 
+		LAST);
+	lr_end_transaction("СhooseDepartureTime",LR_AUTO);
+	/*-------------------------------------*/
+	/*КОНЕЦ ТРАНЗАКЦИИ ВЫБОРА ВРЕМЕНИ РЕЙСА*/
+	
 
 	lr_think_time(5);
 	

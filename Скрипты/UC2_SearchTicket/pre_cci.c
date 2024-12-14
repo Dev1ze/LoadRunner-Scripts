@@ -2941,6 +2941,74 @@ Action()
 	 
 	 
 	
+	
+	lr_think_time(5);
+	
+	
+	 
+	 
+	countTicket = atoi(lr_eval_string("{idTicket_count}"));
+	srand(_time32(0));
+    randomValue = (rand() % (countTicket - 0)) + 1;
+    lr_output_message("Random  - %d", randomValue);
+	sprintf(paramName, "{idTicket_%d}", randomValue);
+	randTicketId = lr_eval_string(paramName); 
+    lr_output_message("Random ticket - %s", randTicketId);
+    lr_save_string(randTicketId, "randTicketId");
+     
+    
+     
+	 
+	token = strtok(randTicketId, ";");
+	token = strtok(0, ";");
+	strcpy(priceTicket, token);
+	lr_output_message("÷ÂÌ‡ ·ËÎÂÚ‡: %s", priceTicket);
+	 
+	
+	 
+	 
+	web_reg_save_param_regexp(
+		"ParamName=totalPrice",
+		"RegExp=\\$ (.*?)\<tr",
+		"Ordinal=1",
+         "LAST");
+	 
+	
+	 
+	 
+	priceTicketInt = atoi(priceTicket);
+	numPassengersInt = atoi(_numPassengers);
+	totalPrice = priceTicketInt * numPassengersInt;
+	sprintf(totalPriceStr, "%d", totalPrice);
+	lr_save_string(totalPriceStr, "totalPriceStr");
+	lr_output_message("totalPriceStr - %s", totalPriceStr);
+	web_reg_find("Text=Total for {_numPassengers} ticket(s) is \= $ {totalPriceStr}", "LAST");
+	 
+	
+     
+	 
+	lr_start_transaction("—hooseDepartureTime");
+	web_submit_data("reservations.pl_2", 
+		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
+		"Snapshot=t6.inf", 
+		"Mode=HTML", 
+		"ITEMDATA", 
+		"Name=outboundFlight", "Value={randTicketId}", "ENDITEM", 
+		"Name=numPassengers", "Value={_numPassengers}", "ENDITEM", 
+		"Name=advanceDiscount", "Value=0", "ENDITEM", 
+		"Name=seatType", "Value={typeSeat}", "ENDITEM", 
+		"Name=seatPref", "Value={seatingPreference}", "ENDITEM", 
+		"Name=reserveFlights.x", "Value=42", "ENDITEM", 
+		"Name=reserveFlights.y", "Value=9", "ENDITEM", 
+		"LAST");
+	lr_end_transaction("—hooseDepartureTime",2);
+	 
+	 
+	
 
 	lr_think_time(5);
 	

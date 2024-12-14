@@ -1,2 +1,0 @@
-"username=hulkSmash1&password=banner2024&passwordConfirm=banner2024&firstName=%7BfirstNameBuffe"
-"r%7D&lastName=Banner&address1=Stark+Tower&address2=New+York+NY&register.x=67&register.y=8"

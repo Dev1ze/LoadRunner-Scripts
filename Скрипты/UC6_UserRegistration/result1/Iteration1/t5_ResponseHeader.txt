@@ -1,8 +1,7 @@
 HTTP/1.1 200 OK
-Date: Sun, 08 Dec 2024 12:42:38 GMT
+Date: Sat, 14 Dec 2024 11:50:34 GMT
 Server: Apache/2.2.21 (Win32)
 Expires: 5s
-Set-Cookie: MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%20CA&username&ironman131&hash&81&lastName&Stark&address1&10880%20Malibu%20Point&creditCard&&expDate&; path=/
 Keep-Alive: timeout=5, max=95
 Connection: Keep-Alive
 Transfer-Encoding: chunked

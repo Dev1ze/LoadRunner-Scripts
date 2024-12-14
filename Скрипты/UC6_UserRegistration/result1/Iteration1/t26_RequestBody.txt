@@ -1,2 +1,0 @@
-"username=thorOdinson1&password=thunder2024&passwordConfirm=thunder2024&firstName=%7BfirstNameB"
-"uffer%7D&lastName=Odinson&address1=Asgard&address2=Asgardian+Realm&register.x=67&register.y=8"

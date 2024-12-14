@@ -348,27 +348,27 @@ Action()
 	/*ПРОСМОТР СПИСКА БИЛЕТОВ*/
 	
 	
-	lr_think_time(5);
-	
-	
-	/*ВЫХОД ИЗ АККАУНТА*/
-	/*-----------------*/
-	lr_start_transaction("SignOff");
-	/*Проверка на вызод из аккаунта*/
-	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
-	/*-----------------------------*/
-	web_revert_auto_header("Sec-Fetch-User");
-	web_url("SignOff Button", 
-		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t24.inf", 
-		"Mode=HTML", 
-		LAST);
-	lr_end_transaction("SignOff",LR_AUTO);
-	/*-----------------*/
+//	lr_think_time(5);
+//	
+//	
+//	/*ВЫХОД ИЗ АККАУНТА*/
+//	/*-----------------*/
+//	lr_start_transaction("SignOff");
+//	/*Проверка на вызод из аккаунта*/
+//	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
+//	/*-----------------------------*/
+//	web_revert_auto_header("Sec-Fetch-User");
+//	web_url("SignOff Button", 
+//		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
+//		"TargetFrame=body", 
+//		"Resource=0", 
+//		"RecContentType=text/html", 
+//		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+//		"Snapshot=t24.inf", 
+//		"Mode=HTML", 
+//		LAST);
+//	lr_end_transaction("SignOff",LR_AUTO);
+//	/*-----------------*/
 	/*ВЫХОД ИЗ АККАУНТА*/
 	
 	
