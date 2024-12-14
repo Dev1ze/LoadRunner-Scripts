@@ -1,4 +1,4 @@
-Virtual User Script started at: 13.12.2024 21:03:15
+Virtual User Script started at: 14.12.2024 14:58:03
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (ноя 27 2019 19:51:20)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -39,7 +39,8 @@ Action.c(46): Detected non-resource "http://127.0.0.1:1080/WebTours/home.html" i
 Action.c(46): Found resource "http://127.0.0.1:1080/WebTours/images/mer_login.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(46): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
 Action.c(46): web_url("WebTours") was successful, 10076 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(55): Notify: Transaction "OpenLandingPage" ended with a "Pass" status (Duration: 0,3020 Wasted Time: 0,0661).
+Action.c(55): Notify: Transaction "OpenLandingPage" ended with a "Pass" status (Duration: 0,3020 Wasted Time: 0,0654).
+Action.c(60): lr_think_time: 5,00 seconds.
 Action.c(65): Notify: Transaction "Login" started.
 Action.c(68): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(68): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -56,8 +57,9 @@ Action.c(72): Found resource "http://127.0.0.1:1080/WebTours/images/itinerary.gi
 Action.c(72): Found resource "http://127.0.0.1:1080/WebTours/images/in_home.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(72): Found resource "http://127.0.0.1:1080/WebTours/images/signoff.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(72): Registered web_reg_find successful for "Text=Welcome, <b>ironman131</b>, to the Web Tours reservation pages" (count=1)  	[MsgId: MMSG-26364]
-Action.c(72): web_submit_data("login.pl_2") was successful, 5785 body bytes, 2091 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(88): Notify: Transaction "Login" ended with a "Pass" status (Duration: 0,1593 Wasted Time: 0,0036).
+Action.c(72): web_submit_data("login.pl_2") was successful, 5785 body bytes, 2095 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(88): Notify: Transaction "Login" ended with a "Pass" status (Duration: 0,1601 Wasted Time: 0,0036).
+Action.c(93): lr_think_time: 5,00 seconds.
 Action.c(98): Notify: Transaction "OpenPage_FindFlight" started.
 Action.c(101): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(101): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -77,12 +79,13 @@ Action.c(123): Found resource "http://127.0.0.1:1080/WebTours/images/home.gif" i
 Action.c(123): Resource "http://127.0.0.1:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(123): Found resource "http://127.0.0.1:1080/WebTours/images/button_next.gif" in HTML "http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome"  	[MsgId: MMSG-26659]
 Action.c(123): Registered web_reg_find successful for "Text=Find Flight" (count=1)  	[MsgId: MMSG-26364]
-Action.c(123): web_url("Search Flights Button") was successful, 8516 body bytes, 1616 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(132): Notify: Transaction "OpenPage_FindFlight" ended with a "Pass" status (Duration: 0,2060 Wasted Time: 0,0059).
+Action.c(123): web_url("Search Flights Button") was successful, 8516 body bytes, 1620 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(132): Notify: Transaction "OpenPage_FindFlight" ended with a "Pass" status (Duration: 0,2080 Wasted Time: 0,0055).
+Action.c(137): lr_think_time: 5,00 seconds.
 Action.c(142): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
 Action.c(142): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
-Action.c(162): Selected Depart City: Zurich
-Action.c(163): Selected Arrive City: Denver
+Action.c(162): Selected Depart City: Seattle
+Action.c(163): Selected Arrive City: Paris
 Action.c(166): Notify: Transaction "SubmitFlight" started.
 Action.c(168): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(168): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -95,8 +98,10 @@ Action.c(173): An unrecognized header ("Sec-Fetch-User") is being added  	[MsgId
 Action.c(173): "Sec-Fetch-User: ?1" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
 Action.c(173): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
 Action.c(174): web_submit_data("reservations.pl") started  	[MsgId: MMSG-26355]
-Action.c(174): t=1141ms: Already connected [0] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(174): t=1141ms: 770-byte request headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(174): t=16172ms: Closed connection [0] to 127.0.0.1:1080 after completing 2 request(s)  	[MsgId: MMSG-26000]
+Action.c(174): t=16172ms: Connecting [0] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(174): t=16172ms: Connected socket [0] from 127.0.0.1:54606 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(174): t=16172ms: 770-byte request headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
 Action.c(174):     POST /cgi-bin/reservations.pl HTTP/1.1\r\n
 Action.c(174):     Content-Type: application/x-www-form-urlencoded\r\n
 Action.c(174):     Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome\r\n
@@ -114,42 +119,51 @@ Action.c(174):     Accept-Language: en-US,en;q=0.5\r\n
 Action.c(174):     Accept: */*\r\n
 Action.c(174):     Connection: Keep-Alive\r\n
 Action.c(174):     Host: 127.0.0.1:1080\r\n
-Action.c(174):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%
+Action.c(174):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%
 Action.c(174):     20CA&username&ironman131&hash&81&lastName&Stark%0A&address1&10880%20Malibu%20Point&creditC
 Action.c(174):     ard&&expDate&%0A\r\n
-Action.c(174):     Content-Length: 240\r\n
+Action.c(174):     Content-Length: 236\r\n
 Action.c(174):     \r\n
-Action.c(174): t=1141ms: 240-byte request body for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
-Action.c(174):     advanceDiscount=0&depart=Zurich&departDate=12%2F14%2F2024&arrive=Denver&returnDate=12%2F15
-Action.c(174):     %2F2024&numPassengers=3&seatPref=Aisle&seatType=Business&findFlights.x=68&findFlights.y=6&
-Action.c(174):     .cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref
-Action.c(174): t=1174ms: 255-byte response headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(174): t=16173ms: 236-byte request body for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(174):     advanceDiscount=0&depart=Seattle&departDate=12%2F15%2F2024&arrive=Paris&returnDate=12%2F16
+Action.c(174):     %2F2024&numPassengers=3&seatPref=None&seatType=First&findFlights.x=68&findFlights.y=6&.cgi
+Action.c(174):     fields=roundtrip&.cgifields=seatType&.cgifields=seatPref
+Action.c(174): t=16173ms: Inactive socket [1] was closed by 127.0.0.1:1080, probably due to Keep-Alive timeout  	[MsgId: MMSG-26000]
+Action.c(174): t=16173ms: Closed connection [1] to 127.0.0.1:1080 after completing 2 request(s)  	[MsgId: MMSG-26000]
+Action.c(174): t=16173ms: Inactive socket [2] was closed by 127.0.0.1:1080, probably due to Keep-Alive timeout  	[MsgId: MMSG-26000]
+Action.c(174): t=16173ms: Closed connection [2] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(174): t=16173ms: Inactive socket [3] was closed by 127.0.0.1:1080, probably due to Keep-Alive timeout  	[MsgId: MMSG-26000]
+Action.c(174): t=16173ms: Closed connection [3] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(174): t=16206ms: 256-byte response headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
 Action.c(174):     HTTP/1.1 200 OK\r\n
-Action.c(174):     Date: Fri, 13 Dec 2024 18:03:16 GMT\r\n
+Action.c(174):     Date: Sat, 14 Dec 2024 11:58:19 GMT\r\n
 Action.c(174):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(174):     Expires: Thu, 12 Dec 2024 18:03:16 GMT\r\n
-Action.c(174):     Keep-Alive: timeout=5, max=93\r\n
+Action.c(174):     Expires: Fri, 13 Dec 2024 11:58:19 GMT\r\n
+Action.c(174):     Keep-Alive: timeout=5, max=100\r\n
 Action.c(174):     Connection: Keep-Alive\r\n
 Action.c(174):     Transfer-Encoding: chunked\r\n
 Action.c(174):     Content-Type: text/html; charset=ISO-8859-1\r\n
 Action.c(174):     \r\n
 Action.c(174): Resource "http://127.0.0.1:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(174): t=1176ms: Request done "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26000]
-Action.c(174): Registered web_reg_find successful for "Text=Flight departing from <B>Zurich</B> to <B>Denver</B> on <B>12/14/2024</B>" (count=1)  	[MsgId: MMSG-26364]
-Action.c(174): web_submit_data("reservations.pl") was successful, 2440 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(197): Notify: Transaction "SubmitFlight" ended with a "Pass" status (Duration: 0,1431 Wasted Time: 0,0020).
+Action.c(174): t=16208ms: Request done "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26000]
+Action.c(174): Registered web_reg_find successful for "Text=Flight departing from <B>Seattle</B> to <B>Paris</B> on <B>12/15/2024</B>" (count=1)  	[MsgId: MMSG-26364]
+Action.c(174): web_submit_data("reservations.pl") was successful, 2440 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(197): Notify: Transaction "SubmitFlight" ended with a "Pass" status (Duration: 0,1546 Wasted Time: 0,0020).
+Action.c(202): lr_think_time: 5,00 seconds.
 Action.c(210): Random  - 2
-Action.c(213): Random ticket - 901;544;12/14/2024
-Action.c(222): Цена билета: 544
+Action.c(213): Random ticket - 741;999;12/15/2024
+Action.c(222): Цена билета: 999
 Action.c(227): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
 Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
-Action.c(241): totalPriceStr - 1632
+Action.c(241): totalPriceStr - 2997
 Action.c(242): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(242): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 Action.c(247): Notify: Transaction "\xffffffd1hooseDepartureTime" started.
 Action.c(248): web_submit_data("reservations.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(248): t=1550ms: Already connected [0] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(248): t=1550ms: 706-byte request headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(248): t=21594ms: Closed connection [0] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(248): t=21594ms: Connecting [0] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(248): t=21594ms: Connected socket [0] from 127.0.0.1:54607 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(248): t=21595ms: 706-byte request headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
 Action.c(248):     POST /cgi-bin/reservations.pl HTTP/1.1\r\n
 Action.c(248):     Content-Type: application/x-www-form-urlencoded\r\n
 Action.c(248):     Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl\r\n
@@ -165,413 +179,431 @@ Action.c(248):     Accept-Language: en-US,en;q=0.5\r\n
 Action.c(248):     Accept: */*\r\n
 Action.c(248):     Connection: Keep-Alive\r\n
 Action.c(248):     Host: 127.0.0.1:1080\r\n
-Action.c(248):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%
+Action.c(248):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%
 Action.c(248):     20CA&username&ironman131&hash&81&lastName&Stark%0A&address1&10880%20Malibu%20Point&creditC
 Action.c(248):     ard&&expDate&%0A\r\n
-Action.c(248):     Content-Length: 147\r\n
+Action.c(248):     Content-Length: 143\r\n
 Action.c(248):     \r\n
-Action.c(248): t=1551ms: 147-byte request body for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
-Action.c(248):     outboundFlight=901%3B544%3B12%2F14%2F2024&numPassengers=3&advanceDiscount=0&seatType=Busin
-Action.c(248):     ess&seatPref=Aisle&reserveFlights.x=42&reserveFlights.y=9
-Action.c(248): t=1586ms: 255-byte response headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(248): t=21595ms: 143-byte request body for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(248):     outboundFlight=741%3B999%3B12%2F15%2F2024&numPassengers=3&advanceDiscount=0&seatType=First
+Action.c(248):     &seatPref=None&reserveFlights.x=42&reserveFlights.y=9
+Action.c(248): t=21629ms: 256-byte response headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
 Action.c(248):     HTTP/1.1 200 OK\r\n
-Action.c(248):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
+Action.c(248):     Date: Sat, 14 Dec 2024 11:58:25 GMT\r\n
 Action.c(248):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(248):     Expires: Thu, 12 Dec 2024 18:03:17 GMT\r\n
-Action.c(248):     Keep-Alive: timeout=5, max=92\r\n
+Action.c(248):     Expires: Fri, 13 Dec 2024 11:58:25 GMT\r\n
+Action.c(248):     Keep-Alive: timeout=5, max=100\r\n
 Action.c(248):     Connection: Keep-Alive\r\n
 Action.c(248):     Transfer-Encoding: chunked\r\n
 Action.c(248):     Content-Type: text/html; charset=ISO-8859-1\r\n
 Action.c(248):     \r\n
 Action.c(248): Resource "http://127.0.0.1:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(248): t=1587ms: Request done "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26000]
-Action.c(248): Registered web_reg_find successful for "Text=Total for 3 ticket(s) is = $ 1632" (count=1)  	[MsgId: MMSG-26364]
-Action.c(248): web_submit_data("reservations.pl_2") was successful, 2913 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(265): Notify: Transaction "\xffffffd1hooseDepartureTime" ended with a "Pass" status (Duration: 0,0775 Wasted Time: 0,0020).
+Action.c(248): t=21631ms: Request done "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26000]
+Action.c(248): Registered web_reg_find successful for "Text=Total for 3 ticket(s) is = $ 2997" (count=1)  	[MsgId: MMSG-26364]
+Action.c(248): web_submit_data("reservations.pl_2") was successful, 2909 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(265): Notify: Transaction "\xffffffd1hooseDepartureTime" ended with a "Pass" status (Duration: 0,0918 Wasted Time: 0,0026).
+Action.c(270): lr_think_time: 5,00 seconds.
 Action.c(280): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(280): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 Action.c(282): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(282): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(285): Notify: Transaction "BuyingTicket" started.
-Action.c(286): web_submit_data("reservations.pl_3") started  	[MsgId: MMSG-26355]
-Action.c(286): t=1707ms: Already connected [0] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(286): t=1707ms: 706-byte request headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(286):     POST /cgi-bin/reservations.pl HTTP/1.1\r\n
-Action.c(286):     Content-Type: application/x-www-form-urlencoded\r\n
-Action.c(286):     Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl\r\n
-Action.c(286):     Sec-Fetch-Dest: document\r\n
-Action.c(286):     Sec-Fetch-Site: none\r\n
-Action.c(286):     Priority: u=0, i\r\n
-Action.c(286):     Sec-Fetch-Mode: navigate\r\n
-Action.c(286):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(286):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(286):     .0\r\n
-Action.c(286):     Accept-Encoding: gzip, deflate\r\n
-Action.c(286):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(286):     Accept: */*\r\n
-Action.c(286):     Connection: Keep-Alive\r\n
-Action.c(286):     Host: 127.0.0.1:1080\r\n
-Action.c(286):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%
-Action.c(286):     20CA&username&ironman131&hash&81&lastName&Stark%0A&address1&10880%20Malibu%20Point&creditC
-Action.c(286):     ard&&expDate&%0A\r\n
-Action.c(286):     Content-Length: 333\r\n
-Action.c(286):     \r\n
-Action.c(286): t=1707ms: 333-byte request body for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(286):     firstName=Tony&lastName=Stark&address1=10880+Malibu+Point&address2=+Malibu+CA&pass1=Tony+S
-Action.c(286):     tark&creditCard=47894563&expDate=03%2F25&oldCCOption=&numPassengers=3&seatType=Business&se
-Action.c(286):     atPref=Aisle&outboundFlight=901%3B544%3B12%2F14%2F2024&advanceDiscount=0&returnFlight=&JSF
-Action.c(286):     ormSubmit=off&buyFlights.x=14&buyFlights.y=11&.cgifields=saveCC
-Action.c(286): t=1741ms: 421-byte response headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(286):     HTTP/1.1 200 OK\r\n
-Action.c(286):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(286):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(286):     Expires: Thu, 12 Dec 2024 18:03:17 GMT\r\n
-Action.c(286):     Set-Cookie: MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131&address2&%20Mal
-Action.c(286):     ibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A; path=/\r\n
-Action.c(286):     Keep-Alive: timeout=5, max=91\r\n
-Action.c(286):     Connection: Keep-Alive\r\n
-Action.c(286):     Transfer-Encoding: chunked\r\n
-Action.c(286):     Content-Type: text/html; charset=ISO-8859-1\r\n
-Action.c(286):     \r\n
-Action.c(286): Found resource "http://127.0.0.1:1080/WebTours/images/bookanother.gif" in HTML "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26659]
-Action.c(286): t=1743ms: Already connected [1] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(286): t=1743ms: 619-byte request headers for "http://127.0.0.1:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
-Action.c(286):     GET /WebTours/images/bookanother.gif HTTP/1.1\r\n
-Action.c(286):     Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl\r\n
-Action.c(286):     Sec-Fetch-Dest: document\r\n
-Action.c(286):     Sec-Fetch-Site: none\r\n
-Action.c(286):     Priority: u=0, i\r\n
-Action.c(286):     Sec-Fetch-Mode: navigate\r\n
-Action.c(286):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(286):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(286):     .0\r\n
-Action.c(286):     Accept-Encoding: gzip, deflate\r\n
-Action.c(286):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(286):     Accept: */*\r\n
-Action.c(286):     Connection: Keep-Alive\r\n
-Action.c(286):     Host: 127.0.0.1:1080\r\n
-Action.c(286):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(286):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(286):     \r\n
-Action.c(286): t=1743ms: Request done "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26000]
-Action.c(286): t=1743ms: 297-byte response headers for "http://127.0.0.1:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
-Action.c(286):     HTTP/1.1 200 OK\r\n
-Action.c(286):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(286):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(286):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
-Action.c(286):     ETag: "100000005f663-326-4b654c052c2c0"\r\n
-Action.c(286):     Accept-Ranges: bytes\r\n
-Action.c(286):     Content-Length: 806\r\n
-Action.c(286):     Keep-Alive: timeout=5, max=94\r\n
-Action.c(286):     Connection: Keep-Alive\r\n
-Action.c(286):     Content-Type: image/gif\r\n
-Action.c(286):     \r\n
-Action.c(286): t=1744ms: Request done "http://127.0.0.1:1080/WebTours/images/bookanother.gif"  	[MsgId: MMSG-26000]
-Action.c(286): Registered web_reg_find successful for "Text=3 Business Class tickets from Zurich to Denver" (count=1)  	[MsgId: MMSG-26364]
-Action.c(286): Registered web_reg_find successful for "Text=Total Charged to Credit Card # 47894563
+Action.c(284): Notify: Transaction "BuyingTicket" started.
+Action.c(285): web_submit_data("reservations.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(285): t=26769ms: Closed connection [0] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(285): t=26769ms: Connecting [0] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(285): t=26769ms: Connected socket [0] from 127.0.0.1:4298 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(285): t=26770ms: 706-byte request headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(285):     POST /cgi-bin/reservations.pl HTTP/1.1\r\n
+Action.c(285):     Content-Type: application/x-www-form-urlencoded\r\n
+Action.c(285):     Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl\r\n
+Action.c(285):     Sec-Fetch-Dest: document\r\n
+Action.c(285):     Sec-Fetch-Site: none\r\n
+Action.c(285):     Priority: u=0, i\r\n
+Action.c(285):     Sec-Fetch-Mode: navigate\r\n
+Action.c(285):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(285):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(285):     .0\r\n
+Action.c(285):     Accept-Encoding: gzip, deflate\r\n
+Action.c(285):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(285):     Accept: */*\r\n
+Action.c(285):     Connection: Keep-Alive\r\n
+Action.c(285):     Host: 127.0.0.1:1080\r\n
+Action.c(285):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&%20Malibu%
+Action.c(285):     20CA&username&ironman131&hash&81&lastName&Stark%0A&address1&10880%20Malibu%20Point&creditC
+Action.c(285):     ard&&expDate&%0A\r\n
+Action.c(285):     Content-Length: 329\r\n
+Action.c(285):     \r\n
+Action.c(285): t=26770ms: 329-byte request body for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(285):     firstName=Tony&lastName=Stark&address1=10880+Malibu+Point&address2=+Malibu+CA&pass1=Tony+S
+Action.c(285):     tark&creditCard=47894563&expDate=03%2F25&oldCCOption=&numPassengers=3&seatType=First&seatP
+Action.c(285):     ref=None&outboundFlight=741%3B999%3B12%2F15%2F2024&advanceDiscount=0&returnFlight=&JSFormS
+Action.c(285):     ubmit=off&buyFlights.x=14&buyFlights.y=11&.cgifields=saveCC
+Action.c(285): t=26804ms: 422-byte response headers for "http://127.0.0.1:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(285):     HTTP/1.1 200 OK\r\n
+Action.c(285):     Date: Sat, 14 Dec 2024 11:58:30 GMT\r\n
+Action.c(285):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(285):     Expires: Fri, 13 Dec 2024 11:58:30 GMT\r\n
+Action.c(285):     Set-Cookie: MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131&address2&%20Mal
+Action.c(285):     ibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A; path=/\r\n
+Action.c(285):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(285):     Connection: Keep-Alive\r\n
+Action.c(285):     Transfer-Encoding: chunked\r\n
+Action.c(285):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(285):     \r\n
+Action.c(285): Found resource "http://127.0.0.1:1080/WebTours/images/bookanother.gif" in HTML "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26659]
+Action.c(285): t=26805ms: Connecting [1] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(285): t=26805ms: Connected socket [1] from 127.0.0.1:4299 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(285): t=26805ms: 619-byte request headers for "http://127.0.0.1:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
+Action.c(285):     GET /WebTours/images/bookanother.gif HTTP/1.1\r\n
+Action.c(285):     Referer: http://127.0.0.1:1080/cgi-bin/reservations.pl\r\n
+Action.c(285):     Sec-Fetch-Dest: document\r\n
+Action.c(285):     Sec-Fetch-Site: none\r\n
+Action.c(285):     Priority: u=0, i\r\n
+Action.c(285):     Sec-Fetch-Mode: navigate\r\n
+Action.c(285):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(285):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(285):     .0\r\n
+Action.c(285):     Accept-Encoding: gzip, deflate\r\n
+Action.c(285):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(285):     Accept: */*\r\n
+Action.c(285):     Connection: Keep-Alive\r\n
+Action.c(285):     Host: 127.0.0.1:1080\r\n
+Action.c(285):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(285):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(285):     \r\n
+Action.c(285): t=26806ms: Request done "http://127.0.0.1:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26000]
+Action.c(285): t=26806ms: 298-byte response headers for "http://127.0.0.1:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
+Action.c(285):     HTTP/1.1 200 OK\r\n
+Action.c(285):     Date: Sat, 14 Dec 2024 11:58:30 GMT\r\n
+Action.c(285):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(285):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
+Action.c(285):     ETag: "100000005f663-326-4b654c052c2c0"\r\n
+Action.c(285):     Accept-Ranges: bytes\r\n
+Action.c(285):     Content-Length: 806\r\n
+Action.c(285):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(285):     Connection: Keep-Alive\r\n
+Action.c(285):     Content-Type: image/gif\r\n
+Action.c(285):     \r\n
+Action.c(285): t=26807ms: Request done "http://127.0.0.1:1080/WebTours/images/bookanother.gif"  	[MsgId: MMSG-26000]
+Action.c(285): Registered web_reg_find successful for "Text=3 First Class tickets from Seattle to Paris" (count=1)  	[MsgId: MMSG-26364]
+Action.c(285): Registered web_reg_find successful for "Text=Total Charged to Credit Card # 47894563
     </TD>
     <TD>
-       <b> $1632 </b>" (count=1)  	[MsgId: MMSG-26364]
-Action.c(286): web_submit_data("reservations.pl_3") was successful, 3288 body bytes, 718 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(314): Notify: Transaction "BuyingTicket" ended with a "Pass" status (Duration: 0,0800 Wasted Time: 0,0027).
-Action.c(326): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(326): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(329): Notify: Transaction "ViewTicketList" started.
-Action.c(330): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-Action.c(330): An unrecognized header ("Sec-Fetch-User") is being added  	[MsgId: MMSG-26595]
-Action.c(330): "Sec-Fetch-User: ?1" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
-Action.c(330): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-Action.c(331): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-Action.c(331): An unrecognized header ("Upgrade-Insecure-Requests") is being added  	[MsgId: MMSG-26595]
-Action.c(331): "Upgrade-Insecure-Requests: 1" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
-Action.c(331): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-Action.c(332): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
-Action.c(332): t=1865ms: Already connected [0] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(332): t=1865ms: 650-byte request headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary" (RelFrameId=1, Internal ID=26)
-Action.c(332):     GET /cgi-bin/welcome.pl?page=itinerary HTTP/1.1\r\n
-Action.c(332):     Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
-Action.c(332):     Sec-Fetch-User: ?1\r\n
-Action.c(332):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(332):     Sec-Fetch-Dest: document\r\n
-Action.c(332):     Sec-Fetch-Site: none\r\n
-Action.c(332):     Priority: u=0, i\r\n
-Action.c(332):     Sec-Fetch-Mode: navigate\r\n
-Action.c(332):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(332):     .0\r\n
-Action.c(332):     Accept-Encoding: gzip, deflate\r\n
-Action.c(332):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(332):     Accept: */*\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Host: 127.0.0.1:1080\r\n
-Action.c(332):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(332):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1890ms: 215-byte response headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary" (RelFrameId=1, Internal ID=26)
-Action.c(332):     HTTP/1.1 200 OK\r\n
-Action.c(332):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(332):     Keep-Alive: timeout=5, max=90\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Transfer-Encoding: chunked\r\n
-Action.c(332):     Content-Type: text/html; charset=ISO-8859-1\r\n
-Action.c(332):     \r\n
-Action.c(332): Detected non-resource "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
-Action.c(332): Detected non-resource "http://127.0.0.1:1080/cgi-bin/itinerary.pl" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
-Action.c(332): t=1891ms: Already connected [1] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(332): t=1891ms: 655-byte request headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary" (RelFrameId=1.1, Internal ID=27)
-Action.c(332):     GET /cgi-bin/nav.pl?page=menu&in=itinerary HTTP/1.1\r\n
-Action.c(332):     Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary\r\n
-Action.c(332):     Sec-Fetch-User: ?1\r\n
-Action.c(332):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(332):     Sec-Fetch-Dest: document\r\n
-Action.c(332):     Sec-Fetch-Site: none\r\n
-Action.c(332):     Priority: u=0, i\r\n
-Action.c(332):     Sec-Fetch-Mode: navigate\r\n
-Action.c(332):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(332):     .0\r\n
-Action.c(332):     Accept-Encoding: gzip, deflate\r\n
-Action.c(332):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(332):     Accept: */*\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Host: 127.0.0.1:1080\r\n
-Action.c(332):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(332):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1892ms: Already connected [2] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(332): t=1892ms: 638-byte request headers for "http://127.0.0.1:1080/cgi-bin/itinerary.pl" (RelFrameId=1.2, Internal ID=28)
-Action.c(332):     GET /cgi-bin/itinerary.pl HTTP/1.1\r\n
-Action.c(332):     Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary\r\n
-Action.c(332):     Sec-Fetch-User: ?1\r\n
-Action.c(332):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(332):     Sec-Fetch-Dest: document\r\n
-Action.c(332):     Sec-Fetch-Site: none\r\n
-Action.c(332):     Priority: u=0, i\r\n
-Action.c(332):     Sec-Fetch-Mode: navigate\r\n
-Action.c(332):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(332):     .0\r\n
-Action.c(332):     Accept-Encoding: gzip, deflate\r\n
-Action.c(332):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(332):     Accept: */*\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Host: 127.0.0.1:1080\r\n
-Action.c(332):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(332):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1893ms: Request done "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26000]
-Action.c(332): t=1919ms: 255-byte response headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary" (RelFrameId=1.1, Internal ID=27)
-Action.c(332):     HTTP/1.1 200 OK\r\n
-Action.c(332):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(332):     Expires: Thu, 12 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Keep-Alive: timeout=5, max=93\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Transfer-Encoding: chunked\r\n
-Action.c(332):     Content-Type: text/html; charset=ISO-8859-1\r\n
-Action.c(332):     \r\n
-Action.c(332): Resource "http://127.0.0.1:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(332): Found resource "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
-Action.c(332): Resource "http://127.0.0.1:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(332): Resource "http://127.0.0.1:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(332): t=1920ms: Already connected [0] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(332): t=1920ms: 654-byte request headers for "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif" (RelFrameId=, Internal ID=29)
-Action.c(332):     GET /WebTours/images/in_itinerary.gif HTTP/1.1\r\n
-Action.c(332):     Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary\r\n
-Action.c(332):     Sec-Fetch-User: ?1\r\n
-Action.c(332):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(332):     Sec-Fetch-Dest: document\r\n
-Action.c(332):     Sec-Fetch-Site: none\r\n
-Action.c(332):     Priority: u=0, i\r\n
-Action.c(332):     Sec-Fetch-Mode: navigate\r\n
-Action.c(332):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(332):     .0\r\n
-Action.c(332):     Accept-Encoding: gzip, deflate\r\n
-Action.c(332):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(332):     Accept: */*\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Host: 127.0.0.1:1080\r\n
-Action.c(332):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(332):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1921ms: Request done "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26000]
-Action.c(332): t=1928ms: 255-byte response headers for "http://127.0.0.1:1080/cgi-bin/itinerary.pl" (RelFrameId=1.2, Internal ID=28)
-Action.c(332):     HTTP/1.1 200 OK\r\n
-Action.c(332):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(332):     Expires: Thu, 12 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Keep-Alive: timeout=5, max=97\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Transfer-Encoding: chunked\r\n
-Action.c(332):     Content-Type: text/html; charset=ISO-8859-1\r\n
-Action.c(332):     \r\n
-Action.c(332): Found resource "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif" in HTML "http://127.0.0.1:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
-Action.c(332): Found resource "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif" in HTML "http://127.0.0.1:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
-Action.c(332): t=1928ms: Already connected [3] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(332): t=1928ms: 646-byte request headers for "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif" (RelFrameId=, Internal ID=31)
-Action.c(332):     GET /WebTours/images/cancelallreservations.gif HTTP/1.1\r\n
-Action.c(332):     Referer: http://127.0.0.1:1080/cgi-bin/itinerary.pl\r\n
-Action.c(332):     Sec-Fetch-User: ?1\r\n
-Action.c(332):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(332):     Sec-Fetch-Dest: document\r\n
-Action.c(332):     Sec-Fetch-Site: none\r\n
-Action.c(332):     Priority: u=0, i\r\n
-Action.c(332):     Sec-Fetch-Mode: navigate\r\n
-Action.c(332):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(332):     .0\r\n
-Action.c(332):     Accept-Encoding: gzip, deflate\r\n
-Action.c(332):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(332):     Accept: */*\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Host: 127.0.0.1:1080\r\n
-Action.c(332):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(332):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1929ms: Already connected [1] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(332): t=1929ms: 642-byte request headers for "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif" (RelFrameId=, Internal ID=30)
-Action.c(332):     GET /WebTours/images/cancelreservation.gif HTTP/1.1\r\n
-Action.c(332):     Referer: http://127.0.0.1:1080/cgi-bin/itinerary.pl\r\n
-Action.c(332):     Sec-Fetch-User: ?1\r\n
-Action.c(332):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(332):     Sec-Fetch-Dest: document\r\n
-Action.c(332):     Sec-Fetch-Site: none\r\n
-Action.c(332):     Priority: u=0, i\r\n
-Action.c(332):     Sec-Fetch-Mode: navigate\r\n
-Action.c(332):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(332):     .0\r\n
-Action.c(332):     Accept-Encoding: gzip, deflate\r\n
-Action.c(332):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(332):     Accept: */*\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Host: 127.0.0.1:1080\r\n
-Action.c(332):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(332):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1930ms: 297-byte response headers for "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif" (RelFrameId=, Internal ID=31)
-Action.c(332):     HTTP/1.1 200 OK\r\n
-Action.c(332):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(332):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
-Action.c(332):     ETag: "100000005f665-2e6-4b654c052c2c0"\r\n
-Action.c(332):     Accept-Ranges: bytes\r\n
-Action.c(332):     Content-Length: 742\r\n
-Action.c(332):     Keep-Alive: timeout=5, max=97\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Content-Type: image/gif\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1930ms: Request done "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif"  	[MsgId: MMSG-26000]
-Action.c(332): t=1930ms: Request done "http://127.0.0.1:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26000]
-Action.c(332): t=1945ms: 297-byte response headers for "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif" (RelFrameId=, Internal ID=29)
-Action.c(332):     HTTP/1.1 200 OK\r\n
-Action.c(332):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(332):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
-Action.c(332):     ETag: "100000005f66f-2dd-4b654c052c2c0"\r\n
-Action.c(332):     Accept-Ranges: bytes\r\n
-Action.c(332):     Content-Length: 733\r\n
-Action.c(332):     Keep-Alive: timeout=5, max=89\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Content-Type: image/gif\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1945ms: Request done "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif"  	[MsgId: MMSG-26000]
-Action.c(332): t=1977ms: 297-byte response headers for "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif" (RelFrameId=, Internal ID=30)
-Action.c(332):     HTTP/1.1 200 OK\r\n
-Action.c(332):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(332):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(332):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
-Action.c(332):     ETag: "100000005f666-33f-4b654c052c2c0"\r\n
-Action.c(332):     Accept-Ranges: bytes\r\n
-Action.c(332):     Content-Length: 831\r\n
-Action.c(332):     Keep-Alive: timeout=5, max=92\r\n
-Action.c(332):     Connection: Keep-Alive\r\n
-Action.c(332):     Content-Type: image/gif\r\n
-Action.c(332):     \r\n
-Action.c(332): t=1977ms: Request done "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif"  	[MsgId: MMSG-26000]
-Action.c(332): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
-Action.c(332): web_url("Itinerary Button") was successful, 11743 body bytes, 1616 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(342): Notify: Transaction "ViewTicketList" ended with a "Pass" status (Duration: 0,1762 Wasted Time: 0,0033).
-Action.c(352): Notify: Transaction "SignOff" started.
-Action.c(354): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(354): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(356): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-Action.c(356): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
-Action.c(356): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
-Action.c(357): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
-Action.c(357): t=2071ms: Already connected [0] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(357): t=2071ms: 625-byte request headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=32)
-Action.c(357):     GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1\r\n
-Action.c(357):     Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
-Action.c(357):     Sec-Fetch-Dest: document\r\n
-Action.c(357):     Sec-Fetch-Site: none\r\n
-Action.c(357):     Priority: u=0, i\r\n
-Action.c(357):     Sec-Fetch-Mode: navigate\r\n
-Action.c(357):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(357):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(357):     .0\r\n
-Action.c(357):     Accept-Encoding: gzip, deflate\r\n
-Action.c(357):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(357):     Accept: */*\r\n
-Action.c(357):     Connection: Keep-Alive\r\n
-Action.c(357):     Host: 127.0.0.1:1080\r\n
-Action.c(357):     Cookie: MSO=SID&1734112995; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
-Action.c(357):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
-Action.c(357):     \r\n
-Action.c(357): t=2098ms: 327-byte response headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=32)
-Action.c(357):     HTTP/1.1 200 OK\r\n
-Action.c(357):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(357):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(357):     Set-Cookie: MSO=SID&1734112997; path=/\r\n
-Action.c(357):     Set-Cookie: MTUserInfo=; path=/; expires=Thu, 12-Dec-2024 18:03:17 GMT\r\n
-Action.c(357):     Keep-Alive: timeout=5, max=88\r\n
-Action.c(357):     Connection: Keep-Alive\r\n
-Action.c(357):     Transfer-Encoding: chunked\r\n
-Action.c(357):     Content-Type: text/html; charset=ISO-8859-1\r\n
-Action.c(357):     \r\n
-Action.c(357): Detected non-resource "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-Action.c(357): Detected non-resource "http://127.0.0.1:1080/WebTours/home.html" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-Action.c(357): Retrieving data from cache for "http://127.0.0.1:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
-Action.c(357): t=2099ms: Request done "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26000]
-Action.c(357): t=2099ms: Already connected [1] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
-Action.c(357): t=2099ms: 469-byte request headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=33)
-Action.c(357):     GET /cgi-bin/nav.pl?in=home HTTP/1.1\r\n
-Action.c(357):     Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1\r\n
-Action.c(357):     Sec-Fetch-Dest: document\r\n
-Action.c(357):     Sec-Fetch-Site: none\r\n
-Action.c(357):     Priority: u=0, i\r\n
-Action.c(357):     Sec-Fetch-Mode: navigate\r\n
-Action.c(357):     Upgrade-Insecure-Requests: 1\r\n
-Action.c(357):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
-Action.c(357):     .0\r\n
-Action.c(357):     Accept-Encoding: gzip, deflate\r\n
-Action.c(357):     Accept-Language: en-US,en;q=0.5\r\n
-Action.c(357):     Accept: */*\r\n
-Action.c(357):     Connection: Keep-Alive\r\n
-Action.c(357):     Host: 127.0.0.1:1080\r\n
-Action.c(357):     Cookie: MSO=SID&1734112997\r\n
-Action.c(357):     \r\n
-Action.c(357): t=2129ms: 255-byte response headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=33)
-Action.c(357):     HTTP/1.1 200 OK\r\n
-Action.c(357):     Date: Fri, 13 Dec 2024 18:03:17 GMT\r\n
-Action.c(357):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(357):     Expires: Thu, 12 Dec 2024 18:03:17 GMT\r\n
-Action.c(357):     Keep-Alive: timeout=5, max=91\r\n
-Action.c(357):     Connection: Keep-Alive\r\n
-Action.c(357):     Transfer-Encoding: chunked\r\n
-Action.c(357):     Content-Type: text/html; charset=ISO-8859-1\r\n
-Action.c(357):     \r\n
-Action.c(357): Resource "http://127.0.0.1:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(357): t=2130ms: Request done "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26000]
-Action.c(357): Registered web_reg_find successful for "Text=<B>sign up now</B></A> to get access to all our resources" (count=1)  	[MsgId: MMSG-26364]
-Action.c(357): web_url("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(366): Notify: Transaction "SignOff" ended with a "Pass" status (Duration: 0,1262 Wasted Time: 0,0035).
-Action.c(372): Notify: Transaction "UC4_ViewTicketList" ended with a "Pass" status (Duration: 2,0431 Wasted Time: 0,0910).
+       <b> $2997 </b>" (count=1)  	[MsgId: MMSG-26364]
+Action.c(285): web_submit_data("reservations.pl_3") was successful, 3285 body bytes, 720 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(313): Notify: Transaction "BuyingTicket" ended with a "Pass" status (Duration: 0,0800 Wasted Time: 0,0022).
+Action.c(318): lr_think_time: 5,00 seconds.
+Action.c(325): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(325): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(327): Notify: Transaction "ViewTicketList" started.
+Action.c(328): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(328): An unrecognized header ("Sec-Fetch-User") is being added  	[MsgId: MMSG-26595]
+Action.c(328): "Sec-Fetch-User: ?1" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+Action.c(328): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(329): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(329): An unrecognized header ("Upgrade-Insecure-Requests") is being added  	[MsgId: MMSG-26595]
+Action.c(329): "Upgrade-Insecure-Requests: 1" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+Action.c(329): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(330): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(330): t=31936ms: Closed connection [0] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(330): t=31936ms: Connecting [0] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(330): t=31936ms: Connected socket [0] from 127.0.0.1:4301 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(330): t=31936ms: 650-byte request headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary" (RelFrameId=1, Internal ID=26)
+Action.c(330):     GET /cgi-bin/welcome.pl?page=itinerary HTTP/1.1\r\n
+Action.c(330):     Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
+Action.c(330):     Sec-Fetch-User: ?1\r\n
+Action.c(330):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(330):     Sec-Fetch-Dest: document\r\n
+Action.c(330):     Sec-Fetch-Site: none\r\n
+Action.c(330):     Priority: u=0, i\r\n
+Action.c(330):     Sec-Fetch-Mode: navigate\r\n
+Action.c(330):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(330):     .0\r\n
+Action.c(330):     Accept-Encoding: gzip, deflate\r\n
+Action.c(330):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(330):     Accept: */*\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Host: 127.0.0.1:1080\r\n
+Action.c(330):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(330):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(330):     \r\n
+Action.c(330): t=31937ms: Inactive socket [1] was closed by 127.0.0.1:1080, probably due to Keep-Alive timeout  	[MsgId: MMSG-26000]
+Action.c(330): t=31937ms: Closed connection [1] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(330): t=31962ms: 216-byte response headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary" (RelFrameId=1, Internal ID=26)
+Action.c(330):     HTTP/1.1 200 OK\r\n
+Action.c(330):     Date: Sat, 14 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(330):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Transfer-Encoding: chunked\r\n
+Action.c(330):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(330):     \r\n
+Action.c(330): Detected non-resource "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(330): Detected non-resource "http://127.0.0.1:1080/cgi-bin/itinerary.pl" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(330): t=31963ms: Connecting [1] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(330): t=31963ms: Connecting [2] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(330): t=31963ms: Request done "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26000]
+Action.c(330): t=31963ms: Connected socket [1] from 127.0.0.1:4302 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(330): t=31963ms: 655-byte request headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary" (RelFrameId=1.1, Internal ID=27)
+Action.c(330):     GET /cgi-bin/nav.pl?page=menu&in=itinerary HTTP/1.1\r\n
+Action.c(330):     Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary\r\n
+Action.c(330):     Sec-Fetch-User: ?1\r\n
+Action.c(330):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(330):     Sec-Fetch-Dest: document\r\n
+Action.c(330):     Sec-Fetch-Site: none\r\n
+Action.c(330):     Priority: u=0, i\r\n
+Action.c(330):     Sec-Fetch-Mode: navigate\r\n
+Action.c(330):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(330):     .0\r\n
+Action.c(330):     Accept-Encoding: gzip, deflate\r\n
+Action.c(330):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(330):     Accept: */*\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Host: 127.0.0.1:1080\r\n
+Action.c(330):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(330):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(330):     \r\n
+Action.c(330): t=31964ms: Connected socket [2] from 127.0.0.1:4303 to 127.0.0.1:1080 in 1 ms  	[MsgId: MMSG-26000]
+Action.c(330): t=31964ms: 638-byte request headers for "http://127.0.0.1:1080/cgi-bin/itinerary.pl" (RelFrameId=1.2, Internal ID=28)
+Action.c(330):     GET /cgi-bin/itinerary.pl HTTP/1.1\r\n
+Action.c(330):     Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?page=itinerary\r\n
+Action.c(330):     Sec-Fetch-User: ?1\r\n
+Action.c(330):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(330):     Sec-Fetch-Dest: document\r\n
+Action.c(330):     Sec-Fetch-Site: none\r\n
+Action.c(330):     Priority: u=0, i\r\n
+Action.c(330):     Sec-Fetch-Mode: navigate\r\n
+Action.c(330):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(330):     .0\r\n
+Action.c(330):     Accept-Encoding: gzip, deflate\r\n
+Action.c(330):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(330):     Accept: */*\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Host: 127.0.0.1:1080\r\n
+Action.c(330):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(330):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(330):     \r\n
+Action.c(330): t=31991ms: 256-byte response headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary" (RelFrameId=1.1, Internal ID=27)
+Action.c(330):     HTTP/1.1 200 OK\r\n
+Action.c(330):     Date: Sat, 14 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(330):     Expires: Fri, 13 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Transfer-Encoding: chunked\r\n
+Action.c(330):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(330):     \r\n
+Action.c(330): Resource "http://127.0.0.1:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(330): Found resource "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(330): Resource "http://127.0.0.1:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(330): Resource "http://127.0.0.1:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(330): t=31993ms: Request done "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26000]
+Action.c(330): t=31993ms: Already connected [0] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(330): t=31993ms: 654-byte request headers for "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif" (RelFrameId=, Internal ID=29)
+Action.c(330):     GET /WebTours/images/in_itinerary.gif HTTP/1.1\r\n
+Action.c(330):     Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=itinerary\r\n
+Action.c(330):     Sec-Fetch-User: ?1\r\n
+Action.c(330):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(330):     Sec-Fetch-Dest: document\r\n
+Action.c(330):     Sec-Fetch-Site: none\r\n
+Action.c(330):     Priority: u=0, i\r\n
+Action.c(330):     Sec-Fetch-Mode: navigate\r\n
+Action.c(330):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(330):     .0\r\n
+Action.c(330):     Accept-Encoding: gzip, deflate\r\n
+Action.c(330):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(330):     Accept: */*\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Host: 127.0.0.1:1080\r\n
+Action.c(330):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(330):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(330):     \r\n
+Action.c(330): t=32000ms: 256-byte response headers for "http://127.0.0.1:1080/cgi-bin/itinerary.pl" (RelFrameId=1.2, Internal ID=28)
+Action.c(330):     HTTP/1.1 200 OK\r\n
+Action.c(330):     Date: Sat, 14 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(330):     Expires: Fri, 13 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Transfer-Encoding: chunked\r\n
+Action.c(330):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(330):     \r\n
+Action.c(330): Found resource "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif" in HTML "http://127.0.0.1:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(330): Found resource "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif" in HTML "http://127.0.0.1:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(330): t=32003ms: Connecting [3] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(330): t=32004ms: Already connected [1] to 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(330): t=32004ms: 642-byte request headers for "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif" (RelFrameId=, Internal ID=30)
+Action.c(330):     GET /WebTours/images/cancelreservation.gif HTTP/1.1\r\n
+Action.c(330):     Referer: http://127.0.0.1:1080/cgi-bin/itinerary.pl\r\n
+Action.c(330):     Sec-Fetch-User: ?1\r\n
+Action.c(330):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(330):     Sec-Fetch-Dest: document\r\n
+Action.c(330):     Sec-Fetch-Site: none\r\n
+Action.c(330):     Priority: u=0, i\r\n
+Action.c(330):     Sec-Fetch-Mode: navigate\r\n
+Action.c(330):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(330):     .0\r\n
+Action.c(330):     Accept-Encoding: gzip, deflate\r\n
+Action.c(330):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(330):     Accept: */*\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Host: 127.0.0.1:1080\r\n
+Action.c(330):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(330):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(330):     \r\n
+Action.c(330): t=32004ms: Connected socket [3] from 127.0.0.1:4304 to 127.0.0.1:1080 in 1 ms  	[MsgId: MMSG-26000]
+Action.c(330): t=32004ms: 646-byte request headers for "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif" (RelFrameId=, Internal ID=31)
+Action.c(330):     GET /WebTours/images/cancelallreservations.gif HTTP/1.1\r\n
+Action.c(330):     Referer: http://127.0.0.1:1080/cgi-bin/itinerary.pl\r\n
+Action.c(330):     Sec-Fetch-User: ?1\r\n
+Action.c(330):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(330):     Sec-Fetch-Dest: document\r\n
+Action.c(330):     Sec-Fetch-Site: none\r\n
+Action.c(330):     Priority: u=0, i\r\n
+Action.c(330):     Sec-Fetch-Mode: navigate\r\n
+Action.c(330):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(330):     .0\r\n
+Action.c(330):     Accept-Encoding: gzip, deflate\r\n
+Action.c(330):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(330):     Accept: */*\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Host: 127.0.0.1:1080\r\n
+Action.c(330):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(330):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(330):     \r\n
+Action.c(330): t=32005ms: Request done "http://127.0.0.1:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26000]
+Action.c(330): t=32005ms: 298-byte response headers for "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif" (RelFrameId=, Internal ID=31)
+Action.c(330):     HTTP/1.1 200 OK\r\n
+Action.c(330):     Date: Sat, 14 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(330):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
+Action.c(330):     ETag: "100000005f665-2e6-4b654c052c2c0"\r\n
+Action.c(330):     Accept-Ranges: bytes\r\n
+Action.c(330):     Content-Length: 742\r\n
+Action.c(330):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Content-Type: image/gif\r\n
+Action.c(330):     \r\n
+Action.c(330): t=32005ms: Request done "http://127.0.0.1:1080/WebTours/images/cancelallreservations.gif"  	[MsgId: MMSG-26000]
+Action.c(330): t=32013ms: 297-byte response headers for "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif" (RelFrameId=, Internal ID=29)
+Action.c(330):     HTTP/1.1 200 OK\r\n
+Action.c(330):     Date: Sat, 14 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(330):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
+Action.c(330):     ETag: "100000005f66f-2dd-4b654c052c2c0"\r\n
+Action.c(330):     Accept-Ranges: bytes\r\n
+Action.c(330):     Content-Length: 733\r\n
+Action.c(330):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Content-Type: image/gif\r\n
+Action.c(330):     \r\n
+Action.c(330): t=32014ms: Request done "http://127.0.0.1:1080/WebTours/images/in_itinerary.gif"  	[MsgId: MMSG-26000]
+Action.c(330): t=32043ms: 297-byte response headers for "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif" (RelFrameId=, Internal ID=30)
+Action.c(330):     HTTP/1.1 200 OK\r\n
+Action.c(330):     Date: Sat, 14 Dec 2024 11:58:35 GMT\r\n
+Action.c(330):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(330):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
+Action.c(330):     ETag: "100000005f666-33f-4b654c052c2c0"\r\n
+Action.c(330):     Accept-Ranges: bytes\r\n
+Action.c(330):     Content-Length: 831\r\n
+Action.c(330):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(330):     Connection: Keep-Alive\r\n
+Action.c(330):     Content-Type: image/gif\r\n
+Action.c(330):     \r\n
+Action.c(330): t=32044ms: Request done "http://127.0.0.1:1080/WebTours/images/cancelreservation.gif"  	[MsgId: MMSG-26000]
+Action.c(330): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(330): web_url("Itinerary Button") was successful, 36238 body bytes, 1620 header bytes, 91 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(340): Notify: Transaction "ViewTicketList" ended with a "Pass" status (Duration: 0,1700 Wasted Time: 0,0040).
+Action.c(345): lr_think_time: 5,00 seconds.
+Action.c(350): Notify: Transaction "SignOff" started.
+Action.c(352): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(352): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(354): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(354): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(354): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(355): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(355): t=37140ms: Closed connection [0] to 127.0.0.1:1080 after completing 2 request(s)  	[MsgId: MMSG-26000]
+Action.c(355): t=37140ms: Connecting [0] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(355): t=37140ms: Connected socket [0] from 127.0.0.1:4305 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(355): t=37140ms: 625-byte request headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=32)
+Action.c(355):     GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1\r\n
+Action.c(355):     Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
+Action.c(355):     Sec-Fetch-Dest: document\r\n
+Action.c(355):     Sec-Fetch-Site: none\r\n
+Action.c(355):     Priority: u=0, i\r\n
+Action.c(355):     Sec-Fetch-Mode: navigate\r\n
+Action.c(355):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(355):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(355):     .0\r\n
+Action.c(355):     Accept-Encoding: gzip, deflate\r\n
+Action.c(355):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(355):     Accept: */*\r\n
+Action.c(355):     Connection: Keep-Alive\r\n
+Action.c(355):     Host: 127.0.0.1:1080\r\n
+Action.c(355):     Cookie: MSO=SID&1734177483; MTUserInfo=firstName&%7BfirstNameBuffer%7D&username&ironman131
+Action.c(355):     &address2&%20Malibu%20CA&hash&81&address1&10880%20Malibu%20Point&lastName&Stark%0A\r\n
+Action.c(355):     \r\n
+Action.c(355): t=37141ms: Inactive socket [1] was closed by 127.0.0.1:1080, probably due to Keep-Alive timeout  	[MsgId: MMSG-26000]
+Action.c(355): t=37141ms: Closed connection [1] to 127.0.0.1:1080 after completing 2 request(s)  	[MsgId: MMSG-26000]
+Action.c(355): t=37141ms: Inactive socket [2] was closed by 127.0.0.1:1080, probably due to Keep-Alive timeout  	[MsgId: MMSG-26000]
+Action.c(355): t=37141ms: Closed connection [2] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(355): t=37141ms: Inactive socket [3] was closed by 127.0.0.1:1080, probably due to Keep-Alive timeout  	[MsgId: MMSG-26000]
+Action.c(355): t=37141ms: Closed connection [3] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(355): t=37167ms: 328-byte response headers for "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=32)
+Action.c(355):     HTTP/1.1 200 OK\r\n
+Action.c(355):     Date: Sat, 14 Dec 2024 11:58:40 GMT\r\n
+Action.c(355):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(355):     Set-Cookie: MSO=SID&1734177520; path=/\r\n
+Action.c(355):     Set-Cookie: MTUserInfo=; path=/; expires=Fri, 13-Dec-2024 11:58:40 GMT\r\n
+Action.c(355):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(355):     Connection: Keep-Alive\r\n
+Action.c(355):     Transfer-Encoding: chunked\r\n
+Action.c(355):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(355):     \r\n
+Action.c(355): Detected non-resource "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(355): Detected non-resource "http://127.0.0.1:1080/WebTours/home.html" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(355): Retrieving data from cache for "http://127.0.0.1:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(355): t=37169ms: Request done "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26000]
+Action.c(355): t=37169ms: Connecting [1] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(355): t=37169ms: Connected socket [1] from 127.0.0.1:4306 to 127.0.0.1:1080 in 0 ms  	[MsgId: MMSG-26000]
+Action.c(355): t=37169ms: 469-byte request headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=33)
+Action.c(355):     GET /cgi-bin/nav.pl?in=home HTTP/1.1\r\n
+Action.c(355):     Referer: http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1\r\n
+Action.c(355):     Sec-Fetch-Dest: document\r\n
+Action.c(355):     Sec-Fetch-Site: none\r\n
+Action.c(355):     Priority: u=0, i\r\n
+Action.c(355):     Sec-Fetch-Mode: navigate\r\n
+Action.c(355):     Upgrade-Insecure-Requests: 1\r\n
+Action.c(355):     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132
+Action.c(355):     .0\r\n
+Action.c(355):     Accept-Encoding: gzip, deflate\r\n
+Action.c(355):     Accept-Language: en-US,en;q=0.5\r\n
+Action.c(355):     Accept: */*\r\n
+Action.c(355):     Connection: Keep-Alive\r\n
+Action.c(355):     Host: 127.0.0.1:1080\r\n
+Action.c(355):     Cookie: MSO=SID&1734177520\r\n
+Action.c(355):     \r\n
+Action.c(355): t=37196ms: 256-byte response headers for "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=33)
+Action.c(355):     HTTP/1.1 200 OK\r\n
+Action.c(355):     Date: Sat, 14 Dec 2024 11:58:40 GMT\r\n
+Action.c(355):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(355):     Expires: Fri, 13 Dec 2024 11:58:40 GMT\r\n
+Action.c(355):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(355):     Connection: Keep-Alive\r\n
+Action.c(355):     Transfer-Encoding: chunked\r\n
+Action.c(355):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(355):     \r\n
+Action.c(355): Resource "http://127.0.0.1:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(355): t=37198ms: Request done "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26000]
+Action.c(355): Registered web_reg_find successful for "Text=<B>sign up now</B></A> to get access to all our resources" (count=1)  	[MsgId: MMSG-26364]
+Action.c(355): web_url("SignOff Button") was successful, 2173 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(364): Notify: Transaction "SignOff" ended with a "Pass" status (Duration: 0,1220 Wasted Time: 0,0023).
+Action.c(370): Notify: Transaction "UC4_ViewTicketList" ended with a "Pass" status (Duration: 37,1007 Think Time: 35,0462 Wasted Time: 0,0895).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...
 Starting action vuser_end.
 Ending action vuser_end.
 Vuser Terminated.
-t=2187ms: Closed connection [0] to 127.0.0.1:1080 after completing 13 request(s)  	[MsgId: MMSG-26000]
-t=2187ms: Closed connection [1] to 127.0.0.1:1080 after completing 10 request(s)  	[MsgId: MMSG-26000]
-t=2187ms: Closed connection [2] to 127.0.0.1:1080 after completing 4 request(s)  	[MsgId: MMSG-26000]
-t=2187ms: Closed connection [3] to 127.0.0.1:1080 after completing 4 request(s)  	[MsgId: MMSG-26000]
-t=2187ms: Closed connection [4] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
-t=2187ms: Closed connection [5] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+t=37252ms: Closed connection [0] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+t=37252ms: Closed connection [1] to 127.0.0.1:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]

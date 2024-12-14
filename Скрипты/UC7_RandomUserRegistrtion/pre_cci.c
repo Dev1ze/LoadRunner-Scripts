@@ -3043,7 +3043,7 @@ Action()
 	lr_end_transaction("OpenLandingPage",2);
 
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 	
 	lr_start_transaction("OpenRegistrationPage");
@@ -3061,7 +3061,7 @@ Action()
 	lr_end_transaction("OpenRegistrationPage",2);
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 	
 	lr_start_transaction("UserRegistered");
@@ -3089,7 +3089,7 @@ Action()
 	lr_end_transaction("UserRegistered",2);
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 
 	lr_start_transaction("press continue");
@@ -3108,7 +3108,7 @@ Action()
 	lr_end_transaction("press continue",2);
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 
 	lr_start_transaction("SignOff");

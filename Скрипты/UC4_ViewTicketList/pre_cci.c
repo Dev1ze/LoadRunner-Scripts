@@ -3250,7 +3250,6 @@ Action()
 	
 	web_reg_find("Text=Total Charged to Credit Card # {creditCard}\n\    </TD\>\n\    <TD\>\n       \<b\> \${totalPriceStr} \</b\>","LAST");
 	 
-	
 	lr_start_transaction("BuyingTicket");
 	web_submit_data("reservations.pl_3", 
 		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
@@ -3294,7 +3293,6 @@ Action()
 	 
 	web_reg_find("Text=Itinerary", "LAST");
 	 
-	
 	lr_start_transaction("ViewTicketList");
 	web_add_header("Sec-Fetch-User", "?1");
 	web_add_header("Upgrade-Insecure-Requests", "1");
