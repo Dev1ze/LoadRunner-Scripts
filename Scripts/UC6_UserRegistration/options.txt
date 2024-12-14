@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IP:\Programs\FinalTask\Скрипты\UC6_UserRegistration
+-IP:\Programs\LoadRunner\include
+-ep:\programs\finaltask\скрипты\uc6_userregistration\\logfile.log
+p:\programs\finaltask\скрипты\uc6_userregistration\\combined_UC6_UserRegistration.c
+p:\programs\finaltask\скрипты\uc6_userregistration\\pre_cci.c

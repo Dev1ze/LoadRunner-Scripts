@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--IP:\Programs\FinalTask\Скрипты\UC4_ViewTicketList
--IP:\Programs\LoadRunner\include
--ep:\programs\finaltask\скрипты\uc4_viewticketlist\\logfile.log
-p:\programs\finaltask\скрипты\uc4_viewticketlist\\combined_UC4_ViewTicketList.c
-p:\programs\finaltask\скрипты\uc4_viewticketlist\\pre_cci.c

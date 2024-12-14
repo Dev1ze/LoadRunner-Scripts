@@ -1,2 +1,0 @@
-"username=ironman131&password=stark2021&passwordConfirm=stark2021&firstName=%7BfirstNameBuffer%"
-"7D&lastName=Stark&address1=10880+Malibu+Point&address2=+Malibu+CA&register.x=67&register.y=8"
