@@ -34,7 +34,7 @@ MonAgg=0
 ErrAgg=0
 FilterEdge=0
 FSartTime=0
-FEndTime=84600
+FEndTime=0
 
 [Result0]
 LRRID=
