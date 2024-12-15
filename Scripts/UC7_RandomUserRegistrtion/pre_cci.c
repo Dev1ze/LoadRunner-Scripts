@@ -1,4 +1,4 @@
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c"
+# 1 "p:\\programs\\finaltask\\scripts\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c"
 # 1 "P:\\Programs\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
+# 1 "p:\\programs\\finaltask\\scripts\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
 
 # 1 "P:\\Programs\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
+# 2 "p:\\programs\\finaltask\\scripts\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
 
 # 1 "globals.h" 1
 
@@ -2951,6 +2951,128 @@ void	 swab(const char *, char *, size_t);
 
 # 11 "globals.h" 2
 
+# 1 "P:\\Programs\\LoadRunner\\include/time.h" 1
+
+ 
+
+
+
+
+
+
+
+
+# 1 "P:\\Programs\\LoadRunner\\include/stddef.h" 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+# 11 "P:\\Programs\\LoadRunner\\include/time.h" 2
+
+
+
+
+struct tm
+{
+  int	tm_sec;
+  int	tm_min;
+  int	tm_hour;
+  int	tm_mday;
+  int	tm_mon;
+  int	tm_year;
+  int	tm_wday;
+  int	tm_yday;
+  int	tm_isdst;
+};
+
+
+
+
+
+
+
+
+char	  *_asctime_r(struct tm *_tblock, void *_p);
+
+
+clock_t clock(void);
+double	  _difftime32(time_t _time2, time_t _time1);
+time_t _mktime32(struct tm *_timeptr);
+time_t _time32(time_t *_timer);
+char	  *asctime(const struct tm *_tblock);
+char	  *_ctime32(const time_t *_time);
+struct tm *_gmtime32(const time_t *_timer);
+struct tm *_localtime32(const time_t *_timer);
+unsigned int   strftime(char *_s, size_t _maxsize, char *_fmt, struct tm *_t);
+
+
+
+# 12 "globals.h" 2
+
 
 
  
@@ -2958,14 +3080,14 @@ void	 swab(const char *, char *, size_t);
 
 
 
-# 3 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
+# 3 "p:\\programs\\finaltask\\scripts\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
+# 4 "p:\\programs\\finaltask\\scripts\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2976,6 +3098,12 @@ Action()
 	int minLength = 4;
 	int maxLength = 10; 
 	char userDatas[6][10];  
+	int vuserId;
+	
+	lr_whoami(&vuserId, 0, 0);
+
+	 
+	srand(_time32(0) + vuserId); 
 	
 	for (j = 0; j < 6; j ++) 
 	{
@@ -3129,12 +3257,12 @@ Action()
 
 	return 0;
 }
-# 5 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
+# 5 "p:\\programs\\finaltask\\scripts\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
+# 6 "p:\\programs\\finaltask\\scripts\\uc7_randomuserregistrtion\\\\combined_UC7_RandomUserRegistrtion.c" 2
 

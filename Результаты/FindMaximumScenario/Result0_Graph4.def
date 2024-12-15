@@ -12,7 +12,7 @@ CustomData=
 
 [TabSheet]
 Visible=1
-ActivePage=0
+ActivePage=1
 
 [MultiUIInfos]
 Count=1
@@ -163,7 +163,7 @@ LastValues0=Avg
 LastIsMsr0=0
 LastAbsoluteTime0=0
 LastBDMsrShow0=0
-LastDisplayType1=None
+LastDisplayType1=Line
 LastValues1=Avg
 LastIsMsr1=0
 LastAbsoluteTime1=0

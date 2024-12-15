@@ -6,6 +6,12 @@ Action()
 	int minLength = 4;
 	int maxLength = 10; 
 	char userDatas[6][10]; //userDatas[username][password][firstname][lastname][address1][address2]. [10] - максимальное число сиволов слова
+	int vuserId;
+	
+	lr_whoami(&vuserId, NULL, NULL);
+
+	// Инициализация генератора случайных чисел с уникальным seed
+	srand(time(NULL) + vuserId); 
 	
 	for (j = 0; j < 6; j ++) 
 	{
