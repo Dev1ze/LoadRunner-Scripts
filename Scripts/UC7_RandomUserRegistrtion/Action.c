@@ -101,6 +101,7 @@ Action()
 	
 	
 	lr_start_transaction("UserRegistered");
+	lr_output_message("Current user name: %s", lr_eval_string("{userName}"));
 	web_reg_find("Text=Thank you, <b>{userName}</b>, for registering and welcome to the Web Tours family", LAST);
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_submit_data("login.pl_2", 

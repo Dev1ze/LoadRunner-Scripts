@@ -1,12 +1,12 @@
 ﻿[Workspace]
 SessionStartTime=0
-SessionEndTime=3742
+SessionEndTime=3745
 VerNo=13
 IsSummaryData=1
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=resl192997311DB
+DataBaseName=resl294026815DB
 DBType=1
 CurrServer=DESKTOP-LQ4AJG3
 CurrUser=sa
@@ -43,8 +43,8 @@ ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-10800
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1734260664
-ScenarioEndTime=1734264406
+ScenarioStartTime=1734292256
+ScenarioEndTime=1734296001
 ResInSD=1
 WebGran=5
 FilterEdge=0

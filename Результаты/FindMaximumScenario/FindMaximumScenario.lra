@@ -1,12 +1,12 @@
 ﻿[Workspace]
 SessionStartTime=0
-SessionEndTime=6644
+SessionEndTime=6642
 VerNo=13
-IsSummaryData=0
+IsSummaryData=1
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=resl139143600DB
+DataBaseName=resl243162413DB
 DBType=1
 CurrServer=DESKTOP-LQ4AJG3
 CurrUser=sa
@@ -23,7 +23,7 @@ UseSpecMSSQLParams=1
 NumResults=1
 
 [Data Config]
-CollectionMode=2
+CollectionMode=1
 IngnoreFlds=Vuser ID
 IngnoreUIFlds=VuserID
 AggSecGran=1
@@ -34,7 +34,7 @@ MonAgg=0
 ErrAgg=0
 FilterEdge=0
 FSartTime=0
-FEndTime=0
+FEndTime=84600
 
 [Result0]
 LRRID=
@@ -43,10 +43,10 @@ ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-10800
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1734201704
-ScenarioEndTime=1734208348
-ResInSD=0
-WebGran=45
+ScenarioStartTime=1734275784
+ScenarioEndTime=1734282426
+ResInSD=1
+WebGran=5
 FilterEdge=0
 FSartTime=0
 FEndTime=0
