@@ -101,7 +101,7 @@ Action()
 	
 	/*НАЧАЛО ОТКРЫТИЯ СТРАНИЦЫ ПОИСКА БИЛЕТА*/
 	/*--------------------------------------*/
-	lr_start_transaction("OpenPage_FindFlights");
+	lr_start_transaction("OpenPage_FindFlight");
 	/*Проверка на успешную открытие страницы поиска билета*/
 	/*----------------------------------------------------*/
 	web_reg_find("Text=Find Flight", LAST);
@@ -135,7 +135,7 @@ Action()
 		"Snapshot=t5.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("OpenPage_FindFlights",LR_AUTO);
+	lr_end_transaction("OpenPage_FindFlight",LR_AUTO);
 	/*-------------------------------------*/
 	/*КОНЕЦ ОТКРЫТИЯ СТРАНИЦЫ ПОИСКА БИЛЕТА*/
 	
@@ -277,7 +277,7 @@ Action()
 	
 	/*ВЫХОД ИЗ АККАУНТА*/
 	/*-----------------*/
-	lr_start_transaction("SignOff");
+	lr_start_transaction("Logout");
 	/*Проверка на вызод из аккаунта*/
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	/*-----------------------------*/
@@ -291,7 +291,7 @@ Action()
 		"Snapshot=t24.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("SignOff",LR_AUTO);
+	lr_end_transaction("Logout",LR_AUTO);
 	   /*-----------------*/
 	/*ВЫХОД ИЗ АККАУНТА*/
 	

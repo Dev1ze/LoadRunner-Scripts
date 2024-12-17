@@ -148,7 +148,7 @@ Action()
 	lr_think_time(4);
 	
 
-	lr_start_transaction("SignOff");
+	lr_start_transaction("Logout");
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	web_revert_auto_header("Sec-Fetch-User");
 	web_url("SignOff Button", 
@@ -160,7 +160,7 @@ Action()
 		"Snapshot=t12.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("SignOff",LR_AUTO);
+	lr_end_transaction("Logout",LR_AUTO);
 	
 	lr_end_transaction("UC7_RandomUserRegistrtion", LR_AUTO);
 
