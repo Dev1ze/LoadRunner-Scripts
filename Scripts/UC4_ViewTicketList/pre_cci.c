@@ -1,4 +1,4 @@
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c"
+# 1 "p:\\programs\\finaltask\\scripts\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c"
 # 1 "P:\\Programs\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
+# 1 "p:\\programs\\finaltask\\scripts\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
 
 # 1 "P:\\Programs\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
+# 2 "p:\\programs\\finaltask\\scripts\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
 
 # 1 "globals.h" 1
 
@@ -2957,14 +2957,14 @@ void	 swab(const char *, char *, size_t);
  
 
 
-# 3 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
+# 3 "p:\\programs\\finaltask\\scripts\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
+# 4 "p:\\programs\\finaltask\\scripts\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -3026,7 +3026,7 @@ Action()
 	 
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 	
 	 
@@ -3059,7 +3059,7 @@ Action()
 	 
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 
 	
 	 
@@ -3103,7 +3103,7 @@ Action()
 	 
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 	
 	 
@@ -3168,7 +3168,7 @@ Action()
 	 
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 
 	 
@@ -3236,7 +3236,7 @@ Action()
 	 
 	
 
-	lr_think_time(5);
+	lr_think_time(4);
 
 	
 	 
@@ -3284,7 +3284,7 @@ Action()
 	 
 	
 	
-	lr_think_time(5);
+	lr_think_time(4);
 	
 	
 	 
@@ -3311,28 +3311,28 @@ Action()
 	 
 	
 	
-	lr_think_time(5);
-	
-	
-	 
-	 
-	lr_start_transaction("SignOff");
-	 
-	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
-	 
-	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-	web_url("SignOff Button", 
-		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t24.inf", 
-		"Mode=HTML", 
-		"LAST");
-	lr_end_transaction("SignOff",2);
-	 
-	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 	
 	
@@ -3342,12 +3342,12 @@ Action()
  
 	return 0;
 }
-# 5 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
+# 5 "p:\\programs\\finaltask\\scripts\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
+# 6 "p:\\programs\\finaltask\\scripts\\uc4_viewticketlist\\\\combined_UC4_ViewTicketList.c" 2
 

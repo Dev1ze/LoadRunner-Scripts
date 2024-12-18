@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=UC4_ViewTicketList.prm
+ParameterFile=UC5_DeleteTicket.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -42,7 +42,7 @@ Action=1
 vuser_end=1
 [Recorded Actions]
 vuser_init=0
-Action=0
+Action=1
 vuser_end=1
 [Replayed Actions]
 vuser_init=1
@@ -53,19 +53,17 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC4_ViewTicketList__*delimiter*__OpenLandingPage__*delimiter*__Login__*delimiter*__OpenPage_FindFlight__*delimiter*__SubmitFlight__*delimiter*__ÑhooseDepartureTime__*delimiter*__BuyingTicket__*delimiter*__ViewTicketList__*delimiter*__SignOff"
+Order="UC5_DeleteTicket__*delimiter*__OpenLandingPage__*delimiter*__Login__*delimiter*__ViewTicketList__*delimiter*__DeleteTicket__*delimiter*__ViewTicketList__*delimiter*__DeleteTicket__*delimiter*__ViewTicketList__*delimiter*__DeleteTicket__*delimiter*__ViewTicketList__*delimiter*__OpenPage_FindFlight__*delimiter*__SubmitFlight"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
-UC4_ViewTicketList=
+UC5_DeleteTicket=
 OpenLandingPage=
 Login=
+ViewTicketList=
+DeleteTicket=
 OpenPage_FindFlight=
 SubmitFlight=
-ÑhooseDepartureTime=
-BuyingTicket=
-ViewTicketList=
-SignOff=

@@ -3,9 +3,9 @@ Action()
 	int i,j;
 	char randomString[11]; 
 	int randomLength;
-	int minLength = 4;
-	int maxLength = 10; 
-	char userDatas[6][10]; //userDatas[username][password][firstname][lastname][address1][address2]. [10] - максимальное число сиволов слова
+	int minLength = 7;
+	int maxLength = 9; 
+	char userDatas[6][9]; //userDatas[username][password][firstname][lastname][address1][address2]. [10] - максимальное число сиволов слова
 	int vuserId;
 	
 	lr_whoami(&vuserId, NULL, NULL);

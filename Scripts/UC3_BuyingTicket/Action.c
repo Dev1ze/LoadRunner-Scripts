@@ -353,7 +353,7 @@ Action()
 //	
 //	/*ВЫХОД ИЗ АККАУНТА*/
 //	/*-----------------*/
-//	lr_start_transaction("SignOff");
+//	lr_start_transaction("Logout");
 //	/*Проверка на вызод из аккаунта*/
 //	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 //	/*-----------------------------*/

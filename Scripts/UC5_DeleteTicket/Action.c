@@ -92,7 +92,7 @@ Action()
 	
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/											//#1
     /*----------------------------------*/
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	/*Проверка на переход на страницу путевых листов*/
 	web_reg_find("Text=Itinerary", LAST);
 	/*----------------------------------------------*/
@@ -116,7 +116,7 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("Litinerary",LR_AUTO);
+	lr_end_transaction("ViewTicketList",LR_AUTO);
     /*----------------------------------*/
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/
 	
@@ -165,7 +165,7 @@ Action()
 	
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/											//#2
     /*----------------------------------*/
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	/*Проверка на переход на страницу путевых листов*/
 	web_reg_find("Text=Itinerary", LAST);
 	/*----------------------------------------------*/
@@ -189,7 +189,7 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("Litinerary",LR_AUTO);
+	lr_end_transaction("ViewTicketList",LR_AUTO);
     /*----------------------------------*/
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/
 	
@@ -238,7 +238,7 @@ Action()
 	
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/											//#3
     /*----------------------------------*/
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	/*Проверка на переход на страницу путевых листов*/
 	web_reg_find("Text=Itinerary", LAST);
 	/*----------------------------------------------*/
@@ -262,7 +262,7 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("Litinerary",LR_AUTO);
+	lr_end_transaction("ViewTicketList",LR_AUTO);
     /*----------------------------------*/
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/
 	
@@ -311,7 +311,7 @@ Action()
  	
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/											//#4
     /*----------------------------------*/
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	/*Проверка на переход на страницу путевых листов*/
 	web_reg_find("Text=Itinerary", LAST);
 	/*----------------------------------------------*/
@@ -335,7 +335,7 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("Litinerary",LR_AUTO);
+	lr_end_transaction("ViewTicketList",LR_AUTO);
     /*----------------------------------*/
 	/*ПЕРЕХОД НА СТРАНИЦУ ПУТЕВЫХ ЛИСТОВ*/
 	
@@ -452,7 +452,7 @@ Action()
  	
 // 	/*ВЫХОД ИЗ АККАУНТА*/
 //	/*-----------------*/
-//	lr_start_transaction("SignOff");
+//	lr_start_transaction("Logout");
 //	/*Проверка на вызод из аккаунта*/
 //	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 //	/*-----------------------------*/
