@@ -345,7 +345,41 @@
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv31C.573.log" Filter="1" />
+    <FileEntry Name="mdrv4ln.377.log" Filter="1" />
+    <FileEntry Name="mdrv5ef.121.log" Filter="1" />
+    <FileEntry Name="mdrv6zc.509.log" Filter="1" />
+    <FileEntry Name="mdrvBGX.115.log" Filter="1" />
+    <FileEntry Name="mdrvCCT.401.log" Filter="1" />
+    <FileEntry Name="mdrvEfB.875.log" Filter="1" />
+    <FileEntry Name="mdrvEwr.497.log" Filter="1" />
+    <FileEntry Name="mdrvFkT.633.log" Filter="1" />
+    <FileEntry Name="mdrvHwG.147.log" Filter="1" />
+    <FileEntry Name="mdrvI2E.469.log" Filter="1" />
     <FileEntry Name="mdrvipm.779.log" Filter="1" />
+    <FileEntry Name="mdrvIz5.91.log" Filter="1" />
+    <FileEntry Name="mdrvjb7.811.log" Filter="1" />
+    <FileEntry Name="mdrvjLA.51.log" Filter="1" />
+    <FileEntry Name="mdrvkCM.703.log" Filter="1" />
+    <FileEntry Name="mdrvNoO.861.log" Filter="1" />
+    <FileEntry Name="mdrvnQy.119.log" Filter="1" />
+    <FileEntry Name="mdrvP88.37.log" Filter="1" />
+    <FileEntry Name="mdrvqiT.149.log" Filter="1" />
+    <FileEntry Name="mdrvQRr.843.log" Filter="1" />
+    <FileEntry Name="mdrvQTF.889.log" Filter="1" />
+    <FileEntry Name="mdrvQX6.461.log" Filter="1" />
+    <FileEntry Name="mdrvR39.545.log" Filter="1" />
+    <FileEntry Name="mdrvR67.121.log" Filter="1" />
+    <FileEntry Name="mdrvSaa.303.log" Filter="1" />
+    <FileEntry Name="mdrvSaa.875.log" Filter="1" />
+    <FileEntry Name="mdrvSgN.351.log" Filter="1" />
+    <FileEntry Name="mdrvss6.847.log" Filter="1" />
+    <FileEntry Name="mdrvWqC.371.log" Filter="1" />
+    <FileEntry Name="mdrvxYO.901.log" Filter="1" />
+    <FileEntry Name="mdrvy1I.133.log" Filter="1" />
+    <FileEntry Name="mdrvYXW.125.log" Filter="1" />
+    <FileEntry Name="mdrvZ9T.973.log" Filter="1" />
+    <FileEntry Name="mdrvZa9.659.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="NewParam.dat" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />

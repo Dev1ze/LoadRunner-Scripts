@@ -3095,9 +3095,9 @@ Action()
 	int i,j;
 	char randomString[11]; 
 	int randomLength;
-	int minLength = 4;
-	int maxLength = 10; 
-	char userDatas[6][10];  
+	int minLength = 7;
+	int maxLength = 9; 
+	char userDatas[6][9];  
 	int vuserId;
 	
 	lr_whoami(&vuserId, 0, 0);
@@ -3193,6 +3193,7 @@ Action()
 	
 	
 	lr_start_transaction("UserRegistered");
+	lr_output_message("Current user name: %s", lr_eval_string("{userName}"));
 	web_reg_find("Text=Thank you, <b>{userName}</b>, for registering and welcome to the Web Tours family", "LAST");
 	web_add_header("Origin", "http://127.0.0.1:1080");
 	web_submit_data("login.pl_2", 
@@ -3239,7 +3240,7 @@ Action()
 	lr_think_time(4);
 	
 
-	lr_start_transaction("SignOff");
+	lr_start_transaction("Logout");
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", "LAST");
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
 	web_url("SignOff Button", 
@@ -3251,7 +3252,7 @@ Action()
 		"Snapshot=t12.inf", 
 		"Mode=HTML", 
 		"LAST");
-	lr_end_transaction("SignOff",2);
+	lr_end_transaction("Logout",2);
 	
 	lr_end_transaction("UC7_RandomUserRegistrtion", 2);
 

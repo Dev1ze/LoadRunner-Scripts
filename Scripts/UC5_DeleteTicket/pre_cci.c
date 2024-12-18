@@ -1,4 +1,4 @@
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c"
+# 1 "p:\\programs\\finaltask\\scripts\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c"
 # 1 "P:\\Programs\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
+# 1 "p:\\programs\\finaltask\\scripts\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
 
 # 1 "P:\\Programs\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
+# 2 "p:\\programs\\finaltask\\scripts\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
 
 # 1 "globals.h" 1
 
@@ -2615,14 +2615,14 @@ long WebSocketReceiveLen0   = sizeof(WebSocketReceive0) - 1;
 
 
 
-# 3 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
+# 3 "p:\\programs\\finaltask\\scripts\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
+# 4 "p:\\programs\\finaltask\\scripts\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2679,7 +2679,7 @@ Action()
 	 
 
 	
-	lr_think_time(5);	
+	lr_think_time(2);	
 	
 	
 	 
@@ -2714,12 +2714,12 @@ Action()
 	 
 	
 	
-	lr_think_time(5);	
+	lr_think_time(2);	
 
 	
 	 											 
      
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	 
 	web_reg_find("Text=Itinerary", "LAST");
 	 
@@ -2743,12 +2743,12 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"LAST");
-	lr_end_transaction("Litinerary",2);
+	lr_end_transaction("ViewTicketList",2);
      
 	 
 	
 	
-	lr_think_time(5);	
+	lr_think_time(2);	
 	
 	
  	 
@@ -2787,12 +2787,12 @@ Action()
  	 
  	
  	
- 	lr_think_time(5);	
+ 	lr_think_time(2);	
 
 	
 	 											 
      
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	 
 	web_reg_find("Text=Itinerary", "LAST");
 	 
@@ -2816,12 +2816,12 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"LAST");
-	lr_end_transaction("Litinerary",2);
+	lr_end_transaction("ViewTicketList",2);
      
 	 
 	
 	
-	lr_think_time(5);	
+	lr_think_time(2);	
 	
 	
  	 
@@ -2860,12 +2860,12 @@ Action()
  	 
  	
  	
- 	lr_think_time(5);	
+ 	lr_think_time(2);	
 
 	
 	 											 
      
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	 
 	web_reg_find("Text=Itinerary", "LAST");
 	 
@@ -2889,12 +2889,12 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"LAST");
-	lr_end_transaction("Litinerary",2);
+	lr_end_transaction("ViewTicketList",2);
      
 	 
 	
 	
-	lr_think_time(5);	
+	lr_think_time(2);	
 	
 	
  	 
@@ -2933,12 +2933,12 @@ Action()
  	 
  	
  	
- 	lr_think_time(5);
+ 	lr_think_time(2);
  	
  	
 	 											 
      
-	lr_start_transaction("Litinerary");
+	lr_start_transaction("ViewTicketList");
 	 
 	web_reg_find("Text=Itinerary", "LAST");
 	 
@@ -2962,12 +2962,12 @@ Action()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"LAST");
-	lr_end_transaction("Litinerary",2);
+	lr_end_transaction("ViewTicketList",2);
      
 	 
 	
 	
-	lr_think_time(5);
+	lr_think_time(2);
 
 	
 	 
@@ -3011,7 +3011,7 @@ Action()
 	 
 	
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	
 	 
@@ -3105,12 +3105,12 @@ Action()
 
 	return 0;
 }
-# 5 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
+# 5 "p:\\programs\\finaltask\\scripts\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
+# 6 "p:\\programs\\finaltask\\scripts\\uc5_deleteticket\\\\combined_UC5_DeleteTicket.c" 2
 

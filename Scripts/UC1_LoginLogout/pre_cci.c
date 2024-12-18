@@ -1,4 +1,4 @@
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c"
+# 1 "p:\\programs\\finaltask\\scripts\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c"
 # 1 "P:\\Programs\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
+# 1 "p:\\programs\\finaltask\\scripts\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
 
 # 1 "P:\\Programs\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
+# 2 "p:\\programs\\finaltask\\scripts\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
 
 # 1 "globals.h" 1
 
@@ -2605,14 +2605,14 @@ long WebSocketReceiveLen0   = sizeof(WebSocketReceive0) - 1;
 
 
 
-# 3 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
+# 3 "p:\\programs\\finaltask\\scripts\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
+# 4 "p:\\programs\\finaltask\\scripts\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2678,7 +2678,7 @@ Action()
 	lr_end_transaction("OpenLandingPage",2);  
 	
 	
-	
+	lr_think_time(5);
 	
 	
 	lr_start_transaction("Login"); 	 
@@ -2704,7 +2704,7 @@ Action()
 	lr_end_transaction("Login",2);  
 	
 	
-	
+	lr_think_time(5);
 	
 	
 	lr_start_transaction("Logout");  
@@ -2727,12 +2727,12 @@ Action()
  	lr_end_transaction("UC1_LoginLogout", 2);  
  	return 0;
 }
-# 5 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
+# 5 "p:\\programs\\finaltask\\scripts\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "p:\\programs\\finaltask\\\361\352\360\350\357\362\373\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
+# 6 "p:\\programs\\finaltask\\scripts\\uc1_loginlogout\\\\combined_UC1_LoginLogout.c" 2
 

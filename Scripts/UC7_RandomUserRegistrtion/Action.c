@@ -3,9 +3,9 @@ Action()
 	int i,j;
 	char randomString[11]; 
 	int randomLength;
-	int minLength = 4;
-	int maxLength = 10; 
-	char userDatas[6][10]; //userDatas[username][password][firstname][lastname][address1][address2]. [10] - максимальное число сиволов слова
+	int minLength = 7;
+	int maxLength = 9; 
+	char userDatas[6][9]; //userDatas[username][password][firstname][lastname][address1][address2]. [10] - максимальное число сиволов слова
 	int vuserId;
 	
 	lr_whoami(&vuserId, NULL, NULL);
@@ -148,7 +148,7 @@ Action()
 	lr_think_time(4);
 	
 
-	lr_start_transaction("SignOff");
+	lr_start_transaction("Logout");
 	web_reg_find("Text=<B>sign up now</B></A> to get access to all our resources", LAST);
 	web_revert_auto_header("Sec-Fetch-User");
 	web_url("SignOff Button", 
@@ -160,7 +160,7 @@ Action()
 		"Snapshot=t12.inf", 
 		"Mode=HTML", 
 		LAST);
-	lr_end_transaction("SignOff",LR_AUTO);
+	lr_end_transaction("Logout",LR_AUTO);
 	
 	lr_end_transaction("UC7_RandomUserRegistrtion", LR_AUTO);
 
