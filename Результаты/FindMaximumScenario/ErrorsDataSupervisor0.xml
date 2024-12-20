@@ -14643,7 +14643,7 @@
 </a5:TimeRangeRecord>
 <a5:TimeRangeRecord id="ref-1337" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
 <m_PeriodStartInSec>6640</m_PeriodStartInSec>
-<m_PeriodEndInSec>6642</m_PeriodEndInSec>
+<m_PeriodEndInSec>6641</m_PeriodEndInSec>
 <m_Status>rulesStatusOK</m_Status>
 <m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
@@ -26604,7 +26604,7 @@
 </a5:TimeRangeRecord>
 <a5:TimeRangeRecord id="ref-2666" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
 <m_PeriodStartInSec>6640</m_PeriodStartInSec>
-<m_PeriodEndInSec>6642</m_PeriodEndInSec>
+<m_PeriodEndInSec>6641</m_PeriodEndInSec>
 <m_Status>rulesStatusOK</m_Status>
 <m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
