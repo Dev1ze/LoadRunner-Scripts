@@ -59,7 +59,7 @@ Schedule Name=Schedule 1
 Mode=Scenario Scheduling
 Load Behavior=Initialize all Vusers simultaneously
 Scenario Duration=Start 10 Vusers simultaneously; Run for 00:22:00 (HH:MM:SS); Stop all Vusers simultaneously
-NumGraphs=5
+NumGraphs=6
 
 [DimensionFunctions]
 DimeFuncCount=1
