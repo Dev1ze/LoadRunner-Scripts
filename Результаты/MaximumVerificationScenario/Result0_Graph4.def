@@ -12,7 +12,7 @@ CustomData=
 
 [TabSheet]
 Visible=1
-ActivePage=0
+ActivePage=1
 
 [MultiUIInfos]
 Count=1
@@ -40,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T294135469T
+TableName=T72360135T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
