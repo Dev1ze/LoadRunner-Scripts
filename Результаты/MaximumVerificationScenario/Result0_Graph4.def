@@ -12,7 +12,7 @@ CustomData=
 
 [TabSheet]
 Visible=1
-ActivePage=1
+ActivePage=0
 
 [MultiUIInfos]
 Count=1
@@ -40,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T72360135T
+TableName=T161444335T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -76,7 +76,7 @@ BreakdownTree=0
 TransactionBreakdownGraph=1
 
 [SelectString0]
-Dimension=Transaction Response Time
+Dimension=!([Value]-[Think Time])!
 CountField=![Acount]!
 AggregateFunction=Avg
 ResultSetAggregateFunction=Y Value
@@ -118,7 +118,7 @@ DimensionFragmentValues_UI0=
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=128
+Granularity=60
 BaseGranularityUIName=
 MinimumDefaultGranularity=1
 

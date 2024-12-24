@@ -1,12 +1,12 @@
 ﻿[Workspace]
 SessionStartTime=0
-SessionEndTime=3751
+SessionEndTime=3737
 VerNo=13
-IsSummaryData=1
+IsSummaryData=0
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=resl72270598DB
+DataBaseName=resl157660649DB
 DBType=1
 CurrServer=DESKTOP-LQ4AJG3
 CurrUser=sa
@@ -23,7 +23,7 @@ UseSpecMSSQLParams=1
 NumResults=1
 
 [Data Config]
-CollectionMode=1
+CollectionMode=2
 IngnoreFlds=Vuser ID
 IngnoreUIFlds=VuserID
 AggSecGran=1
@@ -43,9 +43,9 @@ ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-10800
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1734978110
-ScenarioEndTime=1734981861
-ResInSD=1
+ScenarioStartTime=1735045961
+ScenarioEndTime=1735049698
+ResInSD=0
 WebGran=5
 FilterEdge=0
 FSartTime=0
@@ -58,8 +58,8 @@ Scenario Type=Manual
 Schedule Name=Schedule 1
 Mode=Scenario Scheduling
 Load Behavior=Initialize each Vuser just before it runs
-Scenario Duration=Start 45 Vusers simultaneously; Run for 01:02:00 (HH:MM:SS); Stop all Vusers simultaneously
-NumGraphs=6
+Scenario Duration=Start 36 Vusers simultaneously; Run for 01:02:00 (HH:MM:SS); Stop all Vusers simultaneously
+NumGraphs=7
 
 [DimensionFunctions]
 DimeFuncCount=0
