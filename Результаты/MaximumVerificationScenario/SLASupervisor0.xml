@@ -5,7 +5,7 @@
 <m_TrackingPeriodType>Default</m_TrackingPeriodType>
 <m_TrackingPeriodValue>0</m_TrackingPeriodValue>
 <m_TrackingPeriodTimeScale>NoTime</m_TrackingPeriodTimeScale>
-<m_TrackingPeriodValueInSec>5</m_TrackingPeriodValueInSec>
+<m_TrackingPeriodValueInSec>30</m_TrackingPeriodValueInSec>
 <m_DataProvider href="#ref-6"/>
 </a1:TSLASupervisor>
 <a2:ArrayList id="ref-5" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">

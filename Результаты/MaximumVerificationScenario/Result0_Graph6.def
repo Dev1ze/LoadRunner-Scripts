@@ -12,7 +12,7 @@ CustomData=
 
 [TabSheet]
 Visible=1
-ActivePage=0
+ActivePage=1
 
 [MultiUIInfos]
 Count=1
@@ -40,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T161472472T
+TableName=T544779488T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -106,9 +106,9 @@ DimensionFragmentValues_UI0=
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=60
+Granularity=128
 BaseGranularityUIName=
-MinimumDefaultGranularity=1
+MinimumDefaultGranularity=30
 
 [Alerts]
 Number Of Alerts=0

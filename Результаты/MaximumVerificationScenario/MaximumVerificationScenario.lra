@@ -1,18 +1,18 @@
 ﻿[Workspace]
 SessionStartTime=0
-SessionEndTime=3737
+SessionEndTime=3743
 VerNo=13
 IsSummaryData=0
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=resl157660649DB
+DataBaseName=resl543919976DB
 DBType=1
 CurrServer=DESKTOP-LQ4AJG3
 CurrUser=sa
 CurrPswd===
 StorageLoc=\\DESKTOP-LQ4AJG3\Data\
-PhStorageLoc=C:\MSSQL7\Data
+PhStorageLoc=C:\MSSQL7\Data\
 LocStorageLoc=
 LocPhStorageLoc=
 WinIntSec=0
@@ -23,10 +23,10 @@ UseSpecMSSQLParams=1
 NumResults=1
 
 [Data Config]
-CollectionMode=2
+CollectionMode=3
 IngnoreFlds=Vuser ID
 IngnoreUIFlds=VuserID
-AggSecGran=1
+AggSecGran=30
 TransAgg=1
 DataPointAgg=1
 WebAgg=1
@@ -38,15 +38,15 @@ FEndTime=84600
 
 [Result0]
 LRRID=
-ResultPath=C:\Users\iron-\AppData\Local\Temp\res\res.lrr
+ResultPath=p:\Programs\res\res\res.lrr
 ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-10800
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1735045961
-ScenarioEndTime=1735049698
+ScenarioStartTime=1735199453
+ScenarioEndTime=1735203196
 ResInSD=0
-WebGran=5
+WebGran=0
 FilterEdge=0
 FSartTime=0
 FEndTime=0
@@ -58,7 +58,7 @@ Scenario Type=Manual
 Schedule Name=Schedule 1
 Mode=Scenario Scheduling
 Load Behavior=Initialize each Vuser just before it runs
-Scenario Duration=Start 36 Vusers simultaneously; Run for 01:02:00 (HH:MM:SS); Stop all Vusers simultaneously
+Scenario Duration=Start 40 Vusers simultaneously; Run for 01:02:00 (HH:MM:SS); Stop all Vusers simultaneously
 NumGraphs=7
 
 [DimensionFunctions]

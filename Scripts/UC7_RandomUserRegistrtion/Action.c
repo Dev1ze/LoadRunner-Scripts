@@ -1,12 +1,12 @@
 Action()
 {
 	int i,j;
-	char randomString[11]; 
+	char randomString[12]; 
 	int randomLength;
 	int minLength = 7;
-	int maxLength = 9; 
-	char userDatas[6][9]; //userDatas[username][password][firstname][lastname][address1][address2]. [10] - максимальное число сиволов слова
-	int vuserId;
+	int maxLength = 12; 
+	char userDatas[6][12]; //userDatas[username][password][firstname][lastname][address1][address2]. [10] - максимальное число сиволов слова
+	int vuserId, randomNumber;
 	
 	lr_whoami(&vuserId, NULL, NULL);
 
@@ -17,8 +17,13 @@ Action()
 	{
 		randomLength = (rand() % (maxLength - minLength + 1)) + minLength;
 		lr_output_message("Рандоное число %d", randomLength);
-		for (i = 0; i < randomLength; i++) randomString[i] = (char)('A' + rand() % 26); //Начинаю с числа 65 (символ 'A') и делю его на случайное число от 0 до 25
+		for (i = 0; i < randomLength; i++) randomString[i] = (char)('a' + rand() % 26); //Начинаю с числа 65 (символ 'A') и делю его на случайное число от 0 до 25
 		randomString[randomLength] = '\0'; 
+		randomNumber = rand() % 1000; // Число от 0 до 999
+    	// Объединение слова и числа
+    	sprintf(randomString + randomLength, "%d", randomNumber);
+   		// Сохранение результата
+    	strcpy(userDatas[j], randomString);
 		strcpy(userDatas[j], randomString);
 		lr_save_string(userDatas[j], "userData");
 		lr_output_message("Valuse %d - %s", j, lr_eval_string("{userData}"));
