@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Fri, 27 Dec 2024 20:20:54 GMT
+Server: Apache/2.4.58 (Unix)
+Expires: 5s
+Set-Cookie: MTUserInfo=address1&Asgard&hash&14&lastName&Odinson&address2&Asgardian%20Realm&username&thorOdinson&expDate&&firstName&%7BfirstNameBuffer%7D&creditCard&; path=/
+Keep-Alive: timeout=5, max=76
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+

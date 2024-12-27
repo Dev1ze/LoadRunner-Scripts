@@ -18,18 +18,6 @@ ActivePage=0
 Count=1
 
 [UIInfo0]
-Title0=Action_Transaction:Fail
-Color0=50677
-Active0=-1
-Scale0=1
-ScaleState0=User
-UITitle0=
-Title1=Action_Transaction:Pass
-Color1=6710835
-Active1=-1
-Scale1=1
-ScaleState1=User
-UITitle1=
 
 [MoreUiInfos]
 ShowPieMarks=1
@@ -52,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T239652488T
+TableName=T13447016T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -113,10 +101,21 @@ InternalDimName=Event Name
 Dimension=Transaction Name
 EqualFlag=1
 DimensionTableName=Event_map
-NumValues=1
+NumValues=12
 UseEscapeSequence=1
-DimCount=1
-Dim_0=Action_Transaction
+DimCount=12
+Dim_0=BuyingTicket
+Dim_1=DeleteTicket
+Dim_2=Login
+Dim_3=Logout
+Dim_4=OpenLandingPage
+Dim_5=OpenPage_FindFlight
+Dim_6=OpenRegistrationPage
+Dim_7=press continue
+Dim_8=SubmitFlight
+Dim_9=UserRegistered
+Dim_10=ViewTicketList
+Dim_11=СhooseDepartureTime
 LikeMode=0
 
 [AdditionalFilter1]

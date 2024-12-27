@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Fri, 27 Dec 2024 20:20:55 GMT
+Server: Apache/2.4.58 (Unix)
+Expires: 5s
+Set-Cookie: MTUserInfo=username&hulkSmash&hash&8&lastName&Banner&firstName&%7BfirstNameBuffer%7D&expDate&&address2&New%20York%20NY&creditCard&&address1&Stark%20Tower; path=/
+Keep-Alive: timeout=5, max=70
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+

@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Fri, 27 Dec 2024 20:20:51 GMT
+Server: Apache/2.4.58 (Unix)
+Expires: 5s
+Set-Cookie: MTUserInfo=username&blackwidow007&firstName&%7BfirstNameBuffer%7D&expDate&&creditCard&&address2&Washington%20DC&address1&S.H.I.E.L.D.%20HQ&hash&55&lastName&Romanoff; path=/
+Keep-Alive: timeout=5, max=82
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+

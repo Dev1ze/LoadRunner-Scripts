@@ -3111,13 +3111,11 @@ Action()
 		lr_output_message("Рандоное число %d", randomLength);
 		for (i = 0; i < randomLength; i++) randomString[i] = (char)('a' + rand() % 26);  
 		randomString[randomLength] = '\0'; 
-		     randomNumber = rand() % 1000;  
-
-     
-    sprintf(randomString + randomLength, "%d", randomNumber);
-
-     
-    strcpy(userDatas[j], randomString);
+		randomNumber = rand() % 1000;  
+    	 
+    	sprintf(randomString + randomLength, "%d", randomNumber);
+   		 
+    	strcpy(userDatas[j], randomString);
 		strcpy(userDatas[j], randomString);
 		lr_save_string(userDatas[j], "userData");
 		lr_output_message("Valuse %d - %s", j, lr_eval_string("{userData}"));

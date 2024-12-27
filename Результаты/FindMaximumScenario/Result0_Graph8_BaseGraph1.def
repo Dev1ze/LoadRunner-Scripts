@@ -1,84 +1,72 @@
 ﻿[BasicInfo]
-Title=Running Vusers
-TemplateName=VuserStateGraph
-ChartGroup=Vusers
-PerformanceClass=General
+Title=Windows Resources
+TemplateName=WindowsResources
+ChartGroup=System Resources
+PerformanceClass=Resources
 
 [Graph Definitions]
-MainFactTableName=VuserEvent_meter
+MainFactTableName=Monitor_meter
 DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T219178514T
+TableName=T565927196T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
 SetPieToPercent=0
 DescFromFID=0
 NumSelectStrings=1
-ProduceRealStatis=0
+ProduceRealStatis=1
 CompleteMissingValuesWithZeroes=0
 CompleteMissingValues=0
 ForceCompleteValsOnArea=1
 IdsToStrs=1
-StdMonitor=0
+StdMonitor=1
 HiddenFunctions=
-NumBasicFilters=0
-NumAdditionalFilters=1
-NumRawDataFilters=1
+NumBasicFilters=1
+NumAdditionalFilters=0
+NumRawDataFilters=0
 HiddenDimensions=
-BasicGroupBy=Vuser Status
+BasicGroupBy=System Resource Name, Host Name
 AdditionalGroupBy=
 HasGranularity=1
-YLeftAxisTitle=Number of Vusers
+YLeftAxisTitle=Resource usage
 YRightAxisTitle=
 TimeBasedXAxis=1
 XBottomAxisTitle=Elapsed scenario time hh:mm
 XTopAxisTitle=
-DisplayAsStairs=1
+DisplayAsStairs=0
 RawDataDimension=Scenario Elapsed Time
-Scaling=0
-ZeroValue=1
-CompleteValFromLast=1
+Scaling=1
+ZeroValue=0
+CompleteValFromLast=0
 Stacked=0
 BreakdownTree=0
 TransactionBreakdownGraph=0
 
 [SelectString0]
-Dimension=InOut Flag
-CountField=
-AggregateFunction=Sum
-ResultSetAggregateFunction=AggSum
+Dimension=![Value]!
+CountField=![Acount]!
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
 Title=
 ActiveState=1
 
-[AdditionalFilter0]
+[BasicFilter0]
 DimensionType=Discrete
 InternalDimName=
-Dimension=Vuser Status
+Dimension=Event Type
 EqualFlag=1
-DimensionTableName=VuserStatus
+DimensionTableName=Event_Map
 NumValues=1
 UseEscapeSequence=1
 DimCount=1
-Dim_0=Run
+Dim_0=Server Resources
 LikeMode=0
 
 [DimensionFunctions]
 DimeFuncCount=0
-
-[RawDataFilter0]
-DimensionType=DiscreteNumber
-InternalDimName=
-Dimension=InOut Flag
-EqualFlag=1
-DimensionTableName=VuserEvent_Meter
-NumValues=1
-UseEscapeSequence=1
-DimCount=1
-Dim_0=1
-LikeMode=0
 
 [Granularity]
 Dimension=Scenario Elapsed Time

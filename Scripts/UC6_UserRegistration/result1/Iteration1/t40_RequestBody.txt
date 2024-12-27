@@ -1,0 +1,2 @@
+"username=spiderManPeter&password=webs2024&passwordConfirm=webs2024&firstName=%7BfirstNameBuffe"
+"r%7D&lastName=Parker&address1=20+Ingram+Street&address2=Queens+NY&register.x=67&register.y=8"

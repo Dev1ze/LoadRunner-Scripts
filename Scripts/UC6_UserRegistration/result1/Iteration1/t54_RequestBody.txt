@@ -1,0 +1,3 @@
+"username=doctorStrange1&password=strange2024&passwordConfirm=strange2024&firstName=%7BfirstNam"
+"eBuffer%7D&lastName=Strange&address1=Kamar-Taj&address2=Kathmandu+Nepal&register.x=67&register"
+".y=8"

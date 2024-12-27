@@ -1,0 +1,16 @@
+GET /cgi-bin/welcome.pl?page=menus HTTP/1.1
+Referer: http://127.0.0.1:1080/cgi-bin/login.pl
+Sec-Fetch-Mode: navigate
+Upgrade-Insecure-Requests: 1
+Priority: u=4
+Sec-Fetch-Dest: frame
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Accept: */*
+Connection: Keep-Alive
+Host: 127.0.0.1:1080
+Cookie: MSO=SID&1735330851; MTUserInfo=username&blackwidow007&firstName&%7BfirstNameBuffer%7D&expDate&&creditCard&&address2&Washington%20DC&address1&S.H.I.E.L.D.%20HQ&hash&55&lastName&Romanoff
+
