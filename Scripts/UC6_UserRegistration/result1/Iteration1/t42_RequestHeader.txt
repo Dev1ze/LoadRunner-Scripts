@@ -11,5 +11,5 @@ Accept-Language: en-US,en;q=0.5
 Accept: */*
 Connection: Keep-Alive
 Host: 127.0.0.1:1080
-Cookie: MSO=SID&1735330856; MTUserInfo=expDate&&username&spiderManPeter&address1&20%20Ingram%20Street&address2&Queens%20NY&lastName&Parker&hash&82&creditCard&&firstName&%7BfirstNameBuffer%7D
+Cookie: MSO=SID&1735422094; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&Queens%20NY&username&spiderManPeter&hash&82&lastName&Parker&address1&20%20Ingram%20Street&creditCard&&expDate&
 

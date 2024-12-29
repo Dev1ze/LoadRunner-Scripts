@@ -1,13 +1,13 @@
 ﻿[BasicInfo]
-Title=Transactions per Second
-TemplateName=TransactionsPerSecond
+Title=Windows Resources Available Mbytes (RAM)
+TemplateName=WindowsResources
 ChartType=Simple
-Description=Displays the number of completed transactions (both successful and unsuccessful) performed during each second of a load test. This graph helps you determine the actual transaction load on your system at any given moment.
-HelpContext=505
-EventType=Transaction
+Description=Displays a summary of the System Resources usage for each Windows based host.
+HelpContext=513
+EventType=Server Resources
 EventName=
-ChartGroup=Transactions
-PerformanceClass=General
+ChartGroup=System Resources
+PerformanceClass=Resources
 CustomData=
 
 [TabSheet]
@@ -18,6 +18,12 @@ ActivePage=0
 Count=1
 
 [UIInfo0]
+Title0=Available MBytes (Memory):localhost
+Color0=8559404
+Active0=-1
+Scale0=1
+ScaleState0=User
+UITitle0=
 
 [MoreUiInfos]
 ShowPieMarks=1
@@ -35,12 +41,12 @@ Pen_SmallDots=0
 Pen_Visible=1
 Pen_Width=1
 Pen_Color=0
-MainFactTableName=Event_meter
+MainFactTableName=Monitor_meter
 DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T569618059T
+TableName=T148536871T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -48,27 +54,27 @@ SetPieToPercent=0
 DescFromFID=0
 NumSelectStrings=1
 ProduceRealStatis=1
-CompleteMissingValuesWithZeroes=1
+CompleteMissingValuesWithZeroes=0
 CompleteMissingValues=0
 ForceCompleteValsOnArea=1
 IdsToStrs=1
-StdMonitor=0
-HiddenFunctions=Think Time
+StdMonitor=1
+HiddenFunctions=
 NumBasicFilters=1
 NumAdditionalFilters=1
 NumRawDataFilters=0
 HiddenDimensions=
-BasicGroupBy=Transaction Name
-AdditionalGroupBy=Transaction End Status
+BasicGroupBy=System Resource Name, Host Name
+AdditionalGroupBy=
 HasGranularity=1
-YLeftAxisTitle=Number of Transactions
+YLeftAxisTitle=Resource usage
 YRightAxisTitle=
 TimeBasedXAxis=1
 XBottomAxisTitle=Elapsed scenario time hh:mm
 XTopAxisTitle=
 DisplayAsStairs=0
 RawDataDimension=Scenario Elapsed Time
-Scaling=0
+Scaling=1
 ZeroValue=0
 CompleteValFromLast=0
 Stacked=0
@@ -76,9 +82,9 @@ BreakdownTree=0
 TransactionBreakdownGraph=0
 
 [SelectString0]
-Dimension=Acount
-CountField=
-AggregateFunction=SumG
+Dimension=![Value]!
+CountField=![Acount]!
+AggregateFunction=Avg
 ResultSetAggregateFunction=Y Value
 Title=
 ActiveState=1
@@ -92,30 +98,19 @@ DimensionTableName=Event_Map
 NumValues=1
 UseEscapeSequence=1
 DimCount=1
-Dim_0=Transaction
+Dim_0=Server Resources
 LikeMode=0
 
 [AdditionalFilter0]
 DimensionType=Discrete
 InternalDimName=Event Name
-Dimension=Transaction Name
+Dimension=System Resource Name
 EqualFlag=1
 DimensionTableName=Event_map
-NumValues=12
+NumValues=1
 UseEscapeSequence=1
-DimCount=12
-Dim_0=BuyingTicket
-Dim_1=DeleteTicket
-Dim_2=Login
-Dim_3=Logout
-Dim_4=OpenLandingPage
-Dim_5=OpenPage_FindFlight
-Dim_6=OpenRegistrationPage
-Dim_7=press continue
-Dim_8=SubmitFlight
-Dim_9=UserRegistered
-Dim_10=ViewTicketList
-Dim_11=СhooseDepartureTime
+DimCount=1
+Dim_0=Available MBytes (Memory)
 LikeMode=0
 
 [DimensionFunctions]
@@ -124,9 +119,9 @@ DimeFuncCount=0
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=128
+Granularity=64
 BaseGranularityUIName=
-MinimumDefaultGranularity=30
+MinimumDefaultGranularity=1
 
 [Alerts]
 Number Of Alerts=0
@@ -135,7 +130,7 @@ Number Of Alerts=0
 SmartCorrBool=0
 
 [Legend]
-NumColumns=8
+NumColumns=7
 Column0Name=Color
 Column0Type=Color
 Column0Width=38
@@ -145,21 +140,18 @@ Column1Width=40
 Column2Name=Measurement
 Column2Type=Measurement
 Column2Width=242
-Column3Name=Graph Minimum
-Column3Type=Min
+Column3Name=Minimum
+Column3Type=Real Min
 Column3Width=120
 Column4Name=Average
 Column4Type=Real Avg
 Column4Width=120
-Column5Name=Graph Maximum
-Column5Type=Max
+Column5Name=Maximum
+Column5Type=Real Max
 Column5Width=120
-Column6Name=Graph Median
-Column6Type=Med
+Column6Name=Std. Deviation
+Column6Type=Real Std
 Column6Width=120
-Column7Name=Graph Std. Deviation
-Column7Type=Std
-Column7Width=120
 
 [ChartDisplayOptions]
 DisplayType=Line

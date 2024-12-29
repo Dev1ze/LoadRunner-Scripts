@@ -1,12 +1,12 @@
 ﻿[Workspace]
 SessionStartTime=0
-SessionEndTime=3743
+SessionEndTime=3724
 VerNo=13
 IsSummaryData=0
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=resl543919976DB
+DataBaseName=resl129011029DB
 DBType=1
 CurrServer=DESKTOP-LQ4AJG3
 CurrUser=sa
@@ -43,8 +43,8 @@ ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-10800
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1735199453
-ScenarioEndTime=1735203196
+ScenarioStartTime=1735457610
+ScenarioEndTime=1735461334
 ResInSD=0
 WebGran=0
 FilterEdge=0
@@ -58,7 +58,7 @@ Scenario Type=Manual
 Schedule Name=Schedule 1
 Mode=Scenario Scheduling
 Load Behavior=Initialize each Vuser just before it runs
-Scenario Duration=Start 40 Vusers simultaneously; Run for 01:02:00 (HH:MM:SS); Stop all Vusers simultaneously
+Scenario Duration=Start 20 Vusers simultaneously; Run for 01:02:00 (HH:MM:SS); Stop all Vusers simultaneously
 NumGraphs=8
 
 [DimensionFunctions]

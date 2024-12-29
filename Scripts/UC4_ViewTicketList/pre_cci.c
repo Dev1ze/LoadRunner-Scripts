@@ -3026,7 +3026,7 @@ Action()
 	 
 	
 	
-	lr_think_time(4);
+	lr_think_time(5);
 	
 	
 	 
@@ -3059,7 +3059,7 @@ Action()
 	 
 	
 	
-	lr_think_time(4);
+	lr_think_time(5);
 
 	
 	 
@@ -3103,7 +3103,7 @@ Action()
 	 
 	
 	
-	lr_think_time(4);
+	lr_think_time(5);
 	
 	
 	 
@@ -3168,7 +3168,7 @@ Action()
 	 
 	
 	
-	lr_think_time(4);
+	lr_think_time(5);
 	
 
 	 
@@ -3236,7 +3236,7 @@ Action()
 	 
 	
 
-	lr_think_time(4);
+	lr_think_time(5);
 
 	
 	 
@@ -3284,7 +3284,7 @@ Action()
 	 
 	
 	
-	lr_think_time(4);
+	lr_think_time(5);
 	
 	
 	 

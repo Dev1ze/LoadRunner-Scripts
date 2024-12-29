@@ -2715,6 +2715,115 @@ Action()
 	
 	
 	lr_think_time(2);	
+	
+	
+	 
+	 
+	lr_start_transaction("OpenPage_FindFlight");
+	 
+	 
+	web_reg_find("Text=Find Flight", "LAST");
+	 
+	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
+    web_reg_save_param_attrib(
+        "ParamName=departDate",
+        "TagName=input",
+        "Extract=value",
+        "Name=departDate",
+        "Type=text",
+        "SEARCH_FILTERS",
+        "RequestUrl=*/reservations.pl*",
+        "LAST");
+     
+    web_reg_save_param_attrib(
+        "ParamName=returnDate",
+        "TagName=input",
+        "Extract=value",
+        "Name=returnDate",
+        "Type=text",
+        "SEARCH_FILTERS",
+        "RequestUrl=*/reservations.pl*",
+        "LAST");
+	web_url("Search Flights Button", 
+		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t4.inf", 
+		"Mode=HTML", 
+		"LAST");
+	lr_end_transaction("OpenPage_FindFlight",2);
+	 
+	 
+	
+	
+	lr_think_time(2);
+	
+	
+	 
+	 
+	web_reg_save_param_regexp(
+		"ParamName=idTicket",
+		"RegExp=name\=\"outboundFlight\" value\=\"(.*?)\"",
+		"Ordinal=ALL",  
+         "LAST");
+	 
+	
+	
+	 
+	 
+	 
+	lr_set_debug_message(8, 1);
+	strcpy(departCity, lr_eval_string("{depart}"));
+	do 
+	{ 
+		strcpy(arriveCity, lr_eval_string("{arrive}"));
+	} 
+	while (strcmp(departCity, arriveCity) == 0);
+	lr_save_string(departCity, "departCity");
+	lr_save_string(arriveCity, "arriveCity");
+	lr_output_message("Selected Depart City: %s", departCity);
+	lr_output_message("Selected Arrive City: %s", arriveCity);
+	 
+	
+	lr_start_transaction("SubmitFlight");
+	 
+	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>","LAST");
+	 
+	strcpy(_numPassengers, lr_eval_string("{numPassengers}"));
+	lr_save_string(_numPassengers, "_numPassengers");
+	web_add_header("Origin", "http://127.0.0.1:1080");
+	web_add_header("Sec-Fetch-User", "?1");
+	web_submit_data("reservations.pl", 
+		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome", 
+		"Snapshot=t14.inf", 
+		"Mode=HTML", 
+		"ITEMDATA", 
+		"Name=advanceDiscount", "Value=0", "ENDITEM", 
+		"Name=depart", "Value={departCity}", "ENDITEM", 
+		"Name=departDate", "Value={departDate}", "ENDITEM", 
+		"Name=arrive", "Value={arriveCity}", "ENDITEM", 
+		"Name=returnDate", "Value={returnDate}", "ENDITEM", 
+		"Name=numPassengers", "Value={_numPassengers}", "ENDITEM", 
+		"Name=seatPref", "Value={seatingPreference}", "ENDITEM", 
+		"Name=seatType", "Value={typeSeat}", "ENDITEM", 
+		"Name=findFlights.x", "Value=68", "ENDITEM", 
+		"Name=findFlights.y", "Value=6", "ENDITEM", 
+		"Name=.cgifields", "Value=roundtrip", "ENDITEM", 
+		"Name=.cgifields", "Value=seatType", "ENDITEM", 
+		"Name=.cgifields", "Value=seatPref", "ENDITEM", 
+		"LAST");
+	lr_end_transaction("SubmitFlight",2);
+	 
+	 
+	
+	
+	lr_think_time(2);
 
 	
 	 											 
@@ -2967,138 +3076,6 @@ Action()
 	 
 	
 	
-	lr_think_time(2);
-
-	
-	 
-	 
-	lr_start_transaction("OpenPage_FindFlight");
-	 
-	 
-	web_reg_find("Text=Find Flight", "LAST");
-	 
-	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-    web_reg_save_param_attrib(
-        "ParamName=departDate",
-        "TagName=input",
-        "Extract=value",
-        "Name=departDate",
-        "Type=text",
-        "SEARCH_FILTERS",
-        "RequestUrl=*/reservations.pl*",
-        "LAST");
-     
-    web_reg_save_param_attrib(
-        "ParamName=returnDate",
-        "TagName=input",
-        "Extract=value",
-        "Name=returnDate",
-        "Type=text",
-        "SEARCH_FILTERS",
-        "RequestUrl=*/reservations.pl*",
-        "LAST");
-	web_url("Search Flights Button", 
-		"URL=http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t4.inf", 
-		"Mode=HTML", 
-		"LAST");
-	lr_end_transaction("OpenPage_FindFlight",2);
-	 
-	 
-	
-	
-	lr_think_time(2);
-	
-	
-	 
-	 
-	web_reg_save_param_regexp(
-		"ParamName=idTicket",
-		"RegExp=name\=\"outboundFlight\" value\=\"(.*?)\"",
-		"Ordinal=ALL",  
-         "LAST");
-	 
-	
-	
-	 
-	 
-	 
-	lr_set_debug_message(8, 1);
-	strcpy(departCity, lr_eval_string("{depart}"));
-	do 
-	{ 
-		strcpy(arriveCity, lr_eval_string("{arrive}"));
-	} 
-	while (strcmp(departCity, arriveCity) == 0);
-	lr_save_string(departCity, "departCity");
-	lr_save_string(arriveCity, "arriveCity");
-	lr_output_message("Selected Depart City: %s", departCity);
-	lr_output_message("Selected Arrive City: %s", arriveCity);
-	 
-	
-	lr_start_transaction("SubmitFlight");
-	 
-	web_reg_find("Text=Flight departing from <B>{departCity}</B> to <B>{arriveCity}</B> on <B>{departDate}</B>","LAST");
-	 
-	strcpy(_numPassengers, lr_eval_string("{numPassengers}"));
-	lr_save_string(_numPassengers, "_numPassengers");
-	web_add_header("Origin", "http://127.0.0.1:1080");
-	web_add_header("Sec-Fetch-User", "?1");
-	web_submit_data("reservations.pl", 
-		"Action=http://127.0.0.1:1080/cgi-bin/reservations.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Snapshot=t14.inf", 
-		"Mode=HTML", 
-		"ITEMDATA", 
-		"Name=advanceDiscount", "Value=0", "ENDITEM", 
-		"Name=depart", "Value={departCity}", "ENDITEM", 
-		"Name=departDate", "Value={departDate}", "ENDITEM", 
-		"Name=arrive", "Value={arriveCity}", "ENDITEM", 
-		"Name=returnDate", "Value={returnDate}", "ENDITEM", 
-		"Name=numPassengers", "Value={_numPassengers}", "ENDITEM", 
-		"Name=seatPref", "Value={seatingPreference}", "ENDITEM", 
-		"Name=seatType", "Value={typeSeat}", "ENDITEM", 
-		"Name=findFlights.x", "Value=68", "ENDITEM", 
-		"Name=findFlights.y", "Value=6", "ENDITEM", 
-		"Name=.cgifields", "Value=roundtrip", "ENDITEM", 
-		"Name=.cgifields", "Value=seatType", "ENDITEM", 
-		"Name=.cgifields", "Value=seatPref", "ENDITEM", 
-		"LAST");
-	lr_end_transaction("SubmitFlight",2);
-	 
-	 
- 		
- 	
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 	
-	
- 	
  	lr_end_transaction("UC5_DeleteTicket", 2);
  	   
  	 

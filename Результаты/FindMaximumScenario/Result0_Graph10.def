@@ -1,5 +1,5 @@
 ﻿[BasicInfo]
-Title=Windows Resources Committed Bytes (Memory)
+Title=Disc Metrics
 TemplateName=WindowsResources
 ChartType=Simple
 Description=Displays a summary of the System Resources usage for each Windows based host.
@@ -18,12 +18,36 @@ ActivePage=1
 Count=1
 
 [UIInfo0]
-Title0=Committed Bytes (Memory):localhost
-Color0=16744576
-Active0=-1
-Scale0=1E-09
+Title0=% Disk Time (PhysicalDisk _Total):localhost
+Color0=8559404
+Active0=0
+Scale0=1
 ScaleState0=User
 UITitle0=
+Title1=% Idle Time (PhysicalDisk _Total):localhost
+Color1=4276695
+Active1=0
+Scale1=1
+ScaleState1=User
+UITitle1=
+Title2=Avg. Disk Bytes/Transfer (PhysicalDisk _Total):localhost
+Color2=50677
+Active2=-1
+Scale2=1
+ScaleState2=User
+UITitle2=
+Title3=Avg. Disk Queue Length (PhysicalDisk _Total):localhost
+Color3=13207328
+Active3=0
+Scale3=1
+ScaleState3=User
+UITitle3=
+Title4=Split IO/Sec (PhysicalDisk _Total):localhost
+Color4=13419110
+Active4=0
+Scale4=1
+ScaleState4=User
+UITitle4=
 
 [MoreUiInfos]
 ShowPieMarks=1
@@ -35,7 +59,7 @@ ActionClearFilterEnabled=1
 ChartFile=P:\Programs\FinalTask\Результаты\FindMaximumScenario\Result0_Graph10.cfg
 View3D=0
 IntLegendVisible=0
-Chart3dPercent=10
+Chart3dPercent=1
 Pen_Style=0
 Pen_SmallDots=0
 Pen_Visible=1
@@ -46,7 +70,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T17150396T
+TableName=T37008650T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -107,10 +131,14 @@ InternalDimName=Event Name
 Dimension=System Resource Name
 EqualFlag=1
 DimensionTableName=Event_map
-NumValues=1
+NumValues=5
 UseEscapeSequence=1
-DimCount=1
-Dim_0=Committed Bytes (Memory)
+DimCount=5
+Dim_0=% Disk Time (PhysicalDisk _Total)
+Dim_1=% Idle Time (PhysicalDisk _Total)
+Dim_2=Avg. Disk Bytes/Transfer (PhysicalDisk _Total)
+Dim_3=Avg. Disk Queue Length (PhysicalDisk _Total)
+Dim_4=Split IO/Sec (PhysicalDisk _Total)
 LikeMode=0
 
 [DimensionFunctions]
@@ -119,7 +147,7 @@ DimeFuncCount=0
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=60
+Granularity=64
 BaseGranularityUIName=
 MinimumDefaultGranularity=1
 

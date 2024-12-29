@@ -313,7 +313,7 @@
 <m_PeriodStartInSec>120</m_PeriodStartInSec>
 <m_PeriodEndInSec>150</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -403,7 +403,7 @@
 <m_PeriodStartInSec>420</m_PeriodStartInSec>
 <m_PeriodEndInSec>450</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.06666666</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -475,7 +475,7 @@
 <m_PeriodStartInSec>660</m_PeriodStartInSec>
 <m_PeriodEndInSec>690</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -502,7 +502,7 @@
 <m_PeriodStartInSec>750</m_PeriodStartInSec>
 <m_PeriodEndInSec>780</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0</m_ActualValue>
+<m_ActualValue>0.13333333</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -556,7 +556,7 @@
 <m_PeriodStartInSec>930</m_PeriodStartInSec>
 <m_PeriodEndInSec>960</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.13333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -781,7 +781,7 @@
 <m_PeriodStartInSec>1680</m_PeriodStartInSec>
 <m_PeriodEndInSec>1710</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -880,7 +880,7 @@
 <m_PeriodStartInSec>2010</m_PeriodStartInSec>
 <m_PeriodEndInSec>2040</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0</m_ActualValue>
+<m_ActualValue>0.06666666</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1060,7 +1060,7 @@
 <m_PeriodStartInSec>2610</m_PeriodStartInSec>
 <m_PeriodEndInSec>2640</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0</m_ActualValue>
+<m_ActualValue>0.06666666</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1078,7 +1078,7 @@
 <m_PeriodStartInSec>2670</m_PeriodStartInSec>
 <m_PeriodEndInSec>2700</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1123,7 +1123,7 @@
 <m_PeriodStartInSec>2820</m_PeriodStartInSec>
 <m_PeriodEndInSec>2850</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1132,7 +1132,7 @@
 <m_PeriodStartInSec>2850</m_PeriodStartInSec>
 <m_PeriodEndInSec>2880</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1150,7 +1150,7 @@
 <m_PeriodStartInSec>2910</m_PeriodStartInSec>
 <m_PeriodEndInSec>2940</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.06666666</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1159,7 +1159,7 @@
 <m_PeriodStartInSec>2940</m_PeriodStartInSec>
 <m_PeriodEndInSec>2970</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1168,7 +1168,7 @@
 <m_PeriodStartInSec>2970</m_PeriodStartInSec>
 <m_PeriodEndInSec>3000</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1177,7 +1177,7 @@
 <m_PeriodStartInSec>3000</m_PeriodStartInSec>
 <m_PeriodEndInSec>3030</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.1</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1186,7 +1186,7 @@
 <m_PeriodStartInSec>3030</m_PeriodStartInSec>
 <m_PeriodEndInSec>3060</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1195,7 +1195,7 @@
 <m_PeriodStartInSec>3060</m_PeriodStartInSec>
 <m_PeriodEndInSec>3090</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0</m_ActualValue>
+<m_ActualValue>0.06666666</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1204,7 +1204,7 @@
 <m_PeriodStartInSec>3090</m_PeriodStartInSec>
 <m_PeriodEndInSec>3120</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1213,7 +1213,7 @@
 <m_PeriodStartInSec>3120</m_PeriodStartInSec>
 <m_PeriodEndInSec>3150</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1222,7 +1222,7 @@
 <m_PeriodStartInSec>3150</m_PeriodStartInSec>
 <m_PeriodEndInSec>3180</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1231,7 +1231,7 @@
 <m_PeriodStartInSec>3180</m_PeriodStartInSec>
 <m_PeriodEndInSec>3210</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1249,7 +1249,7 @@
 <m_PeriodStartInSec>3240</m_PeriodStartInSec>
 <m_PeriodEndInSec>3270</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1276,7 +1276,7 @@
 <m_PeriodStartInSec>3330</m_PeriodStartInSec>
 <m_PeriodEndInSec>3360</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.03333333</m_ActualValue>
+<m_ActualValue>0</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>
@@ -1339,7 +1339,7 @@
 <m_PeriodStartInSec>3540</m_PeriodStartInSec>
 <m_PeriodEndInSec>3570</m_PeriodEndInSec>
 <m_Status>rulesStatusNoData</m_Status>
-<m_ActualValue>0.1</m_ActualValue>
+<m_ActualValue>0.03333333</m_ActualValue>
 <m_ExpectedValue>0</m_ExpectedValue>
 <m_FormattedActualValue xsi:null="1"/>
 <m_LoadValue>0</m_LoadValue>

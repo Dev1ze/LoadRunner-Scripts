@@ -11,5 +11,5 @@ Accept-Language: en-US,en;q=0.5
 Accept: */*
 Connection: Keep-Alive
 Host: 127.0.0.1:1080
-Cookie: MSO=SID&1735330860; MTUserInfo=hash&116&lastName&Lang&expDate&&firstName&%7BfirstNameBuffer%7D&address1&San%20Francisco&creditCard&&username&antManScott&address2&California
+Cookie: MSO=SID&1735422099; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&California&username&antManScott&hash&116&lastName&Lang&address1&San%20Francisco&creditCard&&expDate&
 

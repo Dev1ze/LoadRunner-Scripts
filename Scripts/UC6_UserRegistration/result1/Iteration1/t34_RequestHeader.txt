@@ -12,5 +12,5 @@ Accept-Language: en-US,en;q=0.5
 Accept: */*
 Connection: Keep-Alive
 Host: 127.0.0.1:1080
-Cookie: MSO=SID&1735330854; MTUserInfo=username&hulkSmash&hash&8&lastName&Banner&firstName&%7BfirstNameBuffer%7D&expDate&&address2&New%20York%20NY&creditCard&&address1&Stark%20Tower
+Cookie: MSO=SID&1735422092; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&New%20York%20NY&username&hulkSmash&hash&8&lastName&Banner&address1&Stark%20Tower&creditCard&&expDate&
 

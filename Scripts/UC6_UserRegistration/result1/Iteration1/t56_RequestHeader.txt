@@ -11,5 +11,5 @@ Accept-Language: en-US,en;q=0.5
 Accept: */*
 Connection: Keep-Alive
 Host: 127.0.0.1:1080
-Cookie: MSO=SID&1735330858; MTUserInfo=hash&17&lastName&Strange&address2&Kathmandu%20Nepal&firstName&%7BfirstNameBuffer%7D&username&doctorStrange1&expDate&&address1&Kamar-Taj&creditCard&
+Cookie: MSO=SID&1735422096; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&Kathmandu%20Nepal&username&doctorStrange1&hash&17&lastName&Strange&address1&Kamar-Taj&creditCard&&expDate&
 

@@ -19,11 +19,6 @@ Action()
 		lr_output_message("Рандоное число %d", randomLength);
 		for (i = 0; i < randomLength; i++) randomString[i] = (char)('a' + rand() % 26); //Начинаю с числа 65 (символ 'A') и делю его на случайное число от 0 до 25
 		randomString[randomLength] = '\0'; 
-		randomNumber = rand() % 1000; // Число от 0 до 999
-    	// Объединение слова и числа
-    	sprintf(randomString + randomLength, "%d", randomNumber);
-   		// Сохранение результата
-    	strcpy(userDatas[j], randomString);
 		strcpy(userDatas[j], randomString);
 		lr_save_string(userDatas[j], "userData");
 		lr_output_message("Valuse %d - %s", j, lr_eval_string("{userData}"));

@@ -11,5 +11,5 @@ Accept-Language: en-US,en;q=0.5
 Accept: */*
 Connection: Keep-Alive
 Host: 127.0.0.1:1080
-Cookie: MSO=SID&1735330857; MTUserInfo=creditCard&&address1&Wakanda%20Palace&username&blackPantherTChalla&hash&97&expDate&&firstName&%7BfirstNameBuffer%7D&address2&Wakanda&lastName&Panther
+Cookie: MSO=SID&1735422095; MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&Wakanda&username&blackPantherTChalla&hash&97&lastName&Panther&address1&Wakanda%20Palace&creditCard&&expDate&
 

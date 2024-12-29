@@ -19,7 +19,7 @@ Count=1
 
 [UIInfo0]
 Title0=% Processor Time (Processor _Total):localhost
-Color0=13419110
+Color0=8559404
 Active0=-1
 Scale0=1
 ScaleState0=User
@@ -46,7 +46,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T15485990T
+TableName=T147327533T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -119,7 +119,7 @@ DimeFuncCount=0
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=128
+Granularity=64
 BaseGranularityUIName=
 MinimumDefaultGranularity=1
 

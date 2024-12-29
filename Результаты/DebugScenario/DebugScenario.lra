@@ -6,13 +6,13 @@ IsSummaryData=0
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=resl95843764DB
+DataBaseName=resl35131345DB
 DBType=1
 CurrServer=DESKTOP-LQ4AJG3
 CurrUser=sa
 CurrPswd===
 StorageLoc=\\DESKTOP-LQ4AJG3\Data\
-PhStorageLoc=C:\MSSQL7\Data
+PhStorageLoc=C:\MSSQL7\Data\
 LocStorageLoc=
 LocPhStorageLoc=
 WinIntSec=0
@@ -23,10 +23,10 @@ UseSpecMSSQLParams=1
 NumResults=1
 
 [Data Config]
-CollectionMode=2
+CollectionMode=3
 IngnoreFlds=Vuser ID
 IngnoreUIFlds=VuserID
-AggSecGran=1
+AggSecGran=30
 TransAgg=1
 DataPointAgg=1
 WebAgg=1
@@ -43,10 +43,10 @@ ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-10800
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1734506753
-ScenarioEndTime=1734508099
+ScenarioStartTime=1735330886
+ScenarioEndTime=1735332232
 ResInSD=0
-WebGran=5
+WebGran=0
 FilterEdge=0
 FSartTime=0
 FEndTime=0
@@ -59,7 +59,7 @@ Schedule Name=Schedule 1
 Mode=Scenario Scheduling
 Load Behavior=Initialize all Vusers simultaneously
 Scenario Duration=Start 10 Vusers simultaneously; Run for 00:22:00 (HH:MM:SS); Stop all Vusers simultaneously
-NumGraphs=7
+NumGraphs=8
 
 [DimensionFunctions]
 DimeFuncCount=1

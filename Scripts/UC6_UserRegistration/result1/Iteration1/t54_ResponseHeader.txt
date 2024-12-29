@@ -1,8 +1,8 @@
 HTTP/1.1 200 OK
-Date: Fri, 27 Dec 2024 20:20:58 GMT
-Server: Apache/2.4.58 (Unix)
+Date: Sat, 28 Dec 2024 21:41:36 GMT
+Server: Apache/2.2.21 (Win32)
 Expires: 5s
-Set-Cookie: MTUserInfo=hash&17&lastName&Strange&address2&Kathmandu%20Nepal&firstName&%7BfirstNameBuffer%7D&username&doctorStrange1&expDate&&address1&Kamar-Taj&creditCard&; path=/
+Set-Cookie: MTUserInfo=firstName&%7BfirstNameBuffer%7D&address2&Kathmandu%20Nepal&username&doctorStrange1&hash&17&lastName&Strange&address1&Kamar-Taj&creditCard&&expDate&; path=/
 Keep-Alive: timeout=5, max=52
 Connection: Keep-Alive
 Transfer-Encoding: chunked
